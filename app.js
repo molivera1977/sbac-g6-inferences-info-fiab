@@ -20,6 +20,25 @@
   const { esc, sayHTML, wordSpan, sayBtn, readBox, readLines, spokenOf, stopReading } = S;
   const Sheet = window.G6Sheet;
   const SETS = window.SETS;
+  /* GUEST VIEW (Marcos 11/19: an admin page with every SBAC site, "so they can see all of them in one place"): share.js,
+     the same guest view as the 4th-grade practice sites, turns on for ?share=<code>. A guest is "Guest" (no name typed, no class
+     needed), every set is open, no PIN is ever asked, and nothing is saved or sent: share.js keeps this visit's storage
+     apart and wipes it, and this page sends nothing and looks nothing up. The teacher/admin guest link also opens the
+     teacher screen with sample students and no PIN (teacher.js). A student's class link is unchanged. */
+  const GUEST = Boolean(window.SHARE_MODE);
+  const GUEST_NAME = 'Guest';
+  if (GUEST) {
+    // what each guest card offers, true of THIS site (share.js draws the cards from these lists; its words say "the
+    // teacher", never another teacher's name: this site's share.js is the copy for the school's other teachers' sites)
+    window.SHARE_CARDS = {
+      student: [['🔓', 'Every set open', 'No name, no class link, nothing locked.'],
+        ['📊', 'Right answers and score', 'The right answer and why after each question.'],
+        ['🛡️', 'Nothing is saved', 'No scores go to the teacher.']],
+      teacher: [['📊', 'Class scores', 'Sample students: the heat map, each pick, the time.'],
+        ['👀', 'Try it as a student', 'Any set, start to score. ⏩ skips the waits.'],
+        ['✅', 'Answer key', 'Every question, the right answer and why. Printable.']]
+    };
+  }
 
   const PLACES_KEY = 'g6InfInfo_places_v1';   // each student's unfinished sets on this device
   const SCORES_KEY = 'g6InfInfo_scores_v1';   // each student's finished sets on this device
@@ -408,10 +427,10 @@
 
   function sendToTeacher(st) {
     const note = $('#r-sent');
-    if (trying) {   // Try it: nothing was sent or kept, and the teacher is told so (not read aloud)
+    if (trying || GUEST) {   // Try it, or a guest: nothing was sent or kept, and they are told so (not read aloud)
       note.hidden = false;
       note.className = 'sent-note sent-wait';
-      note.textContent = '👀 Try it: this score was not saved.';
+      note.textContent = trying ? '👀 Try it: this score was not saved.' : '👀 Guest view — this score was not saved.';
       return;
     }
     note.hidden = !Sheet.connected;
@@ -438,7 +457,7 @@
   let chooseDone = {};     // level → { best, tries } of their finished takes (opens the next level)
   let looking = false;
   const ORDER = Object.keys(SET_NAMES);
-  const isOpen = level => ORDER.indexOf(level) === 0 || ORDER[ORDER.indexOf(level) - 1] in chooseDone || Boolean(choosePlaces[level]);
+  const isOpen = level => GUEST || ORDER.indexOf(level) === 0 || ORDER[ORDER.indexOf(level) - 1] in chooseDone || Boolean(choosePlaces[level]);
   const normName = n => String(n || '').trim().toLowerCase().replace(/\s+/g, ' ');
   const who = (teacher, name) => `${teacher}|${normName(name)}`;
   const placeKey = st => `${who(st.teacher, st.name)}|${st.set}`;
@@ -474,9 +493,9 @@
     return unfinished(st) && Object.keys(results).length === idx ? st : null;
   }
 
-  // every update for the score sheet goes out here: into the outbox, then sent. Try it sends nothing.
+  // every update for the score sheet goes out here: into the outbox, then sent. Try it and a guest send nothing.
   function toSheet(rec) {
-    if (trying) return;
+    if (trying || GUEST) return;
     Sheet.queue(rec);
     Sheet.flush();
   }
@@ -544,7 +563,8 @@
     if (choosePlaces[level]) { beginSet(choosePlaces[level].set); return; }
     const takes = TAKES[level];
     const tries = (chooseDone[level] || {}).tries || 0;
-    if (tries >= takes.length && !(await teacherSays(`let ${chooseName} take ${SET_NAMES[level]} again`))) return;
+    // a guest takes anything as many times as they like: no PIN
+    if (tries >= takes.length && !GUEST && !(await teacherSays(`let ${chooseName} take ${SET_NAMES[level]} again`))) return;
     beginSet(takes[tries % takes.length]);
   }
 
@@ -552,7 +572,7 @@
      that is not open yet looks locked but can still be tapped. The class teacher's PIN lets THIS student start it now
      (take 1). Nothing is kept: no one else's order changes, and without the PIN nothing opens. */
   async function skipAhead(level) {
-    if (trying) return;   // Try it never shows the choose page
+    if (trying || GUEST) return;   // Try it never shows the choose page; a guest has every set open, so no PIN
     const me = who(chooseTeacher, chooseName);
     if (!(await teacherSays(`let ${chooseName} start ${SET_NAMES[level]} now`))) return;
     if (who(chooseTeacher, chooseName) !== me || document.body.dataset.screen !== 'choose') return;   // another student, or the page moved on
@@ -564,7 +584,7 @@
 
   async function startOver(level) {
     const old = choosePlaces[level];
-    if (!old || !(await teacherSays(`let ${chooseName} start ${setLabel(old.set)} over`))) return;
+    if (!old || (!GUEST && !(await teacherSays(`let ${chooseName} start ${setLabel(old.set)} over`)))) return;
     dropPlace(old);
     toSheet({ saveId: old.saveId, teacher: old.teacher, status: 'Restarted' });
     delete choosePlaces[level];
@@ -596,12 +616,21 @@
   $('#home-class').textContent = CLASS ? `${TEACHERS[CLASS]}'s class` : '';
   ['#home-lead', '.name-row', '.teacher-row', '#home-class'].forEach(sel => { $(sel).hidden = !CLASS; });
   $('#home-nolink').hidden = Boolean(CLASS);
+  // a guest: no name boxes and no "ask for your class link" — one start button (share.js names it), or the two guest cards
+  // on the teacher/admin link (the row widens for them); the Teacher Access link is gone (no PIN in a guest view)
+  const START_ROW = Boolean(CLASS) || GUEST;
+  if (GUEST) {
+    ['#home-lead', '.name-row', '#home-nolink'].forEach(sel => { $(sel).hidden = true; });
+    $('.teacher-row').hidden = false;
+    $('.teacher-row').classList.toggle('guest-row', Boolean(window.SHARE_TEACHER));
+    $('#teacher-link').hidden = true;
+  }
   function renderHome() {
     if (trying) { endTry(); return; }   // Try it: every way out of the set goes back to the teacher screen
     $('#student-name').value = '';
     $('#student-last').value = '';
     $('#name-check').hidden = true;
-    $('.teacher-row').hidden = !CLASS;
+    $('.teacher-row').hidden = !START_ROW;
     $('#name-hint').hidden = true;
     chooseName = '';
     chooseFirst = '';
@@ -625,7 +654,7 @@
   $('#name-check-words').innerHTML = sayHTML(NAME_CHECK);
   function closeNameCheck() {
     $('#name-check').hidden = true;
-    $('.teacher-row').hidden = !CLASS;
+    $('.teacher-row').hidden = !START_ROW;
   }
   ['#student-name', '#student-last'].forEach(id => $(id).addEventListener('input', () => { $('#name-hint').hidden = true; closeNameCheck(); }));
   function goDirections(teacher) {
@@ -650,7 +679,13 @@
     chooseTeacher = $('#name-check').dataset.teacher;
     renderDirections(`${first} ${last}`.slice(0, 30).trim());   // the sheet keeps 30 letters: the same 30 find their work
   }
-  $('#home-go').addEventListener('click', () => { if (CLASS) goDirections(CLASS); });
+  // a guest goes straight to the directions as "Guest", in the class of the link (or the first class)
+  function guestStart() {
+    chooseFirst = GUEST_NAME;
+    chooseTeacher = CLASS || Object.keys(TEACHERS)[0];
+    renderDirections(GUEST_NAME);
+  }
+  $('#home-go').addEventListener('click', () => { if (GUEST) guestStart(); else if (CLASS) goDirections(CLASS); });
   $('#name-yes').addEventListener('click', nameYes);
   $('#name-no').addEventListener('click', () => { closeNameCheck(); stopReading(); $('#student-name').focus(); $('#student-name').select(); });
   $('#student-name').addEventListener('keydown', e => { if (e.key === 'Enter') $('#student-last').focus(); });
@@ -755,10 +790,10 @@
   function renderChoose() {
     if (trying) { endTry(); return; }   // Try it: no choose page (it would look up a student's saved work)
     $('#hello').textContent = `Hi, ${chooseFirst || chooseName.split(' ')[0]}!`;
-    $('#choose-class').textContent = `${TEACHERS[chooseTeacher]}'s class`;
+    $('#choose-class').textContent = GUEST ? '👀 Guest view · every set is open · nothing is saved' : `${TEACHERS[chooseTeacher]}'s class`;
     choosePlaces = localPlaces(chooseTeacher, chooseName);
     chooseDone = localDone(chooseTeacher, chooseName);
-    looking = Sheet.connected;
+    looking = Sheet.connected && !GUEST;   // a guest's work is never looked up on the score sheet
     drawChoose();
     show('choose');
     if (!looking) return;

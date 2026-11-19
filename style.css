@@ -487,3 +487,6 @@ button { font: inherit; }
 .t-try-box { margin: 12px 0 0; padding: 10px 14px; border: 2px solid var(--p); border-radius: 12px; background: var(--pl); }
 .t-try-note { margin: 0 0 8px; font-size: 14px; color: #334155; }
 @media print { .try-bar { display: none !important; } }
+
+/* guest view (11/19): the two guest cards on the teacher/admin link need more room than one start button */
+.teacher-row.guest-row { max-width: 760px; }

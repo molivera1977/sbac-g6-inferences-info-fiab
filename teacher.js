@@ -661,6 +661,17 @@
   window.addEventListener('afterprint', () => document.body.classList.remove('print-short'));
   $('#key-home').addEventListener('click', () => show('teacher'));
 
+  /* Guest view (11/19, share.js): the teacher/admin guest link opens this screen with no PIN, on the sample students
+     (invented, labeled "Sample data"), never a real class: real rows come only from the score sheet, with the PIN. */
+  if (window.SHARE_TEACHER) {
+    window.SHARE_OPEN_TEACHER = () => {
+      pickClass(A.CLASS || Object.keys(TEACHERS)[0]);
+      tPin = '';
+      heatMode = 'latest';
+      showClass(sampleRows(), true);
+    };
+  }
+
   // the site test checks the heat map against these rows, worked out on its own
   window.G6Teacher = { sampleRows };
 })();
