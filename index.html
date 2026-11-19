@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SBAC Practice: Make &amp; Support Inferences (Informational)</title>
+<!-- tab icon: a plain open book (no name, no initials) -->
+<link rel="icon" type="image/svg+xml" href="icons/favicon.svg?v=1">
+<link rel="stylesheet" href="style.css?v=g6tq">
+</head>
+<body>
+<div class="container">
+
+  <!-- shown only while no score sheet is connected (sheet.js SHEET_URL is empty) -->
+  <p id="preview-banner" class="preview-banner" hidden>Preview — nothing is saved</p>
+
+  <!-- 👀 Try it as a student (teacher only, 11/18): shown only while a teacher walks through a set; students never see it -->
+  <div id="try-bar" class="try-bar" hidden>
+    <button type="button" id="try-back" class="btn small">← Teacher screen</button>
+    <span id="try-what" class="try-what"></span>
+    <span class="try-nav">
+      <button type="button" id="try-prev" class="btn small ghost" aria-label="Back one">◀</button>
+      <label class="sr-only" for="try-jump">Go to</label>
+      <select id="try-jump" class="try-jump"></select>
+      <button type="button" id="try-next" class="btn small ghost" aria-label="Next one">▶</button>
+    </span>
+    <button type="button" id="try-skip" class="btn small ghost">⏩ Skip the wait</button>
+  </div>
+
+  <!-- PAGE 1: COVER -->
+  <section id="home" class="screen">
+    <div class="home-inner">
+      <h1 class="main-title">🔍 SBAC Practice: Make &amp; Support Inferences</h1>
+      <p class="sub-title">FIAB Practice · RI.6.1–RI.6.2</p>
+      <!-- each teacher has her own link (?class=…): only her name shows, and no student picks a teacher -->
+      <!-- the cover picture (11/18, his pick): a real Civilian Conservation Corps enrollee planting a pine seedling, the work
+           Test A's passage is about (public domain, National Archives 195827); its credit line is under the Go button -->
+      <img class="home-hero" src="images/cover-ccc.webp?v=1" alt="A young Civilian Conservation Corps worker planting a small pine tree">
+      <p id="home-class" class="home-class" hidden></p>
+
+
+      <div id="home-lead" class="home-lead" data-read-box>
+        <button type="button" id="home-say" class="say-home" aria-label="Read the directions">🔊</button>
+        <p id="home-lead-words" class="home-lead-text"></p>
+      </div>
+      <!-- opened without a class link: nothing to start, only this -->
+      <div id="home-nolink" class="home-lead home-nolink" data-read-box hidden>
+        <button type="button" id="nolink-say" class="say-home" aria-label="Read this">🔊</button>
+        <p id="home-nolink-words" class="home-lead-text"></p>
+      </div>
+
+      <div class="name-row">
+        <label class="sr-only" for="student-name">First name</label>
+        <input id="student-name" class="name-input" type="text" autocomplete="off" maxlength="20" placeholder="First name">
+        <label class="sr-only" for="student-last">Last name</label>
+        <input id="student-last" class="name-input" type="text" autocomplete="off" maxlength="20" placeholder="Last name">
+      </div>
+      <div id="name-hint" class="name-hint" data-read-box hidden>
+        <button type="button" class="say" aria-label="Read the note">🔊</button>
+        <span id="name-hint-words"></span>
+      </div>
+
+      <!-- Is this your name? (11/18): Yes goes on, No goes back to the boxes -->
+      <div id="name-check" class="name-check" hidden>
+        <div id="name-check-ask" class="name-check-ask" data-read-box>
+          <button type="button" class="say" aria-label="Read the question">🔊</button>
+          <span id="name-check-words"></span>
+        </div>
+        <p id="name-check-name" class="name-check-name"></p>
+        <div class="name-check-btns">
+          <button type="button" id="name-yes" class="btn name-yes">✅ Yes, that's me</button>
+          <button type="button" id="name-no" class="btn ghost">✏️ No, fix it</button>
+        </div>
+      </div>
+
+      <div class="teacher-row one">
+        <button type="button" id="home-go" class="teacher-btn go-btn">Go to the Directions ▶</button>
+      </div>
+      <p class="home-credit">Photo: National Archives (public domain)</p>
+
+      <div class="home-links">
+        <a href="#" id="teacher-link" class="home-link">Teacher Access</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAGE 2: DIRECTIONS (locked until heard) -->
+  <section id="directions" class="screen" hidden>
+    <div class="home-inner">
+      <div id="dir-head" class="dir-head" data-read-box>
+        <button type="button" id="dir-say" class="say-home say-dir" aria-label="Listen to the directions">🔊</button>
+        <h2 class="dir-title">Directions</h2>
+      </div>
+      <p class="dir-sub">Tap 🔊 and listen. Then press I'm ready.</p>
+      <ol id="dir-steps" class="dir-steps" role="list"></ol>
+      <p id="dir-note" class="dir-note" hidden></p>
+      <button type="button" id="dir-go" class="btn start-btn" aria-disabled="true">I'm ready ➜</button>
+      <a href="#" id="dir-back" class="change-name">← Back</a>
+    </div>
+  </section>
+
+  <!-- PAGE 3: PICK WHERE TO START -->
+  <section id="choose" class="screen" hidden>
+    <div class="home-inner">
+      <div class="choose-head">
+        <h2 id="hello" class="hello">Hi!</h2>
+        <button type="button" id="choose-say" class="say-home" aria-label="Read the directions">🔊</button>
+      </div>
+      <p id="choose-class" class="choose-class"></p>
+      <p class="choose-sub">Go in order. Each one opens when you finish the one before it.</p>
+      <p id="looking" class="looking" hidden>Looking for your saved work…</p>
+
+      <div id="resume" class="resume" hidden>
+        <p id="resume-text"></p>
+        <div class="resume-btns">
+          <button type="button" id="resume-go" class="btn small">Keep going ▶</button>
+          <button type="button" id="resume-new" class="btn small ghost">Start over (teacher PIN)</button>
+        </div>
+      </div>
+
+      <div class="set-grid">
+        <button type="button" class="set-btn set-W" data-set="W">🌱 Warm Up <span>Start here · 3 texts · 9 questions · 💡 reminders read to you · 2 takes</span></button>
+        <button type="button" class="set-btn set-R" data-set="R">Review <span>3 texts · 9 questions</span><span>a step up · 2 takes</span></button>
+        <button type="button" class="set-btn set-TA" data-set="TA">Test A <span>Just like the real test</span><span>9 questions · 1 take</span></button>
+        <button type="button" class="set-btn set-TB" data-set="TB">Test B <span>Just like the real test</span><span>9 questions · 1 take</span></button>
+      </div>
+      <a href="#" id="change-name" class="change-name">Not you? Go back and type your name</a>
+    </div>
+  </section>
+
+  <!-- A SET: the passage on one side, its questions on the other, one question at a time -->
+  <section id="quiz" class="screen" hidden>
+    <header class="quiz-head">
+      <span id="set-banner" class="set-pill"></span>
+      <span id="q-count" class="q-count"></span>
+      <span id="p-count" class="p-count"></span>
+      <button type="button" id="exit-btn" class="exit-btn" title="Your place is saved">Exit</button>
+    </header>
+    <div class="pg-bar"><div id="progress-fill" class="pg-fill"></div></div>
+    <div class="quiz-body">
+      <aside id="passage" class="passage-panel" aria-label="The text"></aside>
+      <div id="item" class="item"></div>
+    </div>
+  </section>
+
+  <!-- RESULTS -->
+  <section id="results" class="screen" hidden>
+    <div id="reward" class="reward" hidden>
+      <div class="reward-icon">🏆</div>
+      <h2 id="reward-msg" class="reward-msg">Great reading!</h2>
+    </div>
+    <h2 class="res-title">Set Complete</h2>
+    <div id="r-name" class="res-name"></div>
+    <div id="r-say" class="res-msg" data-read-box>
+      <button type="button" class="say" aria-label="Read my score">🔊</button>
+      <span id="r-msg"></span>
+    </div>
+    <p id="r-sent" class="sent-note" hidden></p>
+    <div class="gr-grid">
+      <div><div class="stat" id="r-pts">0/9</div><div class="stat-l">Points</div></div>
+      <div><div class="stat" id="r-pct">0%</div><div class="stat-l">Score</div></div>
+    </div>
+    <div id="missed"></div>
+    <button type="button" id="home-btn" class="btn">Return to Menu</button>
+  </section>
+
+  <!-- TEACHER ACCESS: pick the class, type the PIN (the score sheet checks it; no PIN is in this page) -->
+  <section id="tpin" class="screen" hidden>
+    <div class="home-inner tpin-inner">
+      <h2 class="try-title">Teacher Access</h2>
+      <p class="try-sub">Pick your class. Type your PIN.</p>
+      <div class="tpin-classes" role="radiogroup" aria-label="Class">
+        <button type="button" class="tpin-class" data-teacher="lynk" role="radio" aria-checked="false">Ms. Lynk</button>
+        <button type="button" class="tpin-class" data-teacher="fitzsimmons" role="radio" aria-checked="false">Mrs. Fitzsimmons</button>
+      </div>
+      <label class="sr-only" for="tpin-input">Teacher PIN</label>
+      <input id="tpin-input" class="name-input tpin-input" type="password" autocomplete="off" autocapitalize="off" spellcheck="false" maxlength="20" placeholder="PIN">
+      <button type="button" id="tpin-go" class="btn start-btn">Open class scores</button>
+      <p id="tpin-note" class="tpin-note" hidden></p>
+      <div id="tpin-sample" class="tpin-sample" hidden>
+        <p>No score sheet is connected yet, so a PIN can't be checked here.</p>
+        <button type="button" id="tpin-sample-go" class="btn small ghost">See sample data</button>
+      </div>
+      <a href="#" id="tpin-back" class="change-name">← Back</a>
+    </div>
+  </section>
+
+  <!-- TEACHER: CLASS SCORES -->
+  <section id="teacher" class="screen" hidden>
+    <div class="key-head">
+      <h2 id="t-title">Class Scores</h2>
+      <div class="key-actions">
+        <button type="button" id="t-refresh" class="btn small ghost">Refresh</button>
+        <button type="button" id="t-try" class="btn small ghost" aria-expanded="false" aria-controls="t-try-box">👀 Try it as a student</button>
+        <button type="button" id="t-key" class="btn small ghost">✅ Answer key</button>
+        <button type="button" id="t-home" class="btn small">Back</button>
+      </div>
+    </div>
+    <!-- 👀 Try it as a student (11/18): pick a set, see it as a student does; nothing is saved -->
+    <div id="t-try-box" class="t-try-box" hidden>
+      <p class="t-try-note">Pick a set. You see it as a student does: the directions, each text, each question, the feedback and the score. Nothing is saved. The bar on top skips the wait, goes to any question, and comes back here.</p>
+      <div id="t-try-sets" class="key-tabs" role="group" aria-label="Set to try"></div>
+    </div>
+    <p id="t-sample" class="t-sample" hidden>Sample data · invented students, not a real class · nothing here is saved</p>
+    <div id="t-body"></div>
+    <!-- a name typed wrong (11/18): move that work to the right name, with the PIN already given -->
+    <details id="t-fix" class="t-fix" hidden>
+      <summary>✏️ Fix a misspelled name</summary>
+      <p class="t-fix-note">A student who typed their name wrong shows up as a different student. Move that work to the right name: every row of that name in your class changes, nothing is deleted.</p>
+      <div class="t-fix-row">
+        <label>Name to fix <select id="fix-from"></select></label>
+        <label>Right first name <input id="fix-first" type="text" maxlength="20" autocomplete="off"></label>
+        <label>Right last name <input id="fix-last" type="text" maxlength="20" autocomplete="off"></label>
+        <button type="button" id="fix-go" class="btn small">Move the work</button>
+      </div>
+      <p id="fix-msg" class="t-fix-msg" role="status"></p>
+    </details>
+  </section>
+
+  <!-- TEACHER: ANSWER KEY -->
+  <section id="key" class="screen" hidden>
+    <div class="key-head">
+      <h2>Answer Key</h2>
+      <div class="key-tabs" role="tablist" aria-label="Set"></div>
+      <div class="key-actions">
+        <button type="button" id="key-print-short" class="btn small ghost">🖨️ Print answers only (1 page)</button>
+        <button type="button" id="key-print" class="btn small ghost">🖨️ Print full key</button>
+        <button type="button" id="key-home" class="btn small">Back</button>
+      </div>
+    </div>
+    <div id="key-print-head" class="key-print-head"></div>
+    <p class="key-intro">Every passage and every question as students see them. The right answer is green. Each choice has the Why students hear after they answer.</p>
+    <div id="key-body"></div>
+    <div id="key-short" class="key-short"></div>
+  </section>
+
+</div>
+<script src="data/sets.js?v=g6b-r1118c"></script>
+<script src="sheet.js?v=g6s"></script>
+<!-- the Ava voice: the player (kokoro-voice/kokoro-voice.js, the master copy), then the page that speaks.
+     Recorded 11/18 (G6_AVA_LIST → make_ava_kokoro.py, AVA_CAPS_AS_WORDS=1); the site test checks every line has a recording. -->
+<script src="kokoro/lines.js?v=7ece70e8"></script>
+<script src="kokoro-voice.js?v=ks1116"></script>
+<script src="speech.js?v=g6b"></script>
+<script src="app.js?v=g6tp"></script>
+<script src="teacher.js?v=g6tq"></script>
+</body>
+</html>

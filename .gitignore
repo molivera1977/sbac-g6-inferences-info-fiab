@@ -1,0 +1,9 @@
+.DS_Store
+.claude/
+# the drafts, the tools and the build brief hold the real test's frames and numbers — never on the public site
+drafts/
+tools/
+BUILD_BRIEF.md
+# the score sheet's script and its clasp settings stay off the public site (the page needs only its web-app address)
+apps-script/
+screenshots/
