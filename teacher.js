@@ -459,8 +459,16 @@
   function showClass(rows, sample) {
     tSample = sample;
     students = groupStudents(rows);
-    $('#t-title').textContent = `Class Scores · ${TEACHERS[tTeacher]}`;
+    // the teacher/admin guest link with no class link shows a SAMPLE class, so it names both grade-level teachers
+    // (Marcos 11/19: "should it specifically say Richardson? how about both grade level teachers")
+    const whose = window.SHARE_TEACHER && !A.CLASS ? Object.values(TEACHERS).join(' & ') : TEACHERS[tTeacher];
+    $('#t-title').textContent = `Class Scores · ${whose}`;
     $('#t-sample').hidden = !sample;
+    // the teacher/admin guest view says how the real page works (Marcos 11/19: "mention about the pin so admin knows.
+    // and how each teacher will only see their class data")
+    const pinNote = $('#t-pin-note');
+    pinNote.hidden = !(window.SHARE_TEACHER && sample);
+    if (!pinNote.hidden) pinNote.textContent = `🔒 ${Object.values(TEACHERS).join(' and ')} each open this page with their own PIN in Teacher Access. Each PIN opens only that teacher's class, with real student names and scores. Admins see sample students only.`;
     $('#t-refresh').hidden = sample;
     show('teacher');
     fillFix();

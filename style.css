@@ -276,6 +276,7 @@ button { font: inherit; }
 .key-tab.on { background: var(--pd); border-color: var(--pd); color: #fff; }
 .key-intro { color: var(--tm); font-size: 0.85rem; }
 .t-sample { margin: 12px 0 0; padding: 8px 14px; border-radius: 10px; background: #fef3c7; color: #78350f; font-weight: 800; border: 2px dashed #f59e0b; }
+.t-pin-note { margin: 8px 0 0; padding: 8px 14px; border-radius: 10px; background: #e0f2fe; color: #0c4a6e; font-weight: 700; border: 2px solid #7dd3fc; line-height: 1.4; }
 .t-msg { color: var(--tm); font-weight: 700; }
 .t-msg.t-err { color: var(--er); }
 .t-sum { color: var(--tm); font-weight: 700; margin: 12px 0 6px; }
