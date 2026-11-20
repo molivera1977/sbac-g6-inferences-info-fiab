@@ -49,7 +49,7 @@
 (function () {
   var SHARE_CODE = 'mro';       // the student guest code — change it here to shut old links off
   var TEACHER_HASH = 'ce64cc1c';   // fingerprint (fnv) of the SBAC teacher/admin code (11/19) — a new code = a new fingerprint
-  var TEACHER_HASH_ALSO = 'ae786515';   // the teacher code of Mr. O's other sites: his Class Portal's teacher link hands it on here
+  var TEACHER_HASH_ALSO = 'ae786515';   // the older teacher code, still handed on by the class portal's teacher link
 
   /* FNV-1a, 32 bits: a fingerprint of a code, not a lock — enough to keep the code out of sight */
   var fnv = function (s) {
