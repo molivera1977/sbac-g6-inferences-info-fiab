@@ -193,7 +193,7 @@
     const right = Number(r.pts) || 0;
     return `on question ${Math.min(answered + 1, tot)} of ${tot} · ${right} right · ${answered - right} wrong`;
   }
-  // 📍 Right Now (11/21, from Mr. O's dashboard): the questions missed so far in this try, in words; and the share right
+  // 📍 Right Now (11/21, from the class dashboard): the questions missed so far in this try, in words; and the share right
   // so far (nothing answered yet counts as all right, so it sorts last)
   function liveShare(r) {
     const answered = Number(r.answered) || 0;
@@ -273,7 +273,7 @@
   }
 
   function classHTML() {
-    // 📍 Right Now (11/21, from Mr. O's dashboard): the student with the lowest share right comes first, then the newest
+    // 📍 Right Now (11/21, from the class dashboard): the student with the lowest share right comes first, then the newest
     const working = students.flatMap(st => ALL_SETS.filter(s => st.sets[s] && st.sets[s].now).map(s => ({ name: st.name, r: st.sets[s].now })))
       .sort((a, b) => liveShare(a.r) - liveShare(b.r) || rowTime(b.r) - rowTime(a.r));
     const finished = students.reduce((n, st) => n + Object.values(st.sets).reduce((k, c) => k + c.tries.length, 0), 0);
