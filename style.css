@@ -449,6 +449,7 @@ button { font: inherit; }
 .t-strip { display: flex; flex-wrap: wrap; gap: 3px; margin-top: 6px; }
 .ts-q { display: inline-flex; flex-direction: column; align-items: center; min-width: 26px; padding: 1px 3px; border-radius: 6px; font-size: 13px; line-height: 1.15; border: 1px solid #d0d7de; }
 .ts-q i { font-style: normal; font-size: 11px; color: #555; }
+.t-live-miss { flex-basis: 100%; margin: 4px 0 0; font-size: 14px; color: #a61b1b; line-height: 1.35; }   /* 📍 the misses in words, 11/21 */
 .ts-ok { background: #dcfce7; border-color: #86efac; }
 .ts-miss { background: #fee2e2; border-color: #fca5a5; }
 .ts-wait { background: #fff; color: #999; }

@@ -193,6 +193,17 @@
     const right = Number(r.pts) || 0;
     return `on question ${Math.min(answered + 1, tot)} of ${tot} · ${right} right · ${answered - right} wrong`;
   }
+  // 📍 Right Now (11/21, from Mr. O's dashboard): the questions missed so far in this try, in words; and the share right
+  // so far (nothing answered yet counts as all right, so it sorts last)
+  function liveShare(r) {
+    const answered = Number(r.answered) || 0;
+    return answered ? (Number(r.pts) || 0) / answered : 1;
+  }
+  function liveMissed(r) {
+    const a = answersOf(r);
+    const missed = itemsOf(r.set).map((it, i) => ({ it, i })).filter(({ it }) => a[it.id] && !a[it.id][0]);
+    return missed.length ? `<p class="t-live-miss">Missed: ${missed.map(({ it, i }) => `<b>${i + 1}.</b> ${esc(questionText(it))}`).join(' · ')}</p>` : '';
+  }
   function liveStrip(r) {
     const a = answersOf(r);
     return `<span class="t-strip" aria-label="Each question so far">${itemsOf(r.set).map((it, i) => {
@@ -262,8 +273,9 @@
   }
 
   function classHTML() {
+    // 📍 Right Now (11/21, from Mr. O's dashboard): the student with the lowest share right comes first, then the newest
     const working = students.flatMap(st => ALL_SETS.filter(s => st.sets[s] && st.sets[s].now).map(s => ({ name: st.name, r: st.sets[s].now })))
-      .sort((a, b) => rowTime(b.r) - rowTime(a.r));
+      .sort((a, b) => liveShare(a.r) - liveShare(b.r) || rowTime(b.r) - rowTime(a.r));
     const finished = students.reduce((n, st) => n + Object.values(st.sets).reduce((k, c) => k + c.tries.length, 0), 0);
     const cell = c => {
       if (!c) return '<span class="t-none">—</span>';
@@ -275,10 +287,10 @@
       return done + now;
     };
     return `<p class="t-sum">${students.length} ${students.length === 1 ? 'student' : 'students'} · ${finished} finished ${finished === 1 ? 'set' : 'sets'} · ${working.length} in progress</p>
-      <h3 class="t-sub">In progress <span>(saved after every answer${tSample ? ' · sample' : ` · updates by itself every ${AUTO_MS / 1000} seconds`})</span></h3>
+      <h3 class="t-sub">In progress <span>(saved after every answer · lowest share right first${tSample ? ' · sample' : ` · updates by itself every ${AUTO_MS / 1000} seconds`})</span></h3>
       ${tSample ? '' : `<p id="t-updated" class="t-updated">Updated ${new Date().toLocaleTimeString([], { hour: 'numeric', minute: '2-digit', second: '2-digit' })}</p>`}
       ${working.length ? `<ul class="t-working">${working.map(w => `<li><b>${esc(w.name)}</b> · ${setLabel(w.r.set)} · ${liveText(w.r)}
-        <span class="t-ago">${ago(w.r.updatedAt)}</span>${liveStrip(w.r)}</li>`).join('')}</ul>` : '<p class="t-msg">No one is in the middle of a set.</p>'}
+        <span class="t-ago">${ago(w.r.updatedAt)}</span>${liveStrip(w.r)}${liveMissed(w.r)}</li>`).join('')}</ul>` : '<p class="t-msg">No one is in the middle of a set.</p>'}
       <h3 class="t-sub">Finished <span>(1st try → latest try · ▶ = working on it now)</span></h3>
       <div class="t-wrap"><table class="t-table"><thead><tr><th>Student</th>${ALL_SETS.map(s => `<th>${setLabel(s)}</th>`).join('')}</tr></thead>
         <tbody>${students.map(st => `<tr><td>${esc(st.name)}</td>${ALL_SETS.map(s => `<td>${cell(st.sets[s])}</td>`).join('')}</tr>`).join('')}</tbody></table></div>
