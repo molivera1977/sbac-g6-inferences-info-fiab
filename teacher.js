@@ -199,18 +199,79 @@
     const answered = Number(r.answered) || 0;
     return answered ? (Number(r.pts) || 0) / answered : 1;
   }
+  /* The misses so far, easy to read (Marcos 11/23, after Mrs. Wright's copy): one question a line, what the student
+     picked and the right answer after it. */
   function liveMissed(r) {
     const a = answersOf(r);
     const missed = itemsOf(r.set).map((it, i) => ({ it, i })).filter(({ it }) => a[it.id] && !a[it.id][0]);
-    return missed.length ? `<p class="t-live-miss">Missed: ${missed.map(({ it, i }) => `<b>${i + 1}.</b> ${cue(questionText(it))}`).join(' · ')}</p>` : '';
+    if (!missed.length) return '';
+    return `<div class="t-live-miss"><p class="lm-h">Missed so far:</p><ol class="lm-list">${missed.map(({ it, i }) => {
+      const picked = pickedText(it, a[it.id][1]);
+      return `<li><b class="lm-n">${i + 1}.</b><span class="lm-line"><span class="lm-q">${cue(questionText(it))}</span>`
+        + `${picked == null ? '' : ` <span class="lm-pick">✗ picked <b>${esc(picked)}</b></span>`}`
+        + ` <span class="lm-right">✓ right answer <b>${esc(rightAnswerText(it))}</b></span></span></li>`;
+    }).join('')}</ol></div>`;
   }
-  function liveStrip(r) {
-    const a = answersOf(r);
-    return `<span class="t-strip" aria-label="Each question so far">${itemsOf(r.set).map((it, i) => {
+  /* 🔎 TAP A BOX (Marcos 11/23, from Mrs. Wright's copy: "im suppose to be able to click on them"): every box is a
+     button; it opens a box right under that student's row — the heat map's "what this student picked" box for a ✓ or ✗
+     (the pick and what they heard), "has not answered it yet" for an empty one — with the question and its right answer.
+     One box at a time; the 20-second update keeps it open with its student (found by name and set, not by place). */
+  const liveKey = w => `${normName(w.name)}|${w.r.set}`;
+  let workingList = [];   // the In progress list on the screen: { name, r }
+  let liveOpen = null;    // the open box: { key, q } (q = 0-based question)
+  function liveStrip(w) {
+    const r = w.r, a = answersOf(r), k = esc(liveKey(w));
+    return `<span class="t-strip" role="group" aria-label="${esc(w.name)}: each question so far. Tap one to see it.">${itemsOf(r.set).map((it, i) => {
       const x = a[it.id];
       const mark = !x ? '' : x[0] ? '✓' : '✗';
-      return `<span class="ts-q ${!x ? 'ts-wait' : x[0] ? 'ts-ok' : 'ts-miss'}" title="Question ${i + 1}: ${!x ? 'not answered yet' : x[0] ? 'right' : 'wrong'}"><i>${i + 1}</i>${mark}</span>`;
-    }).join('')}</span>`;
+      return `<button type="button" class="ts-q ${!x ? 'ts-wait' : x[0] ? 'ts-ok' : 'ts-miss'}" data-live="${k}" data-q="${i}" aria-expanded="false" title="${esc(w.name)} · question ${i + 1}: ${!x ? 'not answered yet' : x[0] ? 'right' : 'wrong'}"><i>${i + 1}</i>${mark}</button>`;
+    }).join('')}</span><div class="t-qbox t-livebox" data-live-box="${k}" hidden></div>`;
+  }
+  // The box for question i (0-based) of one student working now
+  function liveBoxHTML(w, i) {
+    const it = itemsOf(w.r.set)[i];
+    const answers = answersOf(w.r);
+    const x = answers[it.id];
+    const who = Array.isArray(x)
+      ? studentHTML(it, { name: w.name, answers, missed: new Set(x[0] ? [] : [it.id]), take: 'working now' })
+      : `<div class="t-student wait"><p><b>${esc(w.name)}</b> has not answered it yet.</p></div>`;
+    const asked = it.type === 'ebsr'
+      ? `<p class="t-qbox-q t-live-ask"><b>Part A:</b> ${cue(it.partA.q)}</p><p class="t-qbox-q t-live-ask"><b>Part B:</b> ${cue(it.partB.q)}</p>`
+      : `<p class="t-qbox-q t-live-ask">${cue(it.stem)}</p>`;
+    return `<div class="t-qbox-head"><b>Question ${i + 1}</b><span class="kq-skill">${esc(it.skill)}</span>
+        <button type="button" class="t-qbox-x" data-live-close aria-label="Close question ${i + 1}">✕</button></div>
+      ${who}
+      ${asked}
+      <p class="t-qbox-a t-live-right"><b>Right answer:</b> ${esc(rightAnswerText(it))}</p>`;
+  }
+  // Open the box for one student's question i, or close it when that one is already open
+  function toggleLive(key, i) {
+    liveOpen = liveOpen && liveOpen.key === key && liveOpen.q === i ? null : { key, q: i };
+    drawLive();
+  }
+  // Show the open box (if its student is still working) under that student; mark its button
+  function drawLive() {
+    const w = liveOpen ? workingList.find(x => liveKey(x) === liveOpen.key) : null;
+    if (!w || !itemsOf(w.r.set)[liveOpen.q]) liveOpen = null;
+    document.querySelectorAll('#t-body .t-livebox').forEach(box => {
+      const on = !!liveOpen && box.dataset.liveBox === liveOpen.key;
+      box.innerHTML = on ? liveBoxHTML(w, liveOpen.q) : '';
+      box.hidden = !on;
+    });
+    document.querySelectorAll('#t-body .ts-q[data-live]').forEach(b => {
+      const on = !!liveOpen && b.dataset.live === liveOpen.key && b.dataset.q === String(liveOpen.q);
+      b.classList.toggle('on', on);
+      b.setAttribute('aria-expanded', String(on));
+    });
+  }
+  /* 📊 SCORE SO FAR (Marcos 11/23: "there's no score so far like a percentage"): after "3 right · 1 wrong", right ÷ the
+     questions answered so far as a % (his dashboard's rule), colored like the heat map; none answered = no %. The list's
+     order (liveShare) uses the same share. */
+  function soFarHTML(r) {
+    const answered = Math.max(0, Math.floor(Number(r.answered)) || 0), right = Math.max(0, Math.floor(Number(r.pts)) || 0);
+    if (!answered) return liveText(r);
+    const pct = Math.round(right / answered * 100);
+    return `${liveText(r)} <span class="t-pill ${heatClass(pct)}" title="Right out of the questions answered so far">${pct}%</span>`;
   }
 
   /* Skill heat map, under the question heat map (which stays as it is): the questions grouped by skill, each skill
@@ -276,6 +337,7 @@
     // 📍 Right Now (11/21, from the class dashboard): the student with the lowest share right comes first, then the newest
     const working = students.flatMap(st => ALL_SETS.filter(s => st.sets[s] && st.sets[s].now).map(s => ({ name: st.name, r: st.sets[s].now })))
       .sort((a, b) => liveShare(a.r) - liveShare(b.r) || rowTime(b.r) - rowTime(a.r));
+    workingList = working;
     const finished = students.reduce((n, st) => n + Object.values(st.sets).reduce((k, c) => k + c.tries.length, 0), 0);
     const cell = c => {
       if (!c) return '<span class="t-none">—</span>';
@@ -289,8 +351,8 @@
     return `<p class="t-sum">${students.length} ${students.length === 1 ? 'student' : 'students'} · ${finished} finished ${finished === 1 ? 'set' : 'sets'} · ${working.length} in progress</p>
       <h3 class="t-sub">In progress <span>(saved after every answer · lowest share right first${tSample ? ' · sample' : ` · updates by itself every ${AUTO_MS / 1000} seconds`})</span></h3>
       ${tSample ? '' : `<p id="t-updated" class="t-updated">Updated ${new Date().toLocaleTimeString([], { hour: 'numeric', minute: '2-digit', second: '2-digit' })}</p>`}
-      ${working.length ? `<ul class="t-working">${working.map(w => `<li><b>${esc(w.name)}</b> · ${setLabel(w.r.set)} · ${liveText(w.r)}
-        <span class="t-ago">${ago(w.r.updatedAt)}</span>${liveStrip(w.r)}${liveMissed(w.r)}</li>`).join('')}</ul>` : '<p class="t-msg">No one is in the middle of a set.</p>'}
+      ${working.length ? `<p class="t-hint">🔎 Tap a numbered box to see that question: what the student picked and the right answer.</p><ul class="t-working">${working.map(w => `<li><b>${esc(w.name)}</b> · ${setLabel(w.r.set)} · ${soFarHTML(w.r)}
+        <span class="t-ago">${ago(w.r.updatedAt)}</span>${liveStrip(w)}${liveMissed(w.r)}</li>`).join('')}</ul>` : '<p class="t-msg">No one is in the middle of a set.</p>'}
       <h3 class="t-sub">Finished <span>(1st try → latest try · ▶ = working on it now)</span></h3>
       <div class="t-wrap"><table class="t-table"><thead><tr><th>Student</th>${ALL_SETS.map(s => `<th>${setLabel(s)}</th>`).join('')}</tr></thead>
         <tbody>${students.map(st => `<tr><td>${esc(st.name)}</td>${ALL_SETS.map(s => `<td>${cell(st.sets[s])}</td>`).join('')}</tr>`).join('')}</tbody></table></div>
@@ -408,8 +470,8 @@
     const picked = a ? a[1] : null;
     const text = pickedText(it, picked);
     const right = !d.missed.has(it.id);
-    if (text == null) return `<div class="t-student"><p><b>${esc(d.name)}</b> <span class="t-take">(${tryWord()})</span>: ${right ? '✓ right' : '✗ missed'} · no answer saved for this question.</p></div>`;
-    return `<div class="t-student ${right ? 'ok' : 'no'}"><p><b>${esc(d.name)}</b> picked ${right ? '✓' : '✗'} <span class="t-take">(${tryWord()})</span></p>
+    if (text == null) return `<div class="t-student"><p><b>${esc(d.name)}</b> <span class="t-take">(${d.take || tryWord()})</span>: ${right ? '✓ right' : '✗ missed'} · no answer saved for this question.</p></div>`;
+    return `<div class="t-student ${right ? 'ok' : 'no'}"><p><b>${esc(d.name)}</b> picked ${right ? '✓' : '✗'} <span class="t-take">(${d.take || tryWord()})</span></p>
       <p class="t-student-pick">${esc(text)}</p>
       <p class="t-student-why"><b>What ${esc(d.name.split(' ')[0])} heard:</b> ${pickedWhys(it, picked).map(esc).join(' ')}</p></div>`;
   }
@@ -486,6 +548,7 @@
     fillFix();
     if (!students.length) { $('#t-body').innerHTML = '<p class="t-msg">No work yet. Rows show up here after each answer a student checks.</p>'; return; }
     $('#t-body').innerHTML = classHTML();
+    drawLive();
     const hasDone = s => students.some(st => st.sets[s] && st.sets[s].latest);
     if (!hasDone(heatSet)) heatSet = ALL_SETS.find(hasDone) || 'W';
     showHeat(heatSet);
@@ -533,6 +596,7 @@
 
   async function refresh(quiet) {
     if (tSample || !tPin) return;
+    if (!quiet) liveOpen = null;   // ↻ Refresh starts closed; the 20-second update keeps the open box
     const box = $('#t-qbox');
     const open = box && !box.hidden ? { q: box.dataset.q, s: box.dataset.s } : null;
     const y = window.scrollY;
@@ -637,6 +701,9 @@
   $('#t-refresh').addEventListener('click', () => { refresh(); autoRefresh(); });
   $('#fix-go').addEventListener('click', fixName);
   $('#t-body').addEventListener('click', e => {
+    const sq = e.target.closest('.ts-q[data-live]');
+    if (sq) { toggleLive(sq.dataset.live, Number(sq.dataset.q)); return; }
+    if (e.target.closest('[data-live-close]')) { liveOpen = null; drawLive(); return; }
     const t = e.target.closest('[data-heat]');
     if (t) { showHeat(t.dataset.heat); return; }
     const m = e.target.closest('[data-mode]');
