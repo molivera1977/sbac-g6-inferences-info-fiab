@@ -264,14 +264,17 @@
       b.setAttribute('aria-expanded', String(on));
     });
   }
-  /* 📊 SCORE SO FAR (Marcos 11/23: "there's no score so far like a percentage"): after "3 right · 1 wrong", right ÷ the
-     questions answered so far as a % (his dashboard's rule), colored like the heat map; none answered = no %. The list's
-     order (liveShare) uses the same share. */
+  /* 📊 SCORE SO FAR (Marcos 11/23: "there's no score so far like a percentage"): right ÷ the questions answered so far as
+     a % (his dashboard's rule), colored like the heat map. The row says what the % means — "4 of 6 right so far 67%",
+     like Mrs. Wright's Base Ten (his pick, 11/23); none answered = "no answers yet", no %. The list's order (liveShare)
+     uses the same share. */
   function soFarHTML(r) {
     const answered = Math.max(0, Math.floor(Number(r.answered)) || 0), right = Math.max(0, Math.floor(Number(r.pts)) || 0);
-    if (!answered) return liveText(r);
+    const tot = Number(r.tot) || itemsOf(r.set).length;
+    const where = `on question ${Math.min(answered + 1, tot)} of ${tot}`;
+    if (!answered) return `${where} · no answers yet`;
     const pct = Math.round(right / answered * 100);
-    return `${liveText(r)} <span class="t-pill ${heatClass(pct)}" title="Right out of the questions answered so far">${pct}%</span>`;
+    return `${where} · ${right} of ${answered} right so far <span class="t-pill ${heatClass(pct)}" title="Right out of the questions answered so far">${pct}%</span>`;
   }
 
   /* Skill heat map, under the question heat map (which stays as it is): the questions grouped by skill, each skill
