@@ -1,7 +1,7 @@
 /* Grade 6 Reading Practice: Make and Support Inferences, Informational Texts.
    BUILT by tools/build_data.py from drafts/*.md. Do not edit by hand: change the draft, then run
    python3 tools/build_data.py (and python3 -E tools/check_drafts.py).
-   drafts fingerprint: a9cdbdaccabe */
+   drafts fingerprint: 9431b1cd444d */
 window.SETS = {
  "W": {
   "passages": [
@@ -10,7 +10,7 @@ window.SETS = {
     "subtitle": "",
     "blocks": [
      {
-      "p": "On July 17, 1897, seventeen-year-old Walter Brandt squeezed through a crowd on a dock in Seattle, Washington. A steamship called the Portland had just arrived from the North. Weary miners staggered down the ramp, carrying heavy sacks of gold. Walter could hardly believe his eyes. \"Right then, I knew I was going north,\" he said later."
+      "p": "On July 17, 1897, seventeen-year-old Otto Brandt squeezed through a crowd on a dock in Seattle, Washington. A steamship called the Portland had just arrived from the North. Weary miners staggered down the ramp, carrying heavy sacks of gold. Otto could hardly believe his eyes. \"Right then, I knew I was going north,\" he said later."
      },
      {
       "p": "In 1896, gold was found near the Klondike River in Canada's Yukon Territory. Soon about 100,000 people rushed north, hoping to get rich. Canada's police force, the North-West Mounted Police (NWMP), made a strict rule. Every gold seeker had to bring enough food and equipment to survive for a whole year, about a ton. That way, no one would starve during the long, frozen winter."
@@ -19,22 +19,22 @@ window.SETS = {
       "h": "The Golden Stairs"
      },
      {
-      "p": "Walter and his uncle sailed north to Alaska. Then they faced the Chilkoot Pass, a trail over the mountains. Steps had been cut into the snow and ice up the steepest part of the climb. People called them the Golden Stairs. From the top of the pass, Walter could see snowy peaks stretching for miles. \"The glaciers glowed blue in the morning sun,\" he said. \"I had never seen anything so beautiful.\""
+      "p": "Otto and his uncle sailed north to Alaska. Then they faced the Chilkoot Pass, a trail over the mountains. Steps had been cut into the snow and ice up the steepest part of the climb. People called them the Golden Stairs. From the top of the pass, Otto could see snowy peaks stretching for miles. \"The glaciers glowed blue in the morning sun,\" he said. \"I had never seen anything so beautiful.\""
      },
      {
-      "p": "Walter could carry only about 50 pounds (23 kilograms) at a time. So he climbed the pass again and again, about 40 times in all. Some days, howling winds and deep snow kept him in his tent. As soon as each storm passed, he started climbing again."
+      "p": "Otto could carry only about 50 pounds (23 kilograms) at a time. So he climbed the pass again and again, about 40 times in all. Some days, howling winds and deep snow kept him in his tent. As soon as each storm passed, he started climbing again."
      },
      {
       "h": "Rapids on the River"
      },
      {
-      "p": "In the spring, the two men built a wooden boat at Lake Bennett. When the ice melted, they floated more than 500 miles (800 kilometers) down the Yukon River. \"Building our boat was fun,\" Walter said, \"but all I could think about was gold.\""
+      "p": "In the spring, the two men built a wooden boat at Lake Bennett. When the ice melted, they floated more than 500 miles (800 kilometers) down the Yukon River. \"Building our boat was fun,\" Otto said, \"but all I could think about was gold.\""
      },
      {
-      "p": "In one narrow canyon, the river turned into roaring rapids. The boat spun and slammed against a rock. Walter was thrown into the icy water. His uncle grabbed his collar and hauled him back aboard."
+      "p": "In one narrow canyon, the river turned into roaring rapids. The boat spun and slammed against a rock. Water poured in through a crack. Otto and his uncle scooped it out with tin cups until the river grew calm."
      },
      {
-      "p": "They reached Dawson City in June 1898. By then, prospectors who had arrived earlier had already claimed the best land. Walter found only a few tiny flakes of gold. Still, he never regretted the trip. \"I went looking for gold,\" he said, \"but I found out that I could finish anything I started.\""
+      "p": "They reached Dawson City in June 1898. By then, prospectors who had arrived earlier had already claimed the best land. Otto found only a few tiny flakes of gold. Still, he never regretted the trip. \"I went looking for gold,\" he said, \"but I found out that I could finish anything I started.\""
      }
     ],
     "footnotes": [],
@@ -104,7 +104,7 @@ window.SETS = {
       "p": "On December 21, 1968, the three men climbed into a small capsule in Florida. It sat on top of a Saturn V rocket. The rocket stood 363 feet (111 meters) tall. No people had ever ridden one before. At 7:51 in the morning, its engines roared. The ground shook as the rocket climbed into the sky."
      },
      {
-      "p": "Less than three hours later, Apollo 8 left its path around Earth. It headed for the Moon. The trip was not easy. During the first night, Borman felt sick to his stomach. The cabin was crowded, and the men had to take turns sleeping."
+      "p": "Less than three hours later, Apollo 8 left its path around Earth. It headed for the Moon. The trip was not easy. The cabin was crowded, and the men had to take turns sleeping."
      },
      {
       "h": "Day 4: Christmas Eve at the Moon"
@@ -122,7 +122,7 @@ window.SETS = {
       "p": "On Christmas Eve, the astronauts spoke to millions of people on Earth by television. Borman ended by wishing a merry Christmas to \"all of you on the good Earth.\""
      },
      {
-      "h": "Days 5 to 7: The Long Way Home"
+      "h": "Days 5 to 7: The Trip Home"
      },
      {
       "p": "On Christmas morning, the men had to fire the engine one more time. It had to work. If it failed, they would never get home. The engine fired while they were behind the Moon. In Houston, the team on the ground waited and waited. At last, Lovell's voice crackled over the radio. \"Please be informed there is a Santa Claus,\" he said. The engine had worked!"
@@ -166,11 +166,11 @@ window.SETS = {
       },
       {
        "t": "Gold seekers climbed mountains to enjoy the snowy views in the Klondike.",
-       "why": "Walter did enjoy the views, but that is not why people went north. That is one detail. A central idea tells about a big part of the text."
+       "why": "Otto did enjoy the views, but that is not why people went north. That is one detail. A central idea tells about a big part of the text."
       },
       {
        "t": "Gold seekers built wooden boats to sell to others in the Klondike.",
-       "why": "Walter and his uncle built a boat to reach Dawson City. The text never says anyone sold boats."
+       "why": "Otto and his uncle built a boat to reach Dawson City. The text never says anyone sold boats."
       }
      ],
      "answer": 1
@@ -183,8 +183,8 @@ window.SETS = {
        "why": "This tells about one rule. It does not show why the gold seekers went north."
       },
       {
-       "t": "\"From the top of the pass, Walter could see snowy peaks stretching for miles.\"",
-       "why": "This tells what Walter saw. It does not show why the gold seekers went north."
+       "t": "\"From the top of the pass, Otto could see snowy peaks stretching for miles.\"",
+       "why": "This tells what Otto saw. It does not show why the gold seekers went north."
       },
       {
        "t": "\"Soon about 100,000 people rushed north, hoping to get rich.\"",
@@ -208,20 +208,20 @@ window.SETS = {
     "hint": "Look at what the person does, says and feels. Those are your clues.",
     "choices": [
      {
-      "t": "Walter enjoyed the beautiful scenery, but he was most excited about riding the rapids.",
-      "why": "The rapids almost drowned Walter. The text never says he was excited about them."
+      "t": "Otto enjoyed the beautiful scenery, but he was most excited about riding the rapids.",
+      "why": "The rapids almost sank the boat. The text never says he was excited about them."
      },
      {
-      "t": "Walter enjoyed finding gold, but he was most excited about building the wooden boat.",
-      "why": "This switches the two ideas. Walter said building the boat was fun, but he said he could think about only one thing, and it was not the boat."
+      "t": "Otto enjoyed finding gold, but he was most excited about building the wooden boat.",
+      "why": "This switches the two ideas. Otto said building the boat was fun, but he said he could think about only one thing, and it was not the boat."
      },
      {
-      "t": "Walter enjoyed climbing the Golden Stairs, but he was most excited about carrying his pack.",
-      "why": "Walter carried his pack up the pass about 40 times, but the text never says he was excited about carrying it."
+      "t": "Otto enjoyed climbing the Golden Stairs, but he was most excited about carrying his pack.",
+      "why": "Otto carried his pack up the pass about 40 times, but the text never says he was excited about carrying it."
      },
      {
-      "t": "Walter enjoyed building the wooden boat, but he was most excited about finding gold.",
-      "why": "Yes! Walter said building the boat was fun, but all he could think about was gold."
+      "t": "Otto enjoyed building the wooden boat, but he was most excited about finding gold.",
+      "why": "Yes! Otto said building the boat was fun, but all he could think about was gold."
      }
     ],
     "answer": 3
@@ -232,34 +232,34 @@ window.SETS = {
     "p": 0,
     "type": "hottext",
     "skill": "Click the proof of a trait",
-    "stem": "Click the section that **best** supports the inference that Walter was a determined gold seeker. Choose **two** options.",
+    "stem": "Click the section that **best** supports the inference that Otto was a determined gold seeker. Choose **two** options.",
     "pick": 2,
     "layout": "list",
     "hint": "You need two. Each one must prove the idea by itself.",
     "pieces": [
      {
-      "t": "Walter could carry only about 50 pounds (23 kilograms) at a time.",
-      "why": "This tells how much Walter could carry. It does not show that he kept going."
+      "t": "Otto could carry only about 50 pounds (23 kilograms) at a time.",
+      "why": "This tells how much Otto could carry. It does not show that he kept going."
      },
      {
       "t": "So he climbed the pass again and again, about 40 times in all.",
-      "why": "Yes! Walter climbed the pass about 40 times, and every time a storm stopped him, he started again as soon as it passed. Each section proves the inference by itself."
+      "why": "Yes! Otto climbed the pass about 40 times, and every time a storm stopped him, he started again as soon as it passed. Each section proves the inference by itself."
      },
      {
       "t": "Some days, howling winds and deep snow kept him in his tent. As soon as each storm passed, he started climbing again.",
-      "why": "Yes! Walter climbed the pass about 40 times, and every time a storm stopped him, he started again as soon as it passed. Each section proves the inference by itself."
+      "why": "Yes! Otto climbed the pass about 40 times, and every time a storm stopped him, he started again as soon as it passed. Each section proves the inference by itself."
      },
      {
       "t": "In the spring, the two men built a wooden boat at Lake Bennett.",
-      "why": "This tells what the two men built in the spring. It does not show Walter sticking with a hard job."
+      "why": "This tells what the two men built in the spring. It does not show Otto sticking with a hard job."
      },
      {
       "t": "When the ice melted, they floated more than 500 miles (800 kilometers) down the Yukon River.",
-      "why": "This tells how far the river trip was. It does not show that Walter was determined."
+      "why": "This tells how far the river trip was. It does not show that Otto was determined."
      },
      {
-      "t": "\"Building our boat was fun,\" Walter said, \"but all I could think about was gold.\"",
-      "why": "This shows what Walter wanted most. It does not show him sticking with a hard job when it got tough."
+      "t": "\"Building our boat was fun,\" Otto said, \"but all I could think about was gold.\"",
+      "why": "This shows what Otto wanted most. It does not show him sticking with a hard job when it got tough."
      }
     ],
     "answer": [
@@ -478,7 +478,7 @@ window.SETS = {
     "subtitle": "",
     "blocks": [
      {
-      "p": "On the morning of March 3, 1913, fifteen-year-old Nora Hartley stepped off a crowded train at Union Station in Washington, D.C. She had come from Pittsburgh with her mother. Under her arm was a cloth banner she had painted herself. In tall letters, it said \"Votes for Women.\" Nora was too young to vote. Still, she longed for her chance to vote."
+      "p": "On the morning of March 3, 1913, fifteen-year-old Nora Hartley stepped off a crowded train at Union Station in Washington, D.C. She had come from Harrisburg with her mother. Under her arm was a cloth banner she had painted herself. In tall letters, it said \"Votes for Women.\" Nora was too young to vote. Still, she longed for her chance to vote."
      },
      {
       "p": "In 1913, most states barred women from voting for president. A group called the National American Woman Suffrage Association (NAWSA) wanted to change that. Suffrage means the right to vote. Many women thought it was unfair to obey laws they had no voice in making. The group planned a giant parade to show the nation's leaders that women deserved the right to vote. A young leader named Alice Paul chose March 3 for the parade. Woodrow Wilson would be sworn in as president the next day. She knew huge crowds would already be in town."
@@ -546,7 +546,7 @@ window.SETS = {
       "p": "On October 26, 1825, the canal was finished. It stretched 363 miles across the state and was 40 feet wide and 4 feet deep. Governor Clinton boarded a boat called the Seneca Chief in Buffalo. Cannons placed along the route boomed one after another to spread the news. Clinton rode the canal and the Hudson River all the way to New York City. There, he poured a keg of water from Lake Erie into the Atlantic Ocean. People called it the Wedding of the Waters."
      },
      {
-      "p": "The \"madness\" worked. The cost of shipping a ton of goods dropped from about 100 dollars to about 10 dollars. Towns along the canal grew into busy cities, and New York City became the nation's busiest port. Buffalo grew from about 2,000 people in 1820 to more than 18,000 by 1840. Clinton's Ditch had changed the country."
+      "p": "The canal worked. The cost of shipping a ton of goods dropped from about 100 dollars to about 10 dollars. Towns along the canal grew into busy cities, and New York City became the nation's busiest port. Buffalo grew from about 2,000 people in 1820 to more than 18,000 by 1840. Clinton's Ditch had changed the country."
      }
     ],
     "footnotes": [],
@@ -563,19 +563,19 @@ window.SETS = {
       "p": "Many people scoffed at the idea. A famous scientist named Samuel Langley built a flying machine for the government. In 1903, it plunged into the Potomac River. One newspaper said a real flying machine might take a million years to build."
      },
      {
-      "p": "Wilbur and Orville Wright did not agree. The brothers were skilled mechanics from Dayton, Ohio. For three years, they had tested gliders near Kitty Hawk, North Carolina. The sand dunes there were soft, and the winds were strong. Now the brothers had built a new machine with a small engine and two propellers. Propellers are spinning blades that push air back and move a machine forward. They called their machine the Flyer."
+      "p": "Wilbur and Orville Wright did not agree. The brothers were skilled mechanics from Dayton, Ohio. For three years, they had tested gliders near Kitty Hawk, North Carolina. The beach there was wide and empty, and the winds were strong. Now the brothers had built a new machine with a small engine and two propellers. Propellers are spinning blades that push air back and move a machine forward. They called their machine the Flyer."
      },
      {
       "h": "Fall 1903: Trouble at Camp"
      },
      {
-      "p": "On September 25, 1903, the brothers reached their camp near Kitty Hawk. They built a wooden hangar to keep the Flyer safe from the wind. Men from a nearby lifesaving station often came by to help. The brothers tested each part again and again. The work went slowly. In November, a propeller shaft cracked. Orville rode a train home to Ohio. There he made new, stronger shafts. He did not get back until December. Each day grew colder."
+      "p": "On September 25, 1903, the brothers reached their camp near Kitty Hawk. They built a wooden hangar to keep the Flyer safe from the wind. Men from a nearby lifesaving station often came by to help. The brothers tested each part again and again. The work went slowly. In November, a propeller shaft cracked. Orville went home to Ohio. There he made new, stronger shafts. He did not get back until December. Each day grew colder."
      },
      {
       "h": "December 14: A Coin Toss"
      },
      {
-      "p": "On December 14, the brothers were ready at last. They tossed a coin to decide which brother would fly first. Wilbur won. The Flyer rolled along a wooden track and rose up. Then it climbed too steeply. After about three seconds, it stalled. It dropped into the sand with a thud. A few parts broke, so the brothers spent two days fixing them."
+      "p": "On December 14, the brothers were ready at last. They tossed a coin to decide which brother would fly first. Wilbur won. The Flyer rolled along a wooden track and rose up. Then it climbed too steeply. After about three seconds, it stalled. It dropped to the ground with a thud. A few parts broke, so the brothers spent two days fixing them."
      },
      {
       "h": "December 17: Into the Wind"
@@ -590,7 +590,7 @@ window.SETS = {
       "p": "The brothers flew three more times that morning. Wilbur went next, and then Orville again. Each flight went farther than the one before. On the last flight, Wilbur stayed up for 59 seconds. He flew 852 feet (260 meters). Soon after, a strong gust flipped the Flyer over and smashed it. It never flew again. But its job was done."
      },
      {
-      "p": "That afternoon, the brothers sent a telegram to their father. It began, \"Success four flights Thursday morning.\" The test had shown that a machine with an engine could carry a person through the air. It was the first time a pilot had flown a powered machine and steered it. Within a few years, the brothers were flying for amazed crowds in America and Europe."
+      "p": "That afternoon, the brothers sent a telegram to their father. It began, \"Success four flights Thursday morning.\" It was the first time a pilot had flown a powered airplane and steered it. Within a few years, the brothers were flying for amazed crowds in America and Europe."
      }
     ],
     "footnotes": [
@@ -839,8 +839,8 @@ window.SETS = {
        "why": "The text tells about Langley's machine, but it never says the brothers were trying to beat him."
       },
       {
-       "t": "The brothers showed that a pilot could fly a powered machine.",
-       "why": "Yes! The Flyer had an engine, and it carried Orville and then Wilbur through the air four times. That was what the test set out to show. Answer first. Then find the proof."
+       "t": "The brothers were the first to fly and steer a powered airplane.",
+       "why": "Yes! No pilot had ever flown and steered a machine with an engine before Orville and Wilbur did. Answer first. Then find the proof."
       },
       {
        "t": "The brothers kept flying the Flyer for many years after the test.",
@@ -865,8 +865,8 @@ window.SETS = {
        "why": "This tells what happened years later. It does not show what the test on December 17 proved."
       },
       {
-       "t": "\"The test had shown that a machine with an engine could carry a person through the air.\"",
-       "why": "Yes! This tells the result of the test. Part B is your Detail. It proves your Part A answer."
+       "t": "\"It was the first time a pilot had flown a powered airplane and steered it.\"",
+       "why": "Yes! This tells the result: the brothers did something no pilot had done before. Part B is your Detail. It proves your Part A answer."
       }
      ],
      "answer": 3
@@ -890,8 +890,8 @@ window.SETS = {
       "why": "The brothers sent their father a telegram. The text never says they flew home."
      },
      {
-      "t": "The Wright brothers tested whether their Flyer, with its small engine, could fly.",
-      "why": "Yes! The whole text tells about the test, from the troubles at camp to the four flights and the result. This fits every part."
+      "t": "The Wright brothers kept working through setbacks until their Flyer flew.",
+      "why": "Yes! The whole text tells how the brothers kept going, from the cracked shaft and the first stall to the four flights. This fits every part."
      },
      {
       "t": "The Wright brothers tested whether the wooden track could hold the Flyer's weight.",
@@ -937,7 +937,7 @@ window.SETS = {
     "subtitle": "",
     "blocks": [
      {
-      "p": "Edna Farrow was twenty-one years old, and she had been flying for three years. On her family's wheat farm in Kansas, she sold eggs and saved every nickel to pay for flying lessons at a dusty airfield nearby. Some neighbors scoffed at her ambition. \"Airplanes are for boys,\" one farmer told her. Then, in the spring of 1943, Edna read a newspaper story that made her heart pound. The army wanted women pilots. She mailed her application the very next morning. \"Now they will see what a girl can do,\" she wrote to her sister."
+      "p": "Edna Farrow was twenty-one years old, and she had been flying for three years. On her family's wheat farm in Iowa, she sold eggs and saved every nickel to pay for flying lessons at a dusty airfield nearby. Some neighbors scoffed at her ambition. \"Airplanes are for boys,\" one farmer told her. Then, in the spring of 1943, Edna read a newspaper story that made her heart pound. The army wanted women pilots. She mailed her application the very next morning. \"Now they will see what a girl can do,\" she wrote to her sister."
      },
      {
       "p": "The United States was fighting in World War II, and the army needed every pilot it could find. In 1943, it created the Women Airforce Service Pilots (WASP). The program trained women to fly military airplanes inside the United States so that more men could fly in combat overseas. More than 25,000 women applied. Only 1,074 earned their silver wings."
@@ -958,13 +958,13 @@ window.SETS = {
       "h": "Trouble Over the Desert"
      },
      {
-      "p": "In the fall of 1944, Edna was ferrying a fighter plane across New Mexico when the engine began to cough. Black oil spattered across the windshield, and the plane began losing altitude. Edna spotted a long, deserted highway below. She lowered the wheels, held the plane steady, and rolled to a stop beside a startled cattle truck. \"My hands shook afterward,\" she admitted, \"but not while I was flying.\""
+      "p": "In the fall of 1944, Edna was ferrying a fighter plane across the Mojave Desert when the engine began to cough. Black oil spattered across the windshield, and the plane began losing altitude. Edna spotted a long, deserted highway below. She lowered the wheels, held the plane steady, and rolled to a stop beside a startled cattle truck. \"My hands shook afterward,\" she admitted, \"but not while I was flying.\""
      },
      {
-      "p": "On December 20, 1944, the army closed the program, and Edna returned home to Kansas. For many years, the women pilots received little recognition. Not until 1977 were they officially recognized as veterans. In 2009, Congress voted to award them the Congressional Gold Medal."
+      "p": "On December 20, 1944, the army closed the program, and Edna returned home to Iowa. For many years, the women pilots received little recognition. Not until 1977 were they officially recognized as veterans. In 2009, Congress voted to award them the Congressional Gold Medal."
      },
      {
-      "p": "\"People still ask me about the Bryce Canyon,\" Edna said many years later. \"I tell them it was beautiful. Then I tell them the part that mattered most. We proved that women could fly anything the army built.\""
+      "p": "\"People still ask me about my flying days,\" Edna said many years later. \"I tell them it was hard. Then I tell them the part that mattered most. We proved that women could fly anything the army built.\""
      }
     ],
     "footnotes": [],
@@ -1089,19 +1089,19 @@ window.SETS = {
      "q": "Which statement **best** summarizes the central idea of the text?",
      "choices": [
       {
-       "t": "WASP pilots flew combat missions overseas to help win battles during World War II.",
-       "why": "Nothing in the text says the women flew in battles. Answer first. Then find the proof."
+       "t": "WASP pilots built new airplanes in factories across the country in the 1940s.",
+       "why": "The women flew new airplanes away from the factories, but nothing in the text says they built them. Answer first. Then find the proof."
       },
       {
-       "t": "WASP pilots studied engines, navigation and weather in Texas during World War II.",
+       "t": "WASP pilots studied engines, navigation and weather in Texas in the 1940s.",
        "why": "This is true, but it is one detail. It leaves out what the women did after training and why. A central idea tells about a big part of the text."
       },
       {
-       "t": "WASP pilots flew planes at home so more men could fight during World War II.",
+       "t": "WASP pilots flew planes at home so more men could fight in the 1940s.",
        "why": "Yes! The text tells what the women did and why they did it: their flying freed more men to fight. Answer first. Then find the proof."
       },
       {
-       "t": "WASP pilots delivered airplanes so they could see the nation during World War II.",
+       "t": "WASP pilots delivered airplanes so they could see the nation in the 1940s.",
        "why": "Edna did enjoy the view, but sightseeing was not the reason the program was created."
       }
      ],
@@ -1219,8 +1219,8 @@ window.SETS = {
       "why": "Yes! The king says he wants everyone to practice the letters at their ease, which means without trouble. This sentence proves the inference by itself."
      },
      {
-      "t": "One of his scholars added that a quick learner could master the letters in a single morning, and a slow one within ten days.",
-      "why": "Yes! If even a slow learner could master the letters in ten days, they were made to be easy to learn. This sentence proves the inference by itself."
+      "t": "A learner who knew those few shapes could combine them into any syllable.",
+      "why": "Yes! A learner needed only a few shapes to write any syllable, so the letters were made to be easy to learn. This sentence proves the inference by itself."
      },
      {
       "t": "Soon after, the first long work in the new letters appeared: a collection of songs praising the kings who had founded Sejong's royal family.",
@@ -1278,8 +1278,8 @@ window.SETS = {
       "why": "This tells what kind of person Sejong was. It does not show why the people needed new letters."
      },
      {
-      "t": "\"Most farmers, fishers and workers could not read or write.\"",
-      "why": "Yes! Most people could not read or write, so Korea needed a way of writing that ordinary people could learn. Answer first. Then find the proof."
+      "t": "\"Writing Korean with Chinese characters was like trying to play a song on the wrong instrument.\"",
+      "why": "Yes! Chinese characters did not fit the Korean language, like a song played on the wrong instrument. That is why letters made for Korean were needed. Answer first. Then find the proof."
      },
      {
       "t": "\"A learner who knew those few shapes could combine them into any syllable.\"",
@@ -1298,8 +1298,8 @@ window.SETS = {
      "q": "Which of these inferences about the crew of the NC-4 and the flying boat is supported by the text?",
      "choices": [
       {
-       "t": "The crew proved that an airplane could reach Europe from America.",
-       "why": "Yes! The NC-4 flew from New York all the way to Lisbon, Portugal, in Europe. Answer first. Then find the proof."
+       "t": "The crew made the first flight from America to Europe.",
+       "why": "Yes! The NC-4 flew from New York all the way to Lisbon, Portugal, and no airplane had crossed the Atlantic before. Answer first. Then find the proof."
       },
       {
        "t": "The crew proved that planes could cross the ocean without stopping.",
@@ -1333,7 +1333,7 @@ window.SETS = {
       },
       {
        "t": "\"The NC-4 had become the first airplane to fly across the Atlantic Ocean.\"",
-       "why": "Yes! This is the result of the trip: an airplane had crossed the ocean. Part B is your Detail. It proves your Part A answer."
+       "why": "Yes! This is the result of the trip: the NC-4's crew had done what no one had done before. Part B is your Detail. It proves your Part A answer."
       }
      ],
      "answer": 3
@@ -1356,8 +1356,8 @@ window.SETS = {
       "why": "The ships stood ready to rescue anyone who went down, but only in case of trouble. Rescues were not what the flight set out to try."
      },
      {
-      "t": "The flight was a test of whether airplanes could cross the Atlantic.",
-      "why": "Yes! The whole text is about a test: could airplanes cross the ocean? A central idea tells about a big part of the text."
+      "t": "The flight crossed the Atlantic in stages despite fog and engine trouble.",
+      "why": "Yes! The whole text tells how the NC-4 crossed the ocean one stop at a time, through fog, storms and engine trouble. A central idea tells about a big part of the text."
      },
      {
       "t": "The flight showed that thick fog makes all ocean flights impossible.",
@@ -1402,7 +1402,7 @@ window.SETS = {
     "subtitle": "",
     "blocks": [
      {
-      "p": "Russell Dorn was nineteen years old in the winter of 1916. He was supposed to be studying chemistry at a college in Ohio. Instead, he kept rereading a letter from his cousin, who was driving an ambulance in France. \"They need drivers more than they need chemists,\" his cousin wrote. Russell's parents were anxious, but he had made up his mind. He sold his textbooks and his fishing rod to help pay for the voyage. In April, he boarded a steamship bound for France."
+      "p": "Russell Dorn was nineteen years old in the winter of 1916. He was supposed to be studying astronomy at a college in Georgia. Instead, he kept rereading a letter from his cousin, who was driving an ambulance in France. \"They need drivers more than they need astronomers,\" his cousin wrote. Russell's parents were anxious, but he had made up his mind. He sold his textbooks and his fishing rod to help pay for the voyage. In April, he boarded a steamship bound for France."
      },
      {
       "p": "The fighting in Europe had begun in 1914, but the United States would not join the war until 1917. Meanwhile, Americans living in Paris had organized the American Field Service (AFS). It sent young American volunteers to drive ambulances for the French army, carrying wounded soldiers from the battlefields to hospitals. The volunteers even paid for their own uniforms and their own journey to France."
@@ -1411,7 +1411,7 @@ window.SETS = {
       "h": "A Week in Paris"
      },
      {
-      "p": "Russell spent his first week in Paris, learning to drive and repair a small Ford ambulance, and he loved the work. In his free hours, he explored the city. \"I climbed the Eiffel Tower, and the whole city was spread out below me like a map,\" he wrote to his mother. He tasted his first croissant and strolled beside the river at sunset."
+      "p": "Russell spent his first week in Paris, learning to drive and repair a small Ford ambulance, and he loved the work. In his free hours, he explored the city. \"I climbed the cathedral tower, and the whole city was spread out below me like a map,\" he wrote to his mother. He tasted his first croissant and strolled beside the river at sunset."
      },
      {
       "p": "Then his unit drove east toward the front lines. The little Fords were light and sturdy, and they could climb narrow mountain roads where once only mules and horse carts could go. The roads were pitted with craters, and every jolt hurt the wounded men lying in the back. Russell steered gently around each crater, even though it made the trip longer. When a young soldier shivered on a frosty night, Russell wrapped his own coat around him."
@@ -1423,10 +1423,10 @@ window.SETS = {
       "p": "One night in August, Russell was carrying three wounded men to a hospital. Suddenly, artillery shells began to burst along the road ahead. Dirt and pebbles rained down on the canvas roof. Then a front tire went flat. Russell climbed out and changed it in the darkness. His fingers were trembling. \"I was more frightened than I had ever been,\" he wrote. \"But I kept thinking about the men in the back.\" Before dawn, all three soldiers reached the hospital safely. When a surgeon said all three would live, Russell grinned all the way back to his ambulance."
      },
      {
-      "p": "After that night, Russell's letters home said less about Paris and more about the men he carried. He drove for the AFS for eight months in all, and then he sailed home to finish college. In April 1917, the United States finally entered the war. That fall, the AFS ambulance units became part of the United States Army. By then, more than 2,500 young Americans had volunteered with the AFS."
+      "p": "After that night, Russell's letters home said more and more about the men he carried. He drove for the AFS for eight months in all, and then he sailed home to finish college. In April 1917, the United States finally entered the war. That fall, the AFS ambulance units became part of the United States Army. By then, more than 2,500 young Americans had volunteered with the AFS."
      },
      {
-      "p": "For the rest of his life, Russell kept a small painting of the Eiffel Tower above his desk. Beside it hung a note from the surgeon who had saved those three soldiers, thanking Russell for bringing them in time. He read it so often that the paper wore thin."
+      "p": "For the rest of his life, Russell kept a small sketch of his battered ambulance above his desk. Beside it hung a note from the surgeon who had saved those three soldiers, thanking Russell for bringing them in time. He read it so often that the paper wore thin."
      }
     ],
     "footnotes": [],
@@ -1526,7 +1526,7 @@ window.SETS = {
       "p": "The news made headlines around the world. President Eisenhower gave Anderson a medal. When the crew reached New York, people filled the streets for a parade. Paper streamers fluttered down from the skyscrapers like snow. One man in the crowd said, \"Those sailors went where nobody had ever gone, and they came home smiling.\""
      },
      {
-      "p": "The crew had shown that a submarine could cross the top of the world, hidden under the ice. Today, the Nautilus is a museum in Connecticut. Visitors can walk through the narrow halls where the sailors once lived."
+      "p": "The crew had crossed the top of the world, hidden under the ice. Today, the Nautilus is a museum in Connecticut. Visitors can walk through the narrow halls where the sailors once lived."
      }
     ],
     "footnotes": [
@@ -1551,19 +1551,19 @@ window.SETS = {
      "q": "Which statement **best** summarizes the central idea of the text?",
      "choices": [
       {
-       "t": "AFS volunteers drove ambulances to bring America into the fight during World War I.",
+       "t": "AFS volunteers drove ambulances to bring America into the fight in the 1910s.",
        "why": "The text tells when the United States joined the war, but it never says the volunteers went to bring their country into it. Answer first. Then find the proof."
       },
       {
-       "t": "AFS volunteers drove wounded soldiers from battlefields to hospitals during World War I.",
+       "t": "AFS volunteers drove wounded soldiers from battlefields to hospitals in the 1910s.",
        "why": "Yes! The text tells what the volunteers did and why they did it: wounded soldiers needed to reach hospitals. Answer first. Then find the proof."
       },
       {
-       "t": "AFS volunteers learned to drive and repair Ford ambulances in Paris during World War I.",
+       "t": "AFS volunteers learned to drive and repair Ford ambulances in Paris in the 1910s.",
        "why": "This is true, but it tells about one week of training. A central idea tells about a big part of the text."
       },
       {
-       "t": "AFS volunteers traveled to France to explore Paris and its sights during World War I.",
+       "t": "AFS volunteers traveled to France to explore Paris and its sights in the 1910s.",
        "why": "Russell did enjoy Paris, but exploring was what he did in his free hours. It is not why the volunteers went."
       }
      ],
@@ -1585,7 +1585,7 @@ window.SETS = {
        "why": "Yes! This tells what the volunteers did and why: to carry wounded soldiers to hospitals. Part B is your Detail. It proves your Part A answer."
       },
       {
-       "t": "\"'I climbed the Eiffel Tower, and the whole city was spread out below me like a map,' he wrote to his mother.\"",
+       "t": "\"'I climbed the cathedral tower, and the whole city was spread out below me like a map,' he wrote to his mother.\"",
        "why": "This tells what Russell saw in his free time. It does not show the volunteers' work or why they went."
       }
      ],
@@ -1601,20 +1601,20 @@ window.SETS = {
     "stem": "Which sentence **best** summarizes the central idea of the text?",
     "choices": [
      {
-      "t": "Russell enjoyed climbing the Eiffel Tower, but he was most excited about driving at night while shells burst.",
+      "t": "Russell enjoyed climbing the cathedral tower, but he was most excited about driving at night while shells burst.",
       "why": "Russell did drive while shells burst, but he wrote that he was more frightened than he had ever been. Being scared is not the same as being excited."
      },
      {
-      "t": "Russell enjoyed getting wounded soldiers to surgeons, but he was most excited about learning to repair the Ford ambulance.",
-      "why": "This switches the two ideas. Russell loved learning to repair the ambulance, but his letters home came to be about something else."
+      "t": "Russell enjoyed getting wounded soldiers to surgeons, but he was most excited about working on the little Ford ambulance.",
+      "why": "This switches the two ideas. Russell loved working on the ambulance, but his letters home came to be about something else."
      },
      {
-      "t": "Russell enjoyed learning to repair the Ford ambulance, but he was most excited about getting wounded soldiers to surgeons.",
-      "why": "Yes! Russell loved learning to repair the ambulance, but he grinned all the way back to his ambulance when he heard his soldiers would live, and his letters home came to be more about the men he carried."
+      "t": "Russell enjoyed working on the little Ford ambulance, but he was most excited about getting wounded soldiers to surgeons.",
+      "why": "Yes! Russell loved working on the ambulance, but he grinned all the way back to his ambulance when he heard his soldiers would live, and his letters home came to say more and more about the men he carried."
      },
      {
-      "t": "Russell enjoyed exploring the sights of Paris, but he was most excited about studying chemistry in Ohio.",
-      "why": "Russell did explore Paris, but he left his chemistry classes to go to France."
+      "t": "Russell enjoyed exploring the sights of Paris, but he was most excited about studying astronomy in Georgia.",
+      "why": "Russell did explore Paris, but he left his astronomy classes to go to France."
      }
     ],
     "answer": 2
@@ -1634,7 +1634,7 @@ window.SETS = {
       "why": "This tells how Russell spent his first week. It does not show how he treated other people."
      },
      {
-      "t": "\"I climbed the Eiffel Tower, and the whole city was spread out below me like a map,\" he wrote to his mother.",
+      "t": "\"I climbed the cathedral tower, and the whole city was spread out below me like a map,\" he wrote to his mother.",
       "why": "This shows Russell was amazed by the view. It is about sightseeing, not about caring for others."
      },
      {
@@ -1729,11 +1729,11 @@ window.SETS = {
     "p": 1,
     "type": "mc",
     "skill": "Which sentence shows why it was needed",
-    "stem": "Which sentence from the text **best** supports why faster news was needed?",
+    "stem": "Which sentence from the text **best** supports why the telegraph was needed?",
     "choices": [
      {
       "t": "\"A letter could take days or even weeks to reach a distant city.\"",
-      "why": "Yes! A letter could take days or even weeks, so news arrived late. That is why faster news was needed. Answer first. Then find the proof."
+      "why": "Yes! A letter could take days or even weeks, so news arrived late. That is why the telegraph was needed. Answer first. Then find the proof."
      },
      {
       "t": "\"He was painting a portrait of the Marquis de Lafayette, a French hero of the American Revolution.\"",
@@ -1741,11 +1741,11 @@ window.SETS = {
      },
      {
       "t": "\"On the ship, he heard another passenger describe experiments with electricity and magnets.\"",
-      "why": "This tells where Morse got the idea of using electricity. It does not show why faster news was needed."
+      "why": "This tells where Morse got the idea of using electricity. It does not show why the telegraph was needed."
      },
      {
       "t": "\"Building a long telegraph line would cost far more than the partners had.\"",
-      "why": "This tells about a problem the partners had: money to build a line. It does not show why people needed faster news."
+      "why": "This tells about a problem the partners had: money to build a line. It does not show why people needed the telegraph."
      }
     ],
     "answer": 0
@@ -1794,8 +1794,8 @@ window.SETS = {
        "why": "This tells why the trip mattered. It does not show what the crew did."
       },
       {
-       "t": "\"The crew had shown that a submarine could cross the top of the world, hidden under the ice.\"",
-       "why": "Yes! This is the result of the voyage: a submarine could cross under the ice. Part B is your Detail. It proves your Part A answer."
+       "t": "\"The crew had crossed the top of the world, hidden under the ice.\"",
+       "why": "Yes! This is the result of the voyage: the crew made it across, under the ice. Part B is your Detail. It proves your Part A answer."
       }
      ],
      "answer": 3
@@ -1814,8 +1814,8 @@ window.SETS = {
       "why": "This says too much. The text says many Americans worried that their own country was falling behind. It never says the trip proved anything about the Soviet Union."
      },
      {
-      "t": "The voyage was a test of crossing the Arctic beneath its ice.",
-      "why": "Yes! The whole text is about a test: could a submarine cross under the ice and come out on the other side? A central idea tells about a big part of the text."
+      "t": "The voyage under the ice gave Americans something to be proud of.",
+      "why": "Yes! Americans worried that their country was falling behind. The trip under the North Pole gave them a big success, with headlines, a medal and a parade. A central idea tells about a big part of the text."
      },
      {
       "t": "The voyage was planned mainly to measure how cold the water was.",
@@ -1885,10 +1885,10 @@ window.SETS = {
       "p": "In August, a lightning storm ignited a fire on a ridge above the camp, and Stan's crew was ordered to stop it. For two days they dug a firebreak, a long strip of bare dirt that the flames could not cross. Dense smoke stung their eyes, and flaming branches crashed down around them. Once, the wind suddenly shifted. As the fire raced toward them, the men abandoned their tools and sprinted for the river. \"I was scared stiff,\" Stan admitted. \"But the next morning, we went right back up that hill.\""
      },
      {
-      "p": "In the evenings, the camp offered classes to anyone who wanted to continue his education. Stan had quit school after eighth grade, so he studied reading and arithmetic, and he also learned to operate a truck."
+      "p": "In the evenings, the camp offered classes to anyone who wanted to continue his education. Stan had quit school after eighth grade, so he studied reading and arithmetic, and he also learned to operate a truck. \"Those classes were a wonderful surprise,\" he said."
      },
      {
-      "p": "Stan remained in the Civilian Conservation Corps for two years. Every month, he imagined his mother opening the envelope with his $25 inside, and the thought always made him grin. \"Those evening classes were a wonderful surprise,\" Stan said later, \"but that envelope was the reason I went.\" When he finally returned home, he was stronger, healthier, and more confident. He soon found employment driving trucks for a lumber company."
+      "p": "Stan remained in the Civilian Conservation Corps for two years. Every month, he imagined his mother opening the envelope with his $25 inside, and the thought always made him grin. \"That envelope was the reason I went,\" Stan said later. When he finally returned home, he was stronger, healthier, and more confident. He soon found employment driving trucks for a lumber company."
      },
      {
       "p": "Between 1933 and 1942, approximately three million young men served in the CCC, and together they planted more than three billion trees. They also constructed hiking trails, campgrounds and fire lookout towers in hundreds of state parks. \"We didn't just plant trees,\" Stan said. \"We grew up out there.\""
@@ -2034,8 +2034,8 @@ window.SETS = {
      "q": "Which statement **best** summarizes the central idea of the text?",
      "choices": [
       {
-       "t": "CCC workers joined the army to protect the nation's forests during the Great Depression.",
-       "why": "The title calls them a \"Tree Army,\" but nothing in the text says they joined the real army. Answer first. Then find the proof."
+       "t": "CCC workers left home for good to settle in the West during the Great Depression.",
+       "why": "Stan and the other recruits rode west to work, but the text never says they stayed there for good. Stan came home after two years. Answer first. Then find the proof."
       },
       {
        "t": "CCC workers learned to plant trees and fight fires during the Great Depression.",
@@ -2108,38 +2108,38 @@ window.SETS = {
     "p": 0,
     "type": "hottext",
     "skill": "Click the proof of a trait",
-    "stem": "Click the section that **best** supports the inference that Stan was a committed member of the CCC. Choose **two** options.",
+    "stem": "Click the section that **best** supports the inference that Stan was an admirer of the mountains. Choose **two** options.",
     "pick": 2,
     "layout": "list",
     "pieces": [
      {
       "t": "Stan enrolled in April 1934, and a week later he boarded a westbound train with about two hundred other recruits. After four days of travel, they disembarked at a tiny station in the mountains of Idaho, where their temporary camp was a row of canvas tents beside a frigid, rushing river.",
-      "why": "This tells how Stan got to Idaho. Signing up and riding a train do not show that he stuck with the work."
+      "why": "This tells how Stan got to Idaho. Riding a train there does not show how he felt about the mountains."
      },
      {
       "t": "\"I had never seen a mountain before,\" Stan said years later. \"The first morning, I stood outside my tent and just stared.\"",
-      "why": "This shows Stan was amazed by the mountains. It is about sightseeing, not about sticking with the work."
+      "why": "Yes! Stan stood outside his tent and just stared at his first mountain, and on weekends he explored the mountains, swam in the lakes and watched the elk. Each section proves the inference by itself."
      },
      {
       "t": "On weekends, he and his friends explored the surrounding mountains, swam in glacial lakes, and watched elk graze in the meadows.",
-      "why": "This tells what Stan did for fun on weekends. It does not show him giving his best to the job."
+      "why": "Yes! Stan stood outside his tent and just stared at his first mountain, and on weekends he explored the mountains, swam in the lakes and watched the elk. Each section proves the inference by itself."
      },
      {
       "t": "The land around the camp needed repair. Logging companies had stripped the slopes bare, and without roots to hold the soil, spring rains sent dangerous floods rushing into the valleys below.",
-      "why": "This tells why the land needed help. It does not show what Stan gave to the work."
+      "why": "This tells why the land needed help. It does not show how Stan felt about the mountains."
      },
      {
       "t": "A crew leader demonstrated how to open the soil with a sharp tool, insert a pine seedling, and stamp the dirt down firmly. By the end of his first summer, Stan had planted more trees than he could count.",
-      "why": "Yes! A committed member of the CCC gives his best to the job and sticks with it. Stan planted more trees than he could count, and even with blistered hands and an aching back, he never once thought about quitting. Each section proves the inference by itself."
+      "why": "This shows how hard Stan worked. It does not show that he admired the mountains."
      },
      {
       "t": "\"My hands were blistered and my back ached every night,\" he said. \"But I never once thought about quitting.\"",
-      "why": "Yes! A committed member of the CCC gives his best to the job and sticks with it. Stan planted more trees than he could count, and even with blistered hands and an aching back, he never once thought about quitting. Each section proves the inference by itself."
+      "why": "This shows that Stan stuck with hard work. It does not show that he admired the mountains."
      }
     ],
     "answer": [
-     4,
-     5
+     1,
+     2
     ]
    },
    {
@@ -2347,7 +2347,7 @@ window.SETS = {
     "subtitle": "",
     "blocks": [
      {
-      "p": "In the spring of 1962, Ann Pruitt was twenty-two years old and about to graduate from college in Dayton, Ohio, with a degree in chemistry. Most of her classmates had accepted jobs in nearby offices and laboratories. She had never traveled farther than Cincinnati, yet that winter she had applied to a new government program. Then a letter from Washington, D.C., invited her to teach science in Ghana. She could barely locate the West African nation on a map. Her parents worried about her going so far from home, but she said yes right away."
+      "p": "In the spring of 1962, Ann Pruitt was twenty-two years old and about to graduate from college in Dayton, Ohio, with a degree in chemistry. Most of her classmates had accepted jobs in nearby offices and laboratories. She had never traveled farther than Toledo, yet that winter she had applied to a new government program. Then a letter from Washington, D.C., invited her to teach science in Ghana. She could barely locate the West African nation on a map. Her parents worried about her going so far from home, but she said yes right away."
      },
      {
       "p": "The invitation came from the Peace Corps. President John F. Kennedy had first shared the idea in 1960, in a speech to college students in Michigan at two o'clock in the morning. In 1961, he created the program to send American volunteers to nations that requested help. Many of these nations had only recently won their independence, and they needed teachers, nurses and engineers. Kennedy hoped the volunteers would help these nations and also help people around the world get to know Americans as friends. Volunteers served for two years, and they received only enough money to live like their neighbors."
@@ -2359,7 +2359,7 @@ window.SETS = {
       "h": "Akwaaba!"
      },
      {
-      "p": "She arrived in Ghana in September 1962. \"Akwaaba!\" her new neighbors called, which means \"welcome\" in Twi. Within a month, they had taught her enough Twi to bargain for oranges and bread. Her small house had no running water, so each morning she carried a bucket to a pump down the road."
+      "p": "She arrived in Ghana in September 1962. \"Akwaaba!\" her new neighbors called, which means \"welcome\" in Twi. Within a month, they had taught her enough Twi to bargain for oranges and bread. \"I loved learning Twi from my neighbors,\" she said. Her small house had no running water, so each morning she carried a bucket to a pump down the road."
      },
      {
       "p": "At school, she faced a tougher challenge. Her science classroom held forty students but no laboratory equipment at all. So she built a balance scale from a coat hanger, string and two tin cans. For chemistry lessons, she collected empty bottles at the market and turned them into beakers and test tubes. \"My students were hungry to learn,\" she said. \"They made me want to be a better teacher.\""
@@ -2371,10 +2371,10 @@ window.SETS = {
       "h": "A Storm on the Road"
      },
      {
-      "p": "Travel could be dangerous, too. One evening during the rainy season, the truck carrying Ann home slid off a muddy road and tipped over on its side. She crawled out through a window with a bruised arm. Farmers from a nearby village pulled the other passengers free and sheltered everyone in their homes until morning. \"They didn't know me,\" she said, \"but they treated me like family.\""
+      "p": "Travel could be dangerous, too. One evening during the rainy season, the truck carrying Ann home slid off a muddy road and tipped over on its side. She crawled out through a window with a bruised arm. Families from a nearby village pulled the other passengers free and sheltered everyone in their homes until morning. \"They didn't know me,\" she said, \"but they treated me like family.\""
      },
      {
-      "p": "When Ann left Ghana in 1964, her students lined up outside the school and sang the national anthem in Twi, just as the first volunteers had done. \"I loved learning Twi from my neighbors,\" Ann said later, \"but nothing beat the moment a student finally understood.\""
+      "p": "When Ann left Ghana in 1964, her students lined up outside the school and sang the national anthem in Twi, just as the first volunteers had done. \"Nothing beat the moment a student finally understood,\" Ann said later."
      },
      {
       "p": "By the end of 1963, about seven thousand volunteers were serving in dozens of countries. Since 1961, more than 240,000 Americans have served in the Peace Corps. \"I went to Ghana to teach,\" Ann said. \"I came home having learned more than I taught.\""
@@ -2406,7 +2406,7 @@ window.SETS = {
       "h": "A Carpenter's Clocks"
      },
      {
-      "p": "John Harrison seemed an unlikely person to solve the puzzle. He was a carpenter from the village of Barrow upon Humber in Lincolnshire, and he had taught himself to build clocks. By the late 1720s, his clocks kept time to within about one second a month. Clock oil in his day thickened and failed, so Harrison made key parts from lignum vitae, a tropical wood that needed no oil."
+      "p": "John Harrison seemed an unlikely person to solve the puzzle. He was a carpenter from the village of Barrow upon Humber in Lincolnshire, and he had taught himself to build clocks. By the late 1720s, his clocks kept time to within about one second a month. Clock oil in his day thickened in the cold and failed, so Harrison made key parts from lignum vitae, a tropical wood that needed no oil."
      },
      {
       "p": "In 1730, Harrison traveled to London to seek support. Edmond Halley, the Astronomer Royal, sent him to George Graham, a famous clockmaker, who lent him money without charging interest. Over the next five years, Harrison built his first sea clock, now called H1, probably with help from his brother James. In 1736, it sailed to Lisbon, Portugal, and back. On the return trip, Harrison's calculations showed that the crew's own estimate of the ship's position was about 60 miles (97 kilometers) wrong. The Board granted him 500 pounds to keep improving his design."
@@ -2443,7 +2443,7 @@ window.SETS = {
     "credit": "Written for this practice test."
    },
    {
-    "title": "Into the Deep in a Steel Ball",
+    "title": "Into the Deep",
     "subtitle": "",
     "blocks": [
      {
@@ -2480,7 +2480,7 @@ window.SETS = {
       "p": "The dives were dangerous. In 1932, the ball came back from an empty test dive full of water. As the crew loosened the door, a bolt shot across the deck, followed by a powerful jet of water. Beebe later wrote that if men had been inside, the first few drops \"would have shot through flesh and bone like steel bullets.\""
      },
      {
-      "p": "Later that year, the two men made a dive that was broadcast live on the radio. The sea was rough, and the ball swung back and forth on its cable. Barton grew seasick, and both men ended up bruised. Even so, they reached 2,200 feet (670 meters). Beebe described one strange fish as \"wholly different from any deep-sea fish.\""
+      "p": "Later that year, the two men made a dive that was broadcast live on the radio. The sea was rough, and the ball swung back and forth on its cable. Both men ended up bruised. Even so, they reached 2,200 feet (670 meters). Beebe described one strange fish as \"wholly different from any deep-sea fish.\""
      },
      {
       "h": "Half a Mile Down"
@@ -2528,8 +2528,8 @@ window.SETS = {
        "why": "These are true details about Ann, but they leave out why the volunteers went. A central idea tells about a big part of the text."
       },
       {
-       "t": "Peace Corps volunteers served other nations and built friendships for America in the 1960s.",
-       "why": "Yes! The text tells what the volunteers did and why: to help other nations and to make friends for America. Answer first. Then find the proof."
+       "t": "Peace Corps volunteers worked abroad and built friendships for America in the 1960s.",
+       "why": "Yes! The text tells what the volunteers did and why: they worked in other nations so people around the world would know Americans as friends. Answer first. Then find the proof."
       },
       {
        "t": "Peace Corps volunteers went overseas to earn good pay as teachers in the 1960s.",
@@ -2555,7 +2555,7 @@ window.SETS = {
       },
       {
        "t": "\"Kennedy hoped the volunteers would help these nations and also help people around the world get to know Americans as friends.\"",
-       "why": "Yes! This tells why the volunteers went: to help and to build friendships. Part B is your Detail. It proves your Part A answer."
+       "why": "Yes! This tells why the volunteers went: so people around the world would know Americans as friends. Part B is your Detail. It proves your Part A answer."
       }
      ],
      "answer": 3
@@ -2582,8 +2582,8 @@ window.SETS = {
       "why": "Ann did explore Ghana and build equipment, but the text never says the equipment was what excited her most."
      },
      {
-      "t": "Ann enjoyed riding in the mammy wagons, but she was most excited about seeing the huge market in Kumasi.",
-      "why": "Ann was amazed by the market in Kumasi, but the text shows that something else mattered more to her."
+      "t": "Ann enjoyed riding in the mammy wagons, but she was most excited about singing the anthem in Twi.",
+      "why": "Ann's students sang the anthem in Twi when she left, but the text never says singing it excited her most."
      }
     ],
     "answer": 1
@@ -2634,16 +2634,16 @@ window.SETS = {
     "p": 1,
     "type": "ms",
     "skill": "Choose two: proof of the creators' goal",
-    "stem": "The author infers that John Harrison wanted his clocks to be reliable. Which sentences from the text **best** support this inference? Select **two** answers.",
+    "stem": "The author infers that John Harrison wanted his clocks to keep working in any weather. Which sentences from the text **best** support this inference? Select **two** answers.",
     "pick": 2,
     "pieces": [
      {
       "t": "Finished in 1759, his fourth timekeeper, H4, looked like a large pocket watch and measured only about five inches (13 centimeters) across.",
-      "why": "This tells how small H4 was. It does not prove that Harrison wanted his clocks to be reliable."
+      "why": "This tells how small H4 was. It does not prove that Harrison wanted his clocks to keep working in any weather."
      },
      {
-      "t": "Clock oil in his day thickened and failed, so Harrison made key parts from lignum vitae, a tropical wood that needed no oil.",
-      "why": "Yes! Oil that thickened and failed could stop a clock, so Harrison found a way to need no oil at all. This sentence proves the inference by itself."
+      "t": "Clock oil in his day thickened in the cold and failed, so Harrison made key parts from lignum vitae, a tropical wood that needed no oil.",
+      "why": "Yes! Oil that thickened in the cold could stop a clock, so Harrison found a way to need no oil at all. This sentence proves the inference by itself."
      },
      {
       "t": "The Board also wanted proof that other clockmakers could build copies, because a single watch could guide only a single ship.",
@@ -2655,7 +2655,7 @@ window.SETS = {
      },
      {
       "t": "It promised up to 20,000 British pounds, a fortune at the time, for a method that worked within half a degree.",
-      "why": "This tells about the prize that Parliament offered. It does not prove what Harrison wanted his clocks to be."
+      "why": "This tells about the prize that Parliament offered. It does not prove what Harrison wanted his clocks to do."
      }
     ],
     "answer": [
@@ -2733,8 +2733,8 @@ window.SETS = {
        "why": "Two other scientists did make one dive, but the text says the dives were dangerous. It never says the ball was safe for every scientist. Answer first. Then find the proof."
       },
       {
-       "t": "The divers showed that the bathysphere protected people in deep water.",
-       "why": "Yes! Beebe and Barton went more than half a mile down inside the ball and came back alive. Answer first. Then find the proof."
+       "t": "The divers showed that deep-sea creatures could be studied up close.",
+       "why": "Yes! Beebe watched glowing fish swim past the window, alive in their own home, and no scientist had done that before. Answer first. Then find the proof."
       },
       {
        "t": "The divers relied on the crew above to describe the fish.",
@@ -2779,8 +2779,8 @@ window.SETS = {
     "stem": "Which sentence **best** identifies the central idea of the text?",
     "choices": [
      {
-      "t": "The dives tested whether the bathysphere could carry people deep underwater.",
-      "why": "Yes! The whole text tells about a test: could the bathysphere take people into the deep sea and bring them back?"
+      "t": "The dives let people watch living deep-sea animals in their own home.",
+      "why": "Yes! The whole text tells how Beebe went down in the ball, deeper and deeper, until he could watch deep-sea animals alive in their own home."
      },
      {
       "t": "The dives tested whether the bathysphere could stay down half an hour.",
