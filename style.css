@@ -158,7 +158,10 @@ button { font: inherit; }
 .say:hover { border-color: var(--p); background: var(--pl); }
 .say.reading, [data-read-box].reading { background: var(--wab) !important; border-color: var(--a) !important; }
 .stem { line-height: 1.55; border: 2px solid transparent; border-radius: 12px; padding: 4px 6px; }
-.ask { font-weight: 700; margin: 0 0 6px; }
+/* 11/22 (as Grade 3/5 round 4, 11/21): a question reads in plain type with only the real test's cue words bold
+   (**best**, **two**), as on the real test; strong.cue comes from speech.js (sayHTML / cue) */
+.ask { font-weight: 400; margin: 0 0 6px; }
+strong.cue { font-weight: 800; }
 /* question 13: the summary the question is about, in a box between the two question lines */
 .sum-box { margin: 6px 0 12px; padding: 10px 14px; border: 2px solid #94a3b8; border-radius: 10px; background: #f8fafc; font-weight: 400; line-height: 1.55; font-family: var(--font-read); }
 /* question 2: choose two of five numbered answers; square boxes say "more than one" */
@@ -201,7 +204,7 @@ button { font: inherit; }
 .ebsr-part { margin-top: 14px; padding: 12px 14px 14px; border: 2px solid var(--b); border-radius: 14px; background: #fcfcfd; }
 .part-label { display: inline-block; font-family: var(--font-ui); font-weight: 800; font-size: 0.8rem; color: #fff; padding: 3px 12px; border-radius: 999px; }
 .part-A { background: #0369a1; } .part-B { background: #7c3aed; }
-.part-q { display: flex; gap: 10px; align-items: center; margin-top: 8px; font-weight: 700; line-height: 1.5; border: 2px solid transparent; border-radius: 10px; }
+.part-q { display: flex; gap: 10px; align-items: center; margin-top: 8px; font-weight: 400; line-height: 1.5; border: 2px solid transparent; border-radius: 10px; }
 .excerpt { margin-top: 12px; padding: 10px 14px; border-left: 5px solid #5eead4; background: #f0fdfa; border-radius: 8px; }
 .excerpt-label { font-family: var(--font-ui); font-size: 0.75rem; font-weight: 800; color: var(--pd); margin-bottom: 6px; }
 .ex-para { display: flex; gap: 10px; align-items: flex-start; margin: 0 0 8px; font-size: 0.9em; line-height: 1.6; }
@@ -340,7 +343,7 @@ button { font: inherit; }
 .kq-head .item-num { min-width: 36px; height: 36px; font-size: 1rem; }
 .kq-skill { font-weight: 800; color: var(--pd); }
 .kq-type { margin-left: auto; font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; color: var(--tm); }
-.kq-stem { font-weight: 700; margin: 8px 0 4px; font-family: var(--font-read); }
+.kq-stem { font-weight: 400; margin: 8px 0 4px; font-family: var(--font-read); }
 .kq-reminder { margin: 2px 0 8px; padding: 6px 10px; border-radius: 8px; background: #f1f5f9; color: #475569; font-size: 0.85rem; line-height: 1.5; }
 .kq-excerpt { margin: 4px 0 8px; padding: 8px 12px; border-left: 4px solid #5eead4; background: #f0fdfa; font-size: 0.85rem; font-family: var(--font-read); }
 .kq-excerpt p { margin: 4px 0; }

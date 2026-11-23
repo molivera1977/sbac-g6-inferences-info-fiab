@@ -1,7 +1,7 @@
 /* Grade 6 Reading Practice: Make and Support Inferences, Informational Texts.
    BUILT by tools/build_data.py from drafts/*.md. Do not edit by hand: change the draft, then run
    python3 tools/build_data.py (and python3 -E tools/check_drafts.py).
-   drafts fingerprint: 5e49fff8a4b5 */
+   drafts fingerprint: a9cdbdaccabe */
 window.SETS = {
  "W": {
   "passages": [
@@ -28,7 +28,7 @@ window.SETS = {
       "h": "Rapids on the River"
      },
      {
-      "p": "In the spring, the two men built a wooden boat at Lake Bennett. When the ice melted, they floated more than 500 miles (800 kilometers) down the Yukon River. \"The scenery was wonderful,\" Walter said, \"but all I could think about was gold.\""
+      "p": "In the spring, the two men built a wooden boat at Lake Bennett. When the ice melted, they floated more than 500 miles (800 kilometers) down the Yukon River. \"Building our boat was fun,\" Walter said, \"but all I could think about was gold.\""
      },
      {
       "p": "In one narrow canyon, the river turned into roaring rapids. The boat spun and slammed against a rock. Walter was thrown into the icy water. His uncle grabbed his collar and hauled him back aboard."
@@ -54,7 +54,7 @@ window.SETS = {
       "p": "In the 1700s, lightning was a terrible danger. Most houses, barns and churches were made of wood, so a single bolt could burn one down. One lightning fire could wipe out a farmer's barn, crops and animals. Tall church steeples were struck again and again. Many people thought that ringing church bells in a storm would scare the lightning away. It did not work. Some bell ringers were even killed."
      },
      {
-      "h": "A Curious Printer"
+      "h": "Franklin's Questions"
      },
      {
       "p": "Benjamin Franklin was a printer, a writer and an inventor. In the 1740s, he began to experiment with electricity. He saw that electric sparks crackled and flashed like tiny bolts of lightning. Franklin wanted to prove that lightning was a kind of electricity. He also discovered that a sharp metal point could quietly draw electricity away."
@@ -151,31 +151,32 @@ window.SETS = {
     "p": 0,
     "type": "ebsr",
     "skill": "Central idea of the text + proof",
+    "intro": "The following question has two parts. First, answer part A. Then, answer part B.",
     "hint": "Answer first. Then find the proof. Part B is your Detail. It proves your Part A answer.",
     "partA": {
-     "q": "Which statement best summarizes the central idea of the text?",
+     "q": "Which statement **best** summarizes the central idea of the text?",
      "choices": [
       {
-       "t": "Gold seekers in the Klondike Gold Rush had to carry a year of food so no one would starve.",
+       "t": "Gold seekers had to bring a year of food to live in the Klondike.",
        "why": "This is true, but it is one rule the gold seekers had to follow. It does not tell why they went north. That is one detail. A central idea tells about a big part of the text."
       },
       {
-       "t": "Gold seekers in the Klondike Gold Rush went north to Canada hoping to find gold and get rich.",
+       "t": "Gold seekers went north hoping to get rich in the Klondike.",
        "why": "Yes! The text tells what the gold seekers did and why they did it: they hoped to get rich. Answer first. Then find the proof."
       },
       {
-       "t": "Gold seekers in the Klondike Gold Rush climbed the Golden Stairs to enjoy the snowy mountain views.",
-       "why": "Walter did enjoy the views, but that is not why people climbed the pass. That is one detail. A central idea tells about a big part of the text."
+       "t": "Gold seekers climbed mountains to enjoy the snowy views in the Klondike.",
+       "why": "Walter did enjoy the views, but that is not why people went north. That is one detail. A central idea tells about a big part of the text."
       },
       {
-       "t": "Gold seekers in the Klondike Gold Rush built wooden boats so they could race down the river.",
-       "why": "Walter and his uncle built a boat to reach Dawson City. The text never says anyone was racing."
+       "t": "Gold seekers built wooden boats to sell to others in the Klondike.",
+       "why": "Walter and his uncle built a boat to reach Dawson City. The text never says anyone sold boats."
       }
      ],
      "answer": 1
     },
     "partB": {
-     "q": "Which sentence from the text best supports your answer in Part A?",
+     "q": "Which sentence from the text **best** supports your answer in part A?",
      "choices": [
       {
        "t": "\"Every gold seeker had to bring enough food and equipment to survive for a whole year, about a ton.\"",
@@ -203,7 +204,7 @@ window.SETS = {
     "p": 0,
     "type": "mc",
     "skill": "Central idea about the person",
-    "stem": "Which sentence best summarizes the central idea of the text?",
+    "stem": "Which sentence **best** summarizes the central idea of the text?",
     "hint": "Look at what the person does, says and feels. Those are your clues.",
     "choices": [
      {
@@ -211,16 +212,16 @@ window.SETS = {
       "why": "The rapids almost drowned Walter. The text never says he was excited about them."
      },
      {
-      "t": "Walter enjoyed finding gold, but he was most excited about the beautiful scenery.",
-      "why": "This switches the two ideas. Walter said the scenery was wonderful, but he said he could think about only one thing, and it was not the scenery."
+      "t": "Walter enjoyed finding gold, but he was most excited about building the wooden boat.",
+      "why": "This switches the two ideas. Walter said building the boat was fun, but he said he could think about only one thing, and it was not the boat."
      },
      {
       "t": "Walter enjoyed climbing the Golden Stairs, but he was most excited about carrying his pack.",
       "why": "Walter carried his pack up the pass about 40 times, but the text never says he was excited about carrying it."
      },
      {
-      "t": "Walter enjoyed the beautiful scenery, but he was most excited about finding gold.",
-      "why": "Yes! Walter said the scenery was wonderful, but all he could think about was gold."
+      "t": "Walter enjoyed building the wooden boat, but he was most excited about finding gold.",
+      "why": "Yes! Walter said building the boat was fun, but all he could think about was gold."
      }
     ],
     "answer": 3
@@ -231,7 +232,7 @@ window.SETS = {
     "p": 0,
     "type": "hottext",
     "skill": "Click the proof of a trait",
-    "stem": "Click the section that best supports the inference that Walter was a determined gold seeker. Choose two options.",
+    "stem": "Click the section that **best** supports the inference that Walter was a determined gold seeker. Choose **two** options.",
     "pick": 2,
     "layout": "list",
     "hint": "You need two. Each one must prove the idea by itself.",
@@ -257,7 +258,7 @@ window.SETS = {
       "why": "This tells how far the river trip was. It does not show that Walter was determined."
      },
      {
-      "t": "\"The scenery was wonderful,\" Walter said, \"but all I could think about was gold.\"",
+      "t": "\"Building our boat was fun,\" Walter said, \"but all I could think about was gold.\"",
       "why": "This shows what Walter wanted most. It does not show him sticking with a hard job when it got tough."
      }
     ],
@@ -272,28 +273,28 @@ window.SETS = {
     "p": 1,
     "type": "ms",
     "skill": "Choose two: proof of the creators' goal",
-    "stem": "The author infers that Franklin wanted his lightning rod to be safe. Which sentences from the text best support this inference? Select two answers.",
+    "stem": "The author infers that Franklin wanted his lightning rod to be safe. Which sentences from the text **best** support this inference? Select **two** answers.",
     "pick": 2,
     "hint": "You need two. Each one must prove the idea by itself.",
     "pieces": [
      {
-      "t": "\"Franklin wanted to prove that lightning was a kind of electricity.\"",
+      "t": "Franklin wanted to prove that lightning was a kind of electricity.",
       "why": "This tells what Franklin wanted to learn about lightning. It does not prove that he wanted the rod to be safe."
      },
      {
-      "t": "\"He said the lightning would pass through the metal into the ground without hurting anything.\"",
+      "t": "He said the lightning would pass through the metal into the ground without hurting anything.",
       "why": "Yes! The lightning would go into the ground and harm nothing. That means the rod would keep people and buildings out of danger. This sentence proves the idea by itself."
      },
      {
-      "t": "\"He explained that the rod could be made from the same plain iron that nail makers used.\"",
+      "t": "He explained that the rod could be made from the same plain iron that nail makers used.",
       "why": "This is true, but it tells what the rod could be made of. It does not prove that Franklin wanted the rod to be safe."
      },
      {
-      "t": "\"He also wrote that ships with pointed rods on their masts would not be hurt by lightning.\"",
+      "t": "He also wrote that ships with pointed rods on their masts would not be hurt by lightning.",
       "why": "Yes! Franklin wrote that his rods would protect ships from lightning, too. This sentence proves the idea by itself."
      },
      {
-      "t": "\"Franklin never took out a patent, so anyone could build a lightning rod without paying him.\"",
+      "t": "Franklin never took out a patent, so anyone could build a lightning rod without paying him.",
       "why": "This is true, but it tells that the rod was free to build. It does not prove that Franklin wanted the rod to be safe."
      }
     ],
@@ -310,7 +311,7 @@ window.SETS = {
     "skill": "Best summary of a paragraph",
     "lead": "Read the paragraph.",
     "box": "In 1750, Franklin wrote down a bold plan. He would put a pointed iron rod on top of a building. A wire would join the rod to the ground. Then lightning could travel safely down into the earth. Franklin mailed his ideas to a friend in London named Peter Collinson. In 1751, Collinson printed them in a small book.",
-    "stem": "Which sentence best summarizes the paragraph?",
+    "stem": "Which sentence **best** summarizes the paragraph?",
     "hint": "Read the whole paragraph. Which choice tells what all the sentences are about?",
     "choices": [
      {
@@ -338,20 +339,20 @@ window.SETS = {
     "p": 1,
     "type": "mc",
     "skill": "Which sentence shows why it was needed",
-    "stem": "Which sentence from the text best supports why a better way of protecting buildings from lightning in the 1700s was needed?",
+    "stem": "Which sentence from the text **best** supports why a lightning rod was needed?",
     "hint": "Read the idea in the question. Look at each sentence. Ask: Does this prove the idea? A true sentence is not always proof.",
     "choices": [
      {
       "t": "\"Lightning strikes the Empire State Building in New York City about two dozen times a year.\"",
-      "why": "This tells about lightning today, and the text says the people inside are safe. It does not show why a better way was needed in the 1700s."
+      "why": "This tells about lightning today, and the text says the people inside are safe. It does not show why a lightning rod was needed in Franklin's time."
      },
      {
       "t": "\"He also discovered that a sharp metal point could quietly draw electricity away.\"",
-      "why": "This tells what Franklin learned. It does not show why a better way of protecting buildings was needed."
+      "why": "This tells what Franklin learned. It does not show why a lightning rod was needed."
      },
      {
       "t": "\"Most houses, barns and churches were made of wood, so a single bolt could burn one down.\"",
-      "why": "Yes! One bolt of lightning could burn down a wooden building. That is why a better way of protecting buildings was needed."
+      "why": "Yes! One bolt of lightning could burn down a wooden building. That is why a lightning rod was needed."
      },
      {
       "t": "\"Soon lightning rods stood on homes, churches and ships in America and Europe.\"",
@@ -390,7 +391,7 @@ window.SETS = {
      "answer": 2
     },
     "partB": {
-     "q": "Which sentence from the text best supports your answer in Part A?",
+     "q": "Which sentence from the text **best** supports your answer in part A?",
      "choices": [
       {
        "t": "\"Seven months later, in July 1969, two astronauts from Apollo 11 walked on the Moon.\"",
@@ -418,7 +419,7 @@ window.SETS = {
     "p": 2,
     "type": "mc",
     "skill": "Central idea of the text",
-    "stem": "Which sentence best identifies the central idea of the text?",
+    "stem": "Which sentence **best** identifies the central idea of the text?",
     "hint": "The central idea is what the whole text is about. A detail tells about one part. Pick the choice that fits every part.",
     "choices": [
      {
@@ -446,7 +447,7 @@ window.SETS = {
     "p": 2,
     "type": "mc",
     "skill": "Which sentence supports a small idea",
-    "stem": "Which sentence from the text best supports the idea that the Moon blocked the astronauts' radio signals?",
+    "stem": "Which sentence from the text **best** supports the idea that the Moon blocked the astronauts' radio signals?",
     "hint": "Read the idea in the question. Look at each sentence. Ask: Does this prove the idea? A true sentence is not always proof.",
     "choices": [
      {
@@ -477,7 +478,7 @@ window.SETS = {
     "subtitle": "",
     "blocks": [
      {
-      "p": "On the morning of March 3, 1913, fifteen-year-old Nora Hartley stepped off a crowded train at Union Station in Washington, D.C. She had come from Philadelphia with her mother. Under her arm was a cloth banner she had painted herself. In tall letters, it said \"Votes for Women.\" Nora was too young to vote. Still, she longed for her chance to vote."
+      "p": "On the morning of March 3, 1913, fifteen-year-old Nora Hartley stepped off a crowded train at Union Station in Washington, D.C. She had come from Pittsburgh with her mother. Under her arm was a cloth banner she had painted herself. In tall letters, it said \"Votes for Women.\" Nora was too young to vote. Still, she longed for her chance to vote."
      },
      {
       "p": "In 1913, most states barred women from voting for president. A group called the National American Woman Suffrage Association (NAWSA) wanted to change that. Suffrage means the right to vote. Many women thought it was unfair to obey laws they had no voice in making. The group planned a giant parade to show the nation's leaders that women deserved the right to vote. A young leader named Alice Paul chose March 3 for the parade. Woodrow Wilson would be sworn in as president the next day. She knew huge crowds would already be in town."
@@ -524,7 +525,7 @@ window.SETS = {
       "h": "\"Little Short of Madness\""
      },
      {
-      "p": "A canal that long would cost millions of dollars. In 1809, New York leaders asked President Thomas Jefferson to help pay for it. Jefferson refused. He called a canal of 350 miles through the wilderness \"little short of madness.\" Years later, Congress passed a bill that would have helped pay for roads and canals. In 1817, President James Madison vetoed it, which means he refused to sign it."
+      "p": "A canal that long would cost millions of dollars. In 1809, New York leaders asked the president to help pay for it. He refused. He called a canal of 350 miles through the wilderness \"little short of madness.\" Years later, Congress passed a bill that would have helped pay for roads and canals. In 1817, the next president, James Madison, vetoed it, which means he refused to sign it."
      },
      {
       "p": "Still, a New York leader named DeWitt Clinton refused to give up. He became governor of New York in 1817. He persuaded the state to pay for the canal by itself. Critics scoffed and nicknamed it \"Clinton's Ditch\" and \"Clinton's Folly.\" A folly is a foolish idea."
@@ -609,31 +610,32 @@ window.SETS = {
     "p": 0,
     "type": "ebsr",
     "skill": "Central idea of the text + proof",
+    "intro": "The following question has two parts. First, answer part A. Then, answer part B.",
     "hint": "Answer first. Then find the proof. Part B is your Detail. It proves your Part A answer.",
     "partA": {
-     "q": "Which statement best summarizes the central idea of the text?",
+     "q": "Which statement **best** summarizes the central idea of the text?",
      "choices": [
       {
-       "t": "Marchers in the 1913 parade came to Washington to welcome Woodrow Wilson, the new president.",
+       "t": "Parade marchers came to Washington to welcome the new president in 1913.",
        "why": "The new president took office the day after the parade, but the text never says the marchers came to welcome him. Answer first. Then find the proof."
       },
       {
-       "t": "Marchers in the 1913 parade walked through Washington to win women the right to vote.",
+       "t": "Parade marchers walked through Washington to win women the right to vote in 1913.",
        "why": "Yes! The text tells what the marchers did and why they did it: they wanted women to have the right to vote. Answer first. Then find the proof."
       },
       {
-       "t": "Marchers in the 1913 parade walked down Pennsylvania Avenue with bands, floats and college women.",
+       "t": "Parade marchers walked down Pennsylvania Avenue with bands and floats in 1913.",
        "why": "This is true, but it does not tell why the marchers came. That is one detail. A central idea tells about a big part of the text."
       },
       {
-       "t": "Marchers in the 1913 parade came to Washington to complain about the city's police officers.",
+       "t": "Parade marchers came to Washington to complain about the police in 1913.",
        "why": "The police did little to help, but that trouble happened during the parade. It is not why the marchers came to Washington."
       }
      ],
      "answer": 1
     },
     "partB": {
-     "q": "Which sentence from the text best supports your answer in Part A?",
+     "q": "Which sentence from the text **best** supports your answer in part A?",
      "choices": [
       {
        "t": "\"Woodrow Wilson would be sworn in as president the next day.\"",
@@ -661,7 +663,7 @@ window.SETS = {
     "p": 0,
     "type": "mc",
     "skill": "Central idea about the person",
-    "stem": "Which sentence best summarizes the central idea of the text?",
+    "stem": "Which sentence **best** summarizes the central idea of the text?",
     "hint": "Look at what the person does, says and feels. Those are your clues.",
     "choices": [
      {
@@ -689,7 +691,7 @@ window.SETS = {
     "p": 0,
     "type": "hottext",
     "skill": "Click the proof of a trait",
-    "stem": "Click the section that best supports the inference that Nora was a brave marcher. Choose two options.",
+    "stem": "Click the section that **best** supports the inference that Nora was a brave marcher. Choose **two** options.",
     "pick": 2,
     "layout": "list",
     "hint": "You need two. Each one must prove the idea by itself.",
@@ -730,28 +732,28 @@ window.SETS = {
     "p": 1,
     "type": "ms",
     "skill": "Choose two: proof of the creators' goal",
-    "stem": "The author infers that the builders wanted the canal to last a long time. Which sentences from the text best support this inference? Select two answers.",
+    "stem": "The author infers that the builders wanted the canal to last a long time. Which sentences from the text **best** support this inference? Select **two** answers.",
     "pick": 2,
     "hint": "You need two. Each one must prove the idea by itself.",
     "pieces": [
      {
-      "t": "\"Thousands of workers, including many new immigrants from Ireland, dug the canal with shovels, picks and teams of horses.\"",
+      "t": "Thousands of workers, including many new immigrants from Ireland, dug the canal with shovels, picks and teams of horses.",
       "why": "This tells who dug the canal and what tools they used. It does not show that the builders wanted it to last."
      },
      {
-      "t": "\"They used a special cement that hardened underwater, so the stone walls would stay strong and tight for many years.\"",
+      "t": "They used a special cement that hardened underwater, so the stone walls would stay strong and tight for many years.",
       "why": "Yes! The builders chose this cement so the walls would stay strong for many years. This sentence proves the idea by itself."
      },
      {
-      "t": "\"One stump puller had huge wheels that could yank a tree stump right out of the ground.\"",
+      "t": "One stump puller had huge wheels that could yank a tree stump right out of the ground.",
       "why": "This shows the builders wanted to clear the land quickly. It does not show that they wanted the canal to last."
      },
      {
-      "t": "\"Skilled stonemasons from Germany built the locks out of heavy blocks of cut stone.\"",
+      "t": "Skilled stonemasons from Germany built the locks out of heavy blocks of cut stone.",
       "why": "Yes! Heavy cut stone is strong and lasts for many years. This sentence proves the idea by itself."
      },
      {
-      "t": "\"It would connect Lake Erie in the west with the Hudson River in the east.\"",
+      "t": "It would connect Lake Erie in the west with the Hudson River in the east.",
       "why": "This tells what the canal would connect. It does not show that the builders wanted it to last."
      }
     ],
@@ -767,24 +769,24 @@ window.SETS = {
     "type": "mc",
     "skill": "Best summary of a paragraph",
     "lead": "Read the paragraph.",
-    "box": "A canal that long would cost millions of dollars. In 1809, New York leaders asked President Thomas Jefferson to help pay for it. Jefferson refused. He called a canal of 350 miles through the wilderness \"little short of madness.\" Years later, Congress passed a bill that would have helped pay for roads and canals. In 1817, President James Madison vetoed it, which means he refused to sign it.",
-    "stem": "Which sentence best summarizes the paragraph?",
+    "box": "A canal that long would cost millions of dollars. In 1809, New York leaders asked the president to help pay for it. He refused. He called a canal of 350 miles through the wilderness \"little short of madness.\" Years later, Congress passed a bill that would have helped pay for roads and canals. In 1817, the next president, James Madison, vetoed it, which means he refused to sign it.",
+    "stem": "Which sentence **best** summarizes the paragraph?",
     "hint": "Read the whole paragraph. Which choice tells what all the sentences are about?",
     "choices": [
      {
-      "t": "Jefferson thought a canal through the wilderness was madness.",
+      "t": "The president in 1809 thought the canal was madness.",
       "why": "That is one detail. A summary tells about the whole paragraph, not one part."
      },
      {
       "t": "Two presidents refused to help pay for the canal.",
-      "why": "Yes! Every sentence tells part of this story: the canal cost a lot, and both Jefferson and Madison refused to help pay for it."
+      "why": "Yes! Every sentence tells part of this story: the canal cost a lot, and both presidents refused to help pay for it."
      },
      {
       "t": "Congress refused to ever talk about building canals.",
       "why": "The paragraph says Congress passed a bill to help pay for canals. It did not refuse to talk about them."
      },
      {
-      "t": "Madison liked the canal plan much more than Jefferson did.",
+      "t": "Madison liked the canal plan more than the earlier president.",
       "why": "The paragraph never says how much each president liked the plan. It does not compare them."
      }
     ],
@@ -796,20 +798,20 @@ window.SETS = {
     "p": 1,
     "type": "mc",
     "skill": "Which sentence shows why it was needed",
-    "stem": "Which sentence from the text best supports why a better way of moving goods across New York in the early 1800s was needed?",
+    "stem": "Which sentence from the text **best** supports why a canal across New York was needed?",
     "hint": "Read the idea in the question. Look at each sentence. Ask: Does this prove the idea? A true sentence is not always proof.",
     "choices": [
      {
       "t": "\"Today, a truck can carry a load from Buffalo to New York City in less than a day.\"",
-      "why": "This tells about trucks today. It does not show why a better way was needed in the early 1800s."
+      "why": "This tells about trucks today. It does not show why a canal was needed in the early 1800s."
      },
      {
       "t": "\"Farmers in western New York could not afford to ship their wheat and corn to the crowded cities in the East.\"",
-      "why": "Yes! Farmers could not pay to send their crops to the cities. That is why a better way of moving goods was needed."
+      "why": "Yes! Farmers could not pay to send their crops to the cities. That is why a canal across New York was needed."
      },
      {
       "t": "\"Cannons placed along the route boomed one after another to spread the news.\"",
-      "why": "This tells how the news of the opening spread. It does not show why a better way of moving goods was needed."
+      "why": "This tells how the news of the opening spread. It does not show why a canal was needed."
      },
      {
       "t": "\"Buffalo grew from about 2,000 people in 1820 to more than 18,000 by 1840.\"",
@@ -848,7 +850,7 @@ window.SETS = {
      "answer": 2
     },
     "partB": {
-     "q": "Which sentence from the text best supports your answer in Part A?",
+     "q": "Which sentence from the text **best** supports your answer in part A?",
      "choices": [
       {
        "t": "\"By 1900, a few brave people had soared down hills on gliders.\"",
@@ -876,7 +878,7 @@ window.SETS = {
     "p": 2,
     "type": "mc",
     "skill": "Central idea of the text",
-    "stem": "Which sentence best identifies the central idea of the text?",
+    "stem": "Which sentence **best** identifies the central idea of the text?",
     "hint": "The central idea is what the whole text is about. A detail tells about one part. Pick the choice that fits every part.",
     "choices": [
      {
@@ -904,7 +906,7 @@ window.SETS = {
     "p": 2,
     "type": "mc",
     "skill": "Which sentence supports a small idea",
-    "stem": "Which sentence from the text best supports the idea that the brothers tried to be fair to each other?",
+    "stem": "Which sentence from the text **best** supports the idea that the brothers tried to be fair to each other?",
     "hint": "Read the idea in the question. Look at each sentence. Ask: Does this prove the idea? A true sentence is not always proof.",
     "choices": [
      {
@@ -947,7 +949,7 @@ window.SETS = {
       "p": "Edna reported to Avenger Field in Sweetwater, Texas, in the summer of 1943. The trainees slept six to a room, marched in formation to every meal, and studied engines, navigation and weather. At first, Edna flew an open-cockpit biplane that shuddered in the wind. Later she flew a heavier trainer called the AT-6, which roared like a tractor."
      },
      {
-      "p": "After Edna earned her wings, she ferried, or delivered, brand-new airplanes from factories to air bases across the country. \"I saw the Grand Canyon from ten thousand feet,\" she said. \"It looked like a giant had carved it with a spoon.\" On some trips, she landed in cities she had only seen in magazines, like Los Angeles and Detroit."
+      "p": "After Edna earned her wings, she ferried, or delivered, brand-new airplanes from factories to air bases across the country. \"I saw the Bryce Canyon from ten thousand feet,\" she said. \"It looked like a giant had carved it with a spoon.\" On some trips, she landed in cities she had only seen in magazines, like Los Angeles and Detroit."
      },
      {
       "p": "Edna loved those long flights alone. \"Up there, it was just me, the engine and the clouds,\" she said. Still, she never rushed. Before every takeoff, she walked twice around the airplane, inspecting the tires, the wings and the fuel caps. \"The sky does not give second chances,\" she explained. \"So I never skipped a single step on my checklist.\""
@@ -962,7 +964,7 @@ window.SETS = {
       "p": "On December 20, 1944, the army closed the program, and Edna returned home to Kansas. For many years, the women pilots received little recognition. Not until 1977 were they officially recognized as veterans. In 2009, Congress voted to award them the Congressional Gold Medal."
      },
      {
-      "p": "\"People still ask me about the Grand Canyon,\" Edna said many years later. \"I tell them it was beautiful. Then I tell them the part that mattered most. We proved that women could fly anything the army built.\""
+      "p": "\"People still ask me about the Bryce Canyon,\" Edna said many years later. \"I tell them it was beautiful. Then I tell them the part that mattered most. We proved that women could fly anything the army built.\""
      }
     ],
     "footnotes": [],
@@ -1082,30 +1084,31 @@ window.SETS = {
     "p": 0,
     "type": "ebsr",
     "skill": "Central idea of the text + proof",
+    "intro": "The following question has two parts. First, answer part A. Then, answer part B.",
     "partA": {
-     "q": "Which statement best summarizes the central idea of the text?",
+     "q": "Which statement **best** summarizes the central idea of the text?",
      "choices": [
       {
-       "t": "The Women Airforce Service Pilots flew combat missions overseas to help the army win its battles during World War II.",
+       "t": "WASP pilots flew combat missions overseas to help win battles during World War II.",
        "why": "Nothing in the text says the women flew in battles. Answer first. Then find the proof."
       },
       {
-       "t": "The Women Airforce Service Pilots trained at an airfield in Texas, where they studied engines, navigation and weather during World War II.",
+       "t": "WASP pilots studied engines, navigation and weather in Texas during World War II.",
        "why": "This is true, but it is one detail. It leaves out what the women did after training and why. A central idea tells about a big part of the text."
       },
       {
-       "t": "The Women Airforce Service Pilots flew military airplanes at home so that more men could fly in combat overseas during World War II.",
+       "t": "WASP pilots flew planes at home so more men could fight during World War II.",
        "why": "Yes! The text tells what the women did and why they did it: their flying freed more men to fight. Answer first. Then find the proof."
       },
       {
-       "t": "The Women Airforce Service Pilots delivered new airplanes across the country so that they could see the nation from the sky during World War II.",
+       "t": "WASP pilots delivered airplanes so they could see the nation during World War II.",
        "why": "Edna did enjoy the view, but sightseeing was not the reason the program was created."
       }
      ],
      "answer": 2
     },
     "partB": {
-     "q": "Which sentence from the text best supports your answer in Part A?",
+     "q": "Which sentence from the text **best** supports your answer in part A?",
      "choices": [
       {
        "t": "\"The United States was fighting in World War II, and the army needed every pilot it could find.\"",
@@ -1120,7 +1123,7 @@ window.SETS = {
        "why": "This tells about life in training. It does not show what the women did after training or why."
       },
       {
-       "t": "\"'I saw the Grand Canyon from ten thousand feet,' she said.\"",
+       "t": "\"'I saw the Bryce Canyon from ten thousand feet,' she said.\"",
        "why": "This tells what Edna saw on one flight. It does not show why the women were flying."
       }
      ],
@@ -1133,19 +1136,19 @@ window.SETS = {
     "p": 0,
     "type": "mc",
     "skill": "Central idea about the person",
-    "stem": "Which sentence best summarizes the central idea of the text?",
+    "stem": "Which sentence **best** summarizes the central idea of the text?",
     "choices": [
      {
       "t": "Edna enjoyed flying the heavy AT-6 trainer, but she was most excited about earning her silver wings.",
       "why": "Edna did fly the AT-6 and earn her wings, but the text never shows that the wings excited her most."
      },
      {
-      "t": "Edna enjoyed proving that women could fly, but she was most excited about seeing the Grand Canyon.",
-      "why": "This switches the two ideas. Edna called the Grand Canyon beautiful, but she said something else mattered most."
+      "t": "Edna enjoyed proving that women could fly, but she was most excited about her long flights alone.",
+      "why": "This switches the two ideas. Edna loved her long flights alone, but she said something else mattered most."
      },
      {
-      "t": "Edna enjoyed seeing the country from the sky, but she was most excited about proving that women could fly.",
-      "why": "Yes! Edna loved the view, but from her letter to her sister to her last words, she cared most about showing what women could do."
+      "t": "Edna enjoyed her long flights alone, but she was most excited about proving that women could fly.",
+      "why": "Yes! Edna loved her long flights alone, but from her letter to her sister to her last words, she cared most about showing what women could do."
      },
      {
       "t": "Edna enjoyed landing in big cities like Detroit, but she was most excited about ferrying fighter planes.",
@@ -1160,7 +1163,7 @@ window.SETS = {
     "p": 0,
     "type": "hottext",
     "skill": "Click the proof of a trait",
-    "stem": "Click the section that best supports the inference that Edna was a careful pilot. Choose two options.",
+    "stem": "Click the section that **best** supports the inference that Edna was a careful pilot. Choose **two** options.",
     "pick": 2,
     "layout": "list",
     "pieces": [
@@ -1169,7 +1172,7 @@ window.SETS = {
       "why": "This tells what Edna's job was. It does not show how carefully she did it."
      },
      {
-      "t": "\"I saw the Grand Canyon from ten thousand feet,\" she said. \"It looked like a giant had carved it with a spoon.\"",
+      "t": "\"I saw the Bryce Canyon from ten thousand feet,\" she said. \"It looked like a giant had carved it with a spoon.\"",
       "why": "This shows Edna was amazed by the view. It is about sightseeing, not about being careful."
      },
      {
@@ -1200,27 +1203,27 @@ window.SETS = {
     "p": 1,
     "type": "ms",
     "skill": "Choose two: proof of the creators' goal",
-    "stem": "The author infers that King Sejong wanted the new letters to be easy to learn. Which sentences from the text best support this inference? Select two answers.",
+    "stem": "The author infers that King Sejong wanted the new letters to be easy to learn. Which sentences from the text **best** support this inference? Select **two** answers.",
     "pick": 2,
     "pieces": [
      {
-      "t": "\"Sejong gathered talented scholars in a royal research center called the Hall of Worthies, where they studied many subjects.\"",
+      "t": "Sejong gathered talented scholars in a royal research center called the Hall of Worthies, where they studied many subjects.",
       "why": "This tells about the scholars Sejong gathered. It does not show that he wanted the letters to be easy to learn."
      },
      {
-      "t": "\"They argued that Korea should follow China's example in learning and writing, as educated Koreans had done for centuries.\"",
+      "t": "They argued that Korea should follow China's example in learning and writing, as educated Koreans had done for centuries.",
       "why": "This tells what the scholars who protested wanted. It does not show what Sejong wanted for his letters."
      },
      {
-      "t": "\"In its opening lines, the king explained, 'I have newly designed twenty-eight letters, which I wish to have everyone practice at their ease.'\"",
+      "t": "In its opening lines, the king explained, \"I have newly designed twenty-eight letters, which I wish to have everyone practice at their ease.\"",
       "why": "Yes! The king says he wants everyone to practice the letters at their ease, which means without trouble. This sentence proves the inference by itself."
      },
      {
-      "t": "\"One of his scholars added that a quick learner could master the letters in a single morning, and a slow one within ten days.\"",
+      "t": "One of his scholars added that a quick learner could master the letters in a single morning, and a slow one within ten days.",
       "why": "Yes! If even a slow learner could master the letters in ten days, they were made to be easy to learn. This sentence proves the inference by itself."
      },
      {
-      "t": "\"Soon after, the first long work in the new letters appeared: a collection of songs praising the kings who had founded Sejong's royal family.\"",
+      "t": "Soon after, the first long work in the new letters appeared: a collection of songs praising the kings who had founded Sejong's royal family.",
       "why": "This is true, but it is about honoring the kings of Sejong's family. It does not prove the letters were made to be easy."
      }
     ],
@@ -1237,7 +1240,7 @@ window.SETS = {
     "skill": "Best summary of a paragraph",
     "lead": "Read the paragraph.",
     "box": "Not everyone was pleased. In 1444, a group of scholars led by an official named Choe Malli sent the king a sharp letter of protest. They argued that Korea should follow China's example in learning and writing, as educated Koreans had done for centuries. They warned that the new letters would weaken the study of Chinese books. Many educated Koreans looked down on the letters as crude and common. Sejong argued back. When the scholars refused to change their minds, he had several of them locked up for a day.",
-    "stem": "Which sentence best summarizes the paragraph?",
+    "stem": "Which sentence **best** summarizes the paragraph?",
     "choices": [
      {
       "t": "Choe Malli sent the king a letter in 1444.",
@@ -1264,7 +1267,7 @@ window.SETS = {
     "p": 1,
     "type": "mc",
     "skill": "Which sentence shows why it was needed",
-    "stem": "Which sentence from the text best supports why a better way of writing Korean in the 1400s was needed?",
+    "stem": "Which sentence from the text **best** supports why a new set of letters for Korean was needed?",
     "choices": [
      {
       "t": "\"Each October 9, South Korea even celebrates a national holiday called Hangul Day.\"",
@@ -1314,7 +1317,7 @@ window.SETS = {
      "answer": 0
     },
     "partB": {
-     "q": "Which sentence from the text best supports your answer in Part A?",
+     "q": "Which sentence from the text **best** supports your answer in part A?",
      "choices": [
       {
        "t": "\"Hour after hour, it flew east over empty ocean.\"",
@@ -1342,7 +1345,7 @@ window.SETS = {
     "p": 2,
     "type": "mc",
     "skill": "Central idea of the text",
-    "stem": "Which sentence best identifies the central idea of the text?",
+    "stem": "Which sentence **best** identifies the central idea of the text?",
     "choices": [
      {
       "t": "The flight proved that flying boats were safer than ships at sea.",
@@ -1369,7 +1372,7 @@ window.SETS = {
     "p": 2,
     "type": "mc",
     "skill": "Which sentence supports a small idea",
-    "stem": "Which sentence from the text best supports the idea that the radio helped the NC-4 find its way in the fog?",
+    "stem": "Which sentence from the text **best** supports the idea that the radio helped the NC-4 find its way in the fog?",
     "choices": [
      {
       "t": "\"Below them, 21 Navy ships waited in a long line, about 50 miles (80 kilometers) apart.\"",
@@ -1408,7 +1411,7 @@ window.SETS = {
       "h": "A Week in Paris"
      },
      {
-      "p": "Russell spent his first week in Paris, learning to drive and repair a small Ford ambulance. In his free hours, he explored the city. \"I climbed the Eiffel Tower, and the whole city was spread out below me like a map,\" he wrote to his mother. He tasted his first croissant and strolled beside the river at sunset."
+      "p": "Russell spent his first week in Paris, learning to drive and repair a small Ford ambulance, and he loved the work. In his free hours, he explored the city. \"I climbed the Eiffel Tower, and the whole city was spread out below me like a map,\" he wrote to his mother. He tasted his first croissant and strolled beside the river at sunset."
      },
      {
       "p": "Then his unit drove east toward the front lines. The little Fords were light and sturdy, and they could climb narrow mountain roads where once only mules and horse carts could go. The roads were pitted with craters, and every jolt hurt the wounded men lying in the back. Russell steered gently around each crater, even though it made the trip longer. When a young soldier shivered on a frosty night, Russell wrapped his own coat around him."
@@ -1543,37 +1546,38 @@ window.SETS = {
     "p": 0,
     "type": "ebsr",
     "skill": "Central idea of the text + proof",
+    "intro": "The following question has two parts. First, answer part A. Then, answer part B.",
     "partA": {
-     "q": "Which statement best summarizes the central idea of the text?",
+     "q": "Which statement **best** summarizes the central idea of the text?",
      "choices": [
       {
-       "t": "Young volunteers in the American Field Service drove ambulances to help bring the United States into World War I.",
+       "t": "AFS volunteers drove ambulances to bring America into the fight during World War I.",
        "why": "The text tells when the United States joined the war, but it never says the volunteers went to bring their country into it. Answer first. Then find the proof."
       },
       {
-       "t": "Young volunteers in the American Field Service drove ambulances to carry wounded soldiers from the battlefields to hospitals during World War I.",
+       "t": "AFS volunteers drove wounded soldiers from battlefields to hospitals during World War I.",
        "why": "Yes! The text tells what the volunteers did and why they did it: wounded soldiers needed to reach hospitals. Answer first. Then find the proof."
       },
       {
-       "t": "Young volunteers in the American Field Service learned to drive and repair small Ford ambulances in Paris during World War I.",
+       "t": "AFS volunteers learned to drive and repair Ford ambulances in Paris during World War I.",
        "why": "This is true, but it tells about one week of training. A central idea tells about a big part of the text."
       },
       {
-       "t": "Young volunteers in the American Field Service traveled to France so that they could explore Paris and its famous sights during World War I.",
+       "t": "AFS volunteers traveled to France to explore Paris and its sights during World War I.",
        "why": "Russell did enjoy Paris, but exploring was what he did in his free hours. It is not why the volunteers went."
       }
      ],
      "answer": 1
     },
     "partB": {
-     "q": "Which sentence from the text best supports your answer in Part A?",
+     "q": "Which sentence from the text **best** supports your answer in part A?",
      "choices": [
       {
        "t": "\"The fighting in Europe had begun in 1914, but the United States would not join the war until 1917.\"",
        "why": "This tells when the war began and when the United States joined. It does not tell what the volunteers did or why they went."
       },
       {
-       "t": "\"Russell spent his first week in Paris, learning to drive and repair a small Ford ambulance.\"",
+       "t": "\"Russell spent his first week in Paris, learning to drive and repair a small Ford ambulance, and he loved the work.\"",
        "why": "This tells about Russell's training. It does not show what the volunteers did after training or why."
       },
       {
@@ -1594,23 +1598,23 @@ window.SETS = {
     "p": 0,
     "type": "mc",
     "skill": "Central idea about the person",
-    "stem": "Which sentence best summarizes the central idea of the text?",
+    "stem": "Which sentence **best** summarizes the central idea of the text?",
     "choices": [
      {
       "t": "Russell enjoyed climbing the Eiffel Tower, but he was most excited about driving at night while shells burst.",
       "why": "Russell did drive while shells burst, but he wrote that he was more frightened than he had ever been. Being scared is not the same as being excited."
      },
      {
-      "t": "Russell enjoyed getting wounded soldiers to surgeons, but he was most excited about exploring the sights of Paris.",
-      "why": "This switches the two ideas. Russell explored Paris in his free hours, but his letters home came to be about something else."
+      "t": "Russell enjoyed getting wounded soldiers to surgeons, but he was most excited about learning to repair the Ford ambulance.",
+      "why": "This switches the two ideas. Russell loved learning to repair the ambulance, but his letters home came to be about something else."
      },
      {
-      "t": "Russell enjoyed exploring the sights of Paris, but he was most excited about getting wounded soldiers to surgeons.",
-      "why": "Yes! Russell enjoyed Paris, but he grinned all the way back to his ambulance when he heard his soldiers would live, and his letters home came to be more about the men he carried."
+      "t": "Russell enjoyed learning to repair the Ford ambulance, but he was most excited about getting wounded soldiers to surgeons.",
+      "why": "Yes! Russell loved learning to repair the ambulance, but he grinned all the way back to his ambulance when he heard his soldiers would live, and his letters home came to be more about the men he carried."
      },
      {
-      "t": "Russell enjoyed learning to repair a Ford ambulance, but he was most excited about studying chemistry in Ohio.",
-      "why": "Russell did learn to repair an ambulance, but he left his chemistry classes to go to France."
+      "t": "Russell enjoyed exploring the sights of Paris, but he was most excited about studying chemistry in Ohio.",
+      "why": "Russell did explore Paris, but he left his chemistry classes to go to France."
      }
     ],
     "answer": 2
@@ -1621,12 +1625,12 @@ window.SETS = {
     "p": 0,
     "type": "hottext",
     "skill": "Click the proof of a trait",
-    "stem": "Click the section that best supports the inference that Russell was a caring person. Choose two options.",
+    "stem": "Click the section that **best** supports the inference that Russell was a caring person. Choose **two** options.",
     "pick": 2,
     "layout": "list",
     "pieces": [
      {
-      "t": "Russell spent his first week in Paris, learning to drive and repair a small Ford ambulance. In his free hours, he explored the city.",
+      "t": "Russell spent his first week in Paris, learning to drive and repair a small Ford ambulance, and he loved the work. In his free hours, he explored the city.",
       "why": "This tells how Russell spent his first week. It does not show how he treated other people."
      },
      {
@@ -1661,27 +1665,27 @@ window.SETS = {
     "p": 1,
     "type": "ms",
     "skill": "Choose two: proof of the creators' goal",
-    "stem": "The author infers that Morse and Vail wanted their telegraph to be simple to use. Which sentences from the text best support this inference? Select two answers.",
+    "stem": "The author infers that Morse and Vail wanted their telegraph to be simple to use. Which sentences from the text **best** support this inference? Select **two** answers.",
     "pick": 2,
     "pieces": [
      {
-      "t": "\"Leonard Gale, a chemistry professor at a New York college, showed him how to send a signal much farther along a wire.\"",
+      "t": "Leonard Gale, a chemistry professor at a New York college, showed him how to send a signal much farther along a wire.",
       "why": "This tells how Gale helped signals travel farther. It does not show that the partners wanted the telegraph to be simple."
      },
      {
-      "t": "\"Alfred Vail, a young man whose family owned an ironworks in New Jersey, built sturdier machines and helped pay for the project.\"",
+      "t": "Alfred Vail, a young man whose family owned an ironworks in New Jersey, built sturdier machines and helped pay for the project.",
       "why": "This tells how Vail helped with machines and money. It does not show that the partners wanted the telegraph to be simple to use."
      },
      {
-      "t": "\"On January 11, 1838, at the ironworks, the partners sent their first public message: 'A patient waiter is no loser.'\"",
+      "t": "On January 11, 1838, at the ironworks, the partners sent their first public message: \"A patient waiter is no loser.\"",
       "why": "This tells about the first public message. It shows the partners wanted people to see their machine, not that they wanted it to be simple."
      },
      {
-      "t": "\"Their code used mostly two signals, a short one and a long one, which later came to be called dots and dashes.\"",
+      "t": "Their code used mostly two signals, a short one and a long one, which later came to be called dots and dashes.",
       "why": "Yes! Building the code mostly from two signals kept it simple. This sentence proves the inference by itself."
      },
      {
-      "t": "\"An operator could send them by tapping a single key, pressing quickly for a dot and a little longer for a dash.\"",
+      "t": "An operator could send them by tapping a single key, pressing quickly for a dot and a little longer for a dash.",
       "why": "Yes! One key that you press short or long is simple to use. This sentence proves the inference by itself."
      }
     ],
@@ -1698,7 +1702,7 @@ window.SETS = {
     "skill": "Best summary of a paragraph",
     "lead": "Read the paragraph.",
     "box": "The telegraph spread quickly. By 1850, about 12,000 miles (19,000 kilometers) of wire crossed the country. Telegraph offices opened in towns large and small. Newspapers began printing news from distant cities on the same day it happened. In 1861, a line reached all the way to California. News that once took weeks to arrive could now arrive in minutes. Morse, the painter, had become one of the most famous inventors in America.",
-    "stem": "Which sentence best summarizes the paragraph?",
+    "stem": "Which sentence **best** summarizes the paragraph?",
     "choices": [
      {
       "t": "In 1861, a telegraph line finally reached California.",
@@ -1725,11 +1729,11 @@ window.SETS = {
     "p": 1,
     "type": "mc",
     "skill": "Which sentence shows why it was needed",
-    "stem": "Which sentence from the text best supports why a better way of sending news in the 1800s was needed?",
+    "stem": "Which sentence from the text **best** supports why faster news was needed?",
     "choices": [
      {
       "t": "\"A letter could take days or even weeks to reach a distant city.\"",
-      "why": "Yes! A letter could take days or even weeks, so news arrived late. That is why a better way of sending news was needed. Answer first. Then find the proof."
+      "why": "Yes! A letter could take days or even weeks, so news arrived late. That is why faster news was needed. Answer first. Then find the proof."
      },
      {
       "t": "\"He was painting a portrait of the Marquis de Lafayette, a French hero of the American Revolution.\"",
@@ -1737,11 +1741,11 @@ window.SETS = {
      },
      {
       "t": "\"On the ship, he heard another passenger describe experiments with electricity and magnets.\"",
-      "why": "This tells where Morse got the idea of using electricity. It does not show why a better way of sending news was needed."
+      "why": "This tells where Morse got the idea of using electricity. It does not show why faster news was needed."
      },
      {
       "t": "\"Building a long telegraph line would cost far more than the partners had.\"",
-      "why": "This tells about a problem the partners had: money to build a line. It does not show why people needed a better way of sending news."
+      "why": "This tells about a problem the partners had: money to build a line. It does not show why people needed faster news."
      }
     ],
     "answer": 0
@@ -1775,7 +1779,7 @@ window.SETS = {
      "answer": 2
     },
     "partB": {
-     "q": "Which sentence from the text best supports your answer in Part A?",
+     "q": "Which sentence from the text **best** supports your answer in part A?",
      "choices": [
       {
        "t": "\"In some places, the ice above was only a few feet thick.\"",
@@ -1803,7 +1807,7 @@ window.SETS = {
     "p": 2,
     "type": "mc",
     "skill": "Central idea of the text",
-    "stem": "Which sentence best identifies the central idea of the text?",
+    "stem": "Which sentence **best** identifies the central idea of the text?",
     "choices": [
      {
       "t": "The voyage proved that the Soviet Union had fallen behind American science.",
@@ -1830,7 +1834,7 @@ window.SETS = {
     "p": 2,
     "type": "mc",
     "skill": "Which sentence supports a small idea",
-    "stem": "Which sentence from the text best supports the idea that the crew could tell how much space was between the boat and the ice?",
+    "stem": "Which sentence from the text **best** supports the idea that the crew could tell how much space was between the boat and the ice?",
     "choices": [
      {
       "t": "\"A new navigation machine also kept track of where they were, even with no stars or sun to guide them.\"",
@@ -1860,7 +1864,7 @@ window.SETS = {
     "subtitle": "",
     "blocks": [
      {
-      "p": "Frank Kowalski had just turned eighteen, and he had been searching for employment for almost a year. Every morning he walked from factory to factory in New Britain, Connecticut, and every morning a foreman delivered the same discouraging answer: \"No jobs today.\" His father had lost his position at a hardware company, and the household of seven sometimes survived on nothing but bread and soup. Then, in the spring of 1934, a neighbor described a new federal program that would pay young men to plant trees. Frank suspected it was too good to be true."
+      "p": "Stan Novak had just turned eighteen, and he had been searching for employment for almost a year. Every morning he walked from factory to factory in New Britain, Connecticut, and every morning a foreman delivered the same discouraging answer: \"No jobs today.\" His father had lost his position at a hardware company, and the household of seven sometimes survived on nothing but bread and soup. Then, in the spring of 1934, a neighbor described a new federal program that would pay young men to plant trees. Stan suspected it was too good to be true."
      },
      {
       "p": "It was true. The nation was in the middle of the Great Depression, a period when millions of Americans were unemployed. In 1933, President Franklin D. Roosevelt had created the Civilian Conservation Corps (CCC). The program hired unmarried young men from struggling families to work in the nation's forests and parks. Each worker earned $30 a month. He kept only $5, and the remaining $25 was mailed directly to his family."
@@ -1869,25 +1873,25 @@ window.SETS = {
       "h": "Off to the West"
      },
      {
-      "p": "Frank enrolled in April 1934, and a week later he boarded a westbound train with about two hundred other recruits. After four days of travel, they disembarked at a tiny station in the mountains of Idaho, where their temporary camp was a row of canvas tents beside a frigid, rushing river. \"I had never seen a mountain before,\" Frank said years later. \"The first morning, I stood outside my tent and just stared.\" On weekends, he and his friends explored the surrounding mountains, swam in glacial lakes, and watched elk graze in the meadows."
+      "p": "Stan enrolled in April 1934, and a week later he boarded a westbound train with about two hundred other recruits. After four days of travel, they disembarked at a tiny station in the mountains of Idaho, where their temporary camp was a row of canvas tents beside a frigid, rushing river. \"I had never seen a mountain before,\" Stan said years later. \"The first morning, I stood outside my tent and just stared.\" On weekends, he and his friends explored the surrounding mountains, swam in glacial lakes, and watched elk graze in the meadows."
      },
      {
-      "p": "The land around the camp needed repair. Logging companies had stripped the slopes bare, and without roots to hold the soil, spring rains sent dangerous floods rushing into the valleys below. A crew leader demonstrated how to open the soil with a sharp tool, insert a pine seedling, and stamp the dirt down firmly. By the end of his first summer, Frank had planted more trees than he could count. \"My hands were blistered and my back ached every night,\" he said. \"But I never once thought about quitting.\""
+      "p": "The land around the camp needed repair. Logging companies had stripped the slopes bare, and without roots to hold the soil, spring rains sent dangerous floods rushing into the valleys below. A crew leader demonstrated how to open the soil with a sharp tool, insert a pine seedling, and stamp the dirt down firmly. By the end of his first summer, Stan had planted more trees than he could count. \"My hands were blistered and my back ached every night,\" he said. \"But I never once thought about quitting.\""
      },
      {
       "h": "Fire on the Mountain"
      },
      {
-      "p": "In August, a lightning storm ignited a fire on a ridge above the camp, and Frank's crew was ordered to stop it. For two days they dug a firebreak, a long strip of bare dirt that the flames could not cross. Dense smoke stung their eyes, and flaming branches crashed down around them. Once, the wind suddenly shifted. As the fire raced toward them, the men abandoned their tools and sprinted for the river. \"I was scared stiff,\" Frank admitted. \"But the next morning, we went right back up that hill.\""
+      "p": "In August, a lightning storm ignited a fire on a ridge above the camp, and Stan's crew was ordered to stop it. For two days they dug a firebreak, a long strip of bare dirt that the flames could not cross. Dense smoke stung their eyes, and flaming branches crashed down around them. Once, the wind suddenly shifted. As the fire raced toward them, the men abandoned their tools and sprinted for the river. \"I was scared stiff,\" Stan admitted. \"But the next morning, we went right back up that hill.\""
      },
      {
-      "p": "In the evenings, the camp offered classes to anyone who wanted to continue his education. Frank had quit school after eighth grade, so he studied reading and arithmetic, and he also learned to operate a truck."
+      "p": "In the evenings, the camp offered classes to anyone who wanted to continue his education. Stan had quit school after eighth grade, so he studied reading and arithmetic, and he also learned to operate a truck."
      },
      {
-      "p": "Frank remained in the Civilian Conservation Corps for two years. Every month, he imagined his mother opening the envelope with his $25 inside, and the thought always made him grin. \"The mountains were a wonderful surprise,\" Frank said later, \"but that envelope was the reason I went.\" When he finally returned home, he was stronger, healthier, and more confident. He soon found employment driving trucks for a lumber company."
+      "p": "Stan remained in the Civilian Conservation Corps for two years. Every month, he imagined his mother opening the envelope with his $25 inside, and the thought always made him grin. \"Those evening classes were a wonderful surprise,\" Stan said later, \"but that envelope was the reason I went.\" When he finally returned home, he was stronger, healthier, and more confident. He soon found employment driving trucks for a lumber company."
      },
      {
-      "p": "Between 1933 and 1942, approximately three million young men served in the CCC, and together they planted more than three billion trees. They also constructed hiking trails, campgrounds and fire lookout towers in hundreds of state parks. \"We didn't just plant trees,\" Frank said. \"We grew up out there.\""
+      "p": "Between 1933 and 1942, approximately three million young men served in the CCC, and together they planted more than three billion trees. They also constructed hiking trails, campgrounds and fire lookout towers in hundreds of state parks. \"We didn't just plant trees,\" Stan said. \"We grew up out there.\""
      }
     ],
     "footnotes": [],
@@ -2025,33 +2029,34 @@ window.SETS = {
     "p": 0,
     "type": "ebsr",
     "skill": "Central idea of the text + proof",
+    "intro": "The following question has two parts. First, answer part A. Then, answer part B.",
     "partA": {
-     "q": "Which statement best summarizes the central idea of the text?",
+     "q": "Which statement **best** summarizes the central idea of the text?",
      "choices": [
       {
-       "t": "Young men in the Civilian Conservation Corps joined the army to protect the nation's forests during the Great Depression.",
+       "t": "CCC workers joined the army to protect the nation's forests during the Great Depression.",
        "why": "The title calls them a \"Tree Army,\" but nothing in the text says they joined the real army. Answer first. Then find the proof."
       },
       {
-       "t": "Young men in the Civilian Conservation Corps learned to plant trees and fight fires in camps across the West during the Great Depression.",
+       "t": "CCC workers learned to plant trees and fight fires during the Great Depression.",
        "why": "These are true details, but they leave out why the young men joined. A central idea tells about a big part of the text."
       },
       {
-       "t": "Young men in the Civilian Conservation Corps worked in the nation's forests and parks to earn money for their struggling families during the Great Depression.",
+       "t": "CCC workers earned money for their families by caring for forests during the Great Depression.",
        "why": "Yes! The text tells what the young men did and why they did it: their families needed the money. Answer first. Then find the proof."
       },
       {
-       "t": "Young men in the Civilian Conservation Corps enjoyed exploring the mountains and lakes of the West during the Great Depression.",
-       "why": "Frank did enjoy the mountains, but exploring was what he did on weekends. It is not why the young men joined."
+       "t": "CCC workers enjoyed exploring the mountains and lakes during the Great Depression.",
+       "why": "Stan did enjoy the mountains, but exploring was what he did on weekends. It is not why the young men joined."
       }
      ],
      "answer": 2
     },
     "partB": {
-     "q": "Which sentence from the text best supports your answer in Part A?",
+     "q": "Which sentence from the text **best** supports your answer in part A?",
      "choices": [
       {
-       "t": "\"In August, a lightning storm ignited a fire on a ridge above the camp, and Frank's crew was ordered to stop it.\"",
+       "t": "\"In August, a lightning storm ignited a fire on a ridge above the camp, and Stan's crew was ordered to stop it.\"",
        "why": "This tells about one fire. It does not show what the young men did most of the time or why they joined."
       },
       {
@@ -2060,7 +2065,7 @@ window.SETS = {
       },
       {
        "t": "\"On weekends, he and his friends explored the surrounding mountains, swam in glacial lakes, and watched elk graze in the meadows.\"",
-       "why": "This tells what Frank did for fun. It does not show the work or why the young men joined."
+       "why": "This tells what Stan did for fun. It does not show the work or why the young men joined."
       },
       {
        "t": "\"The program hired unmarried young men from struggling families to work in the nation's forests and parks.\"",
@@ -2076,23 +2081,23 @@ window.SETS = {
     "p": 0,
     "type": "mc",
     "skill": "Central idea about the person",
-    "stem": "Which sentence best summarizes the central idea of the text?",
+    "stem": "Which sentence **best** summarizes the central idea of the text?",
     "choices": [
      {
-      "t": "Frank enjoyed working in the Civilian Conservation Corps, but he was most excited about learning to operate a truck.",
-      "why": "Frank did learn to operate a truck, but the text never shows that this was what excited him most."
+      "t": "Stan enjoyed exploring the mountains of Idaho, but he was most excited about fighting the forest fire.",
+      "why": "Stan did help fight the fire, but he said he was \"scared stiff.\" The text never says the fire was what excited him most."
      },
      {
-      "t": "Frank enjoyed exploring the mountains of Idaho, but he was most excited about helping his struggling family.",
-      "why": "Yes! Frank called the mountains a wonderful surprise, but he said the envelope of money for his family was the reason he went."
+      "t": "Stan enjoyed the evening classes at camp, but he was most excited about earning money for his family.",
+      "why": "Yes! Stan called the evening classes a wonderful surprise, but he said the envelope of money for his family was the reason he went."
      },
      {
-      "t": "Frank enjoyed helping his family, but he was most excited about exploring the mountains of Idaho.",
-      "why": "This switches the two ideas. Frank called the mountains a surprise, not the reason he went."
+      "t": "Stan enjoyed earning money for his family, but he was most excited about the evening classes at camp.",
+      "why": "This switches the two ideas. Stan called the classes a surprise, not the reason he went."
      },
      {
-      "t": "Frank enjoyed exploring the mountains of Idaho, but he was most excited about fighting the forest fire.",
-      "why": "Frank did help fight the fire, but he said he was \"scared stiff.\" The text never says the fire was what excited him most."
+      "t": "Stan enjoyed swimming in glacial lakes, but he was most excited about learning to operate a truck.",
+      "why": "Stan did learn to operate a truck, but the text never says the truck was what excited him most."
      }
     ],
     "answer": 1
@@ -2103,33 +2108,33 @@ window.SETS = {
     "p": 0,
     "type": "hottext",
     "skill": "Click the proof of a trait",
-    "stem": "Click the section that best supports the inference that Frank was a committed member of the CCC. Choose two options.",
+    "stem": "Click the section that **best** supports the inference that Stan was a committed member of the CCC. Choose **two** options.",
     "pick": 2,
     "layout": "list",
     "pieces": [
      {
-      "t": "Frank enrolled in April 1934, and a week later he boarded a westbound train with about two hundred other recruits. After four days of travel, they disembarked at a tiny station in the mountains of Idaho, where their temporary camp was a row of canvas tents beside a frigid, rushing river.",
-      "why": "This tells how Frank got to Idaho. Signing up and riding a train do not show that he stuck with the work."
+      "t": "Stan enrolled in April 1934, and a week later he boarded a westbound train with about two hundred other recruits. After four days of travel, they disembarked at a tiny station in the mountains of Idaho, where their temporary camp was a row of canvas tents beside a frigid, rushing river.",
+      "why": "This tells how Stan got to Idaho. Signing up and riding a train do not show that he stuck with the work."
      },
      {
-      "t": "\"I had never seen a mountain before,\" Frank said years later. \"The first morning, I stood outside my tent and just stared.\"",
-      "why": "This shows Frank was amazed by the mountains. It is about sightseeing, not about sticking with the work."
+      "t": "\"I had never seen a mountain before,\" Stan said years later. \"The first morning, I stood outside my tent and just stared.\"",
+      "why": "This shows Stan was amazed by the mountains. It is about sightseeing, not about sticking with the work."
      },
      {
       "t": "On weekends, he and his friends explored the surrounding mountains, swam in glacial lakes, and watched elk graze in the meadows.",
-      "why": "This tells what Frank did for fun on weekends. It does not show him giving his best to the job."
+      "why": "This tells what Stan did for fun on weekends. It does not show him giving his best to the job."
      },
      {
       "t": "The land around the camp needed repair. Logging companies had stripped the slopes bare, and without roots to hold the soil, spring rains sent dangerous floods rushing into the valleys below.",
-      "why": "This tells why the land needed help. It does not show what Frank gave to the work."
+      "why": "This tells why the land needed help. It does not show what Stan gave to the work."
      },
      {
-      "t": "A crew leader demonstrated how to open the soil with a sharp tool, insert a pine seedling, and stamp the dirt down firmly. By the end of his first summer, Frank had planted more trees than he could count.",
-      "why": "Yes! A committed member of the CCC gives his best to the job and sticks with it. Frank planted more trees than he could count, and even with blistered hands and an aching back, he never once thought about quitting. Each section proves the inference by itself."
+      "t": "A crew leader demonstrated how to open the soil with a sharp tool, insert a pine seedling, and stamp the dirt down firmly. By the end of his first summer, Stan had planted more trees than he could count.",
+      "why": "Yes! A committed member of the CCC gives his best to the job and sticks with it. Stan planted more trees than he could count, and even with blistered hands and an aching back, he never once thought about quitting. Each section proves the inference by itself."
      },
      {
       "t": "\"My hands were blistered and my back ached every night,\" he said. \"But I never once thought about quitting.\"",
-      "why": "Yes! A committed member of the CCC gives his best to the job and sticks with it. Frank planted more trees than he could count, and even with blistered hands and an aching back, he never once thought about quitting. Each section proves the inference by itself."
+      "why": "Yes! A committed member of the CCC gives his best to the job and sticks with it. Stan planted more trees than he could count, and even with blistered hands and an aching back, he never once thought about quitting. Each section proves the inference by itself."
      }
     ],
     "answer": [
@@ -2143,27 +2148,27 @@ window.SETS = {
     "p": 1,
     "type": "ms",
     "skill": "Choose two: proof of the creators' goal",
-    "stem": "The author infers that the stamp makers wanted the Penny Black to be hard to copy. Which sentences from the text best support this inference? Select two answers.",
+    "stem": "The author infers that the stamp makers wanted the Penny Black to be hard to copy. Which sentences from the text **best** support this inference? Select **two** answers.",
     "pick": 2,
     "pieces": [
      {
-      "t": "\"Post offices canceled used stamps with red ink, but the red mark was difficult to see on the black stamp and easy to scrub off.\"",
+      "t": "Post offices canceled used stamps with red ink, but the red mark was difficult to see on the black stamp and easy to scrub off.",
       "why": "This is true, but it tells about a flaw that let people use an old stamp again. It does not prove that the makers wanted the stamp to be hard to copy."
      },
      {
-      "t": "\"Every step of preparing the printing plates was slow and intricate on purpose, so that no one could easily make fake stamps.\"",
+      "t": "Every step of preparing the printing plates was slow and intricate on purpose, so that no one could easily make fake stamps.",
       "why": "Yes! A fake stamp is a copy. The makers made the plates hard to prepare on purpose, so that no one could make fake ones. This sentence proves the inference by itself."
      },
      {
-      "t": "\"The Treasury held a design competition, and about 2,600 people submitted entries, but none of them was judged suitable.\"",
+      "t": "The Treasury held a design competition, and about 2,600 people submitted entries, but none of them was judged suitable.",
       "why": "This is true, but it tells how the government looked for a good design. It does not prove that the makers wanted the stamp to be hard to copy."
      },
      {
-      "t": "\"Each stamp carried two small corner letters showing its place on the sheet, so a forger would have had to imitate 240 different stamps.\"",
+      "t": "Each stamp carried two small corner letters showing its place on the sheet, so a forger would have had to imitate 240 different stamps.",
       "why": "Yes! A forger makes fake copies. The corner letters meant a forger would have to copy 240 different stamps instead of one. This sentence proves the inference by itself."
      },
      {
-      "t": "\"Beginning on January 10, 1840, a letter weighing up to half an ounce could travel anywhere in Britain for a single penny.\"",
+      "t": "Beginning on January 10, 1840, a letter weighing up to half an ounce could travel anywhere in Britain for a single penny.",
       "why": "This tells about the low price of a letter. It does not prove that the makers wanted the stamp to be hard to copy."
      }
     ],
@@ -2180,7 +2185,7 @@ window.SETS = {
     "skill": "Best summary of a paragraph",
     "lead": "Read the paragraph.",
     "box": "The leaders of the post office were horrified. Lord Lichfield, the Postmaster General, ridiculed Hill's \"wild and visionary schemes.\" William Leader Maberly, who managed the post office from day to day, called the plan \"preposterous.\" The officials had a genuine reason to worry. The mail produced a profit for the government, and a penny letter would earn far less than a letter that cost a shilling. They doubted that people would write enough extra letters to make up the difference.",
-    "stem": "Which sentence best summarizes the paragraph?",
+    "stem": "Which sentence **best** summarizes the paragraph?",
     "choices": [
      {
       "t": "Lord Lichfield mocked Hill's plan as a wild scheme.",
@@ -2207,7 +2212,7 @@ window.SETS = {
     "p": 1,
     "type": "mc",
     "skill": "Which sentence shows why it was needed",
-    "stem": "Which sentence from the text best supports why a better way of paying for letters in the 1830s was needed?",
+    "stem": "Which sentence from the text **best** supports why a new postage plan was needed?",
     "choices": [
      {
       "t": "\"In 1839, people in Britain had mailed about 76 million letters.\"",
@@ -2219,7 +2224,7 @@ window.SETS = {
      },
      {
       "t": "\"The recipient could read the message on the cover, hand the letter back, and pay nothing at all.\"",
-      "why": "Yes! People could get the message without paying, so the post office carried the letter for nothing. That shows why a better way of paying was needed."
+      "why": "Yes! People could get the message without paying, so the post office carried the letter for nothing. That shows why a new postage plan was needed."
      },
      {
       "t": "\"Wealthy merchants, bankers and traders, who mailed enormous quantities of letters, formed a group called the Mercantile Committee to campaign for his plan.\"",
@@ -2257,7 +2262,7 @@ window.SETS = {
      "answer": 1
     },
     "partB": {
-     "q": "Which sentence from the text best supports your answer in Part A?",
+     "q": "Which sentence from the text **best** supports your answer in part A?",
      "choices": [
       {
        "t": "\"The builders used modern materials such as plywood and fiberglass, but they followed the shape of the old canoes.\"",
@@ -2285,7 +2290,7 @@ window.SETS = {
     "p": 2,
     "type": "mc",
     "skill": "Central idea of the text",
-    "stem": "Which sentence best identifies the central idea of the text?",
+    "stem": "Which sentence **best** identifies the central idea of the text?",
     "choices": [
      {
       "t": "The voyage proved that all Polynesians first came from Hawaii long ago.",
@@ -2312,7 +2317,7 @@ window.SETS = {
     "p": 2,
     "type": "mc",
     "skill": "Which sentence supports a small idea",
-    "stem": "Which sentence from the text best supports the idea that Mau knew the night sky would change during the voyage?",
+    "stem": "Which sentence from the text **best** supports the idea that Mau knew the night sky would change during the voyage?",
     "choices": [
      {
       "t": "\"Each star rises at the same point on the horizon every night, so a rising star can mark a direction.\"",
@@ -2342,7 +2347,7 @@ window.SETS = {
     "subtitle": "",
     "blocks": [
      {
-      "p": "In the spring of 1962, Ann Pruitt was twenty-two years old and about to graduate from college in Dayton, Ohio, with a degree in chemistry. Most of her classmates had accepted jobs in nearby offices and laboratories. She had never traveled farther than Chicago, yet that winter she had applied to a new government program. Then a letter from Washington, D.C., invited her to teach science in Ghana. She could barely locate the West African nation on a map. Her parents worried about her going so far from home, but she said yes right away."
+      "p": "In the spring of 1962, Ann Pruitt was twenty-two years old and about to graduate from college in Dayton, Ohio, with a degree in chemistry. Most of her classmates had accepted jobs in nearby offices and laboratories. She had never traveled farther than Cincinnati, yet that winter she had applied to a new government program. Then a letter from Washington, D.C., invited her to teach science in Ghana. She could barely locate the West African nation on a map. Her parents worried about her going so far from home, but she said yes right away."
      },
      {
       "p": "The invitation came from the Peace Corps. President John F. Kennedy had first shared the idea in 1960, in a speech to college students in Michigan at two o'clock in the morning. In 1961, he created the program to send American volunteers to nations that requested help. Many of these nations had only recently won their independence, and they needed teachers, nurses and engineers. Kennedy hoped the volunteers would help these nations and also help people around the world get to know Americans as friends. Volunteers served for two years, and they received only enough money to live like their neighbors."
@@ -2369,10 +2374,10 @@ window.SETS = {
       "p": "Travel could be dangerous, too. One evening during the rainy season, the truck carrying Ann home slid off a muddy road and tipped over on its side. She crawled out through a window with a bruised arm. Farmers from a nearby village pulled the other passengers free and sheltered everyone in their homes until morning. \"They didn't know me,\" she said, \"but they treated me like family.\""
      },
      {
-      "p": "When Ann left Ghana in 1964, her students lined up outside the school and sang the national anthem in Twi, just as the first volunteers had done. \"I loved every market and every beach,\" Ann said later, \"but nothing beat the moment a student finally understood.\""
+      "p": "When Ann left Ghana in 1964, her students lined up outside the school and sang the national anthem in Twi, just as the first volunteers had done. \"I loved learning Twi from my neighbors,\" Ann said later, \"but nothing beat the moment a student finally understood.\""
      },
      {
-      "p": "By the end of 1963, about seven thousand volunteers were serving in forty-four countries. Since 1961, more than 240,000 Americans have served in the Peace Corps. \"I went to Ghana to teach,\" Ann said. \"I came home having learned more than I taught.\""
+      "p": "By the end of 1963, about seven thousand volunteers were serving in dozens of countries. Since 1961, more than 240,000 Americans have served in the Peace Corps. \"I went to Ghana to teach,\" Ann said. \"I came home having learned more than I taught.\""
      }
     ],
     "footnotes": [],
@@ -2425,10 +2430,10 @@ window.SETS = {
       "h": "Help From the King"
      },
      {
-      "p": "By then, Harrison was nearly eighty years old, so he asked King George III for help. In 1772, the king tested Harrison's newest watch, H5, for ten weeks, and it stayed accurate to within one third of a second a day. In 1773, Parliament awarded Harrison 8,750 pounds. He never received the official prize, but his payments over the years totaled more than 23,000 pounds. He died in 1776, at the age of 82."
+      "p": "By then, Harrison was nearly eighty years old, so he asked King George III for help. The king tested Harrison's newest watch, H5, for ten weeks, and it stayed accurate to within one third of a second a day. In 1773, Parliament awarded Harrison 8,750 pounds. He never received the official prize, but his payments over the years totaled more than 23,000 pounds. He died in 1776, at the age of 82."
      },
      {
-      "p": "Meanwhile, a clockmaker named Larcum Kendall built a copy of H4, called K1. Captain James Cook carried it on his second great voyage across the Pacific, from 1772 to 1775. Cook came to rely on it, calling it his \"trusty friend the watch\" and his \"never failing guide.\" These sea watches, later called chronometers, were expensive at first. By the early 1800s, however, they were becoming common on ships."
+      "p": "Meanwhile, a clockmaker named Larcum Kendall built a copy of H4, called K1. Captain James Cook carried it on his second great voyage across the Pacific, which lasted three years. Cook came to rely on it, calling it his \"trusty friend the watch\" and his \"never failing guide.\" These sea watches, later called chronometers, were expensive at first. By the early 1800s, however, they were becoming common on ships."
      },
      {
       "p": "Today, satellites have replaced the chronometer. Yet the phone in your pocket still finds your location by comparing signals from extremely precise clocks, the same idea Harrison spent his life perfecting."
@@ -2448,7 +2453,7 @@ window.SETS = {
       "p": "But the deep sea is a deadly place for people. The deeper you go, the greater the water pressure becomes. Half a mile down, the water presses with a force of more than 1,000 pounds on every square inch. No diver could survive that."
      },
      {
-      "h": "A Ball of Steel"
+      "h": "Building the Ball"
      },
      {
       "p": "In 1928, a young engineer named Otis Barton offered Beebe an answer. Barton designed a hollow steel ball, and he paid to have it built. In return, Beebe agreed to let him come along on the dives. Beebe named the invention the bathysphere¹. Now the two men had to find out whether it would really work."
@@ -2510,30 +2515,31 @@ window.SETS = {
     "p": 0,
     "type": "ebsr",
     "skill": "Central idea of the text + proof",
+    "intro": "The following question has two parts. First, answer part A. Then, answer part B.",
     "partA": {
-     "q": "Which statement best summarizes the central idea of the text?",
+     "q": "Which statement **best** summarizes the central idea of the text?",
      "choices": [
       {
-       "t": "Young Americans in the Peace Corps traveled to Ghana to teach science in its schools in the 1960s.",
+       "t": "Peace Corps volunteers traveled to Ghana to teach science in the 1960s.",
        "why": "That is one detail. Ann taught science in Ghana, but the volunteers served in many nations, and it leaves out the bigger reasons the text gives for the program. A central idea tells about a big part of the text."
       },
       {
-       "t": "Young Americans in the Peace Corps explored busy markets, rode in brightly painted trucks and learned new languages in the 1960s.",
+       "t": "Peace Corps volunteers explored markets and learned new languages in the 1960s.",
        "why": "These are true details about Ann, but they leave out why the volunteers went. A central idea tells about a big part of the text."
       },
       {
-       "t": "Young Americans in the Peace Corps lived and worked in other nations to help them and build friendships in the 1960s.",
+       "t": "Peace Corps volunteers served other nations and built friendships for America in the 1960s.",
        "why": "Yes! The text tells what the volunteers did and why: to help other nations and to make friends for America. Answer first. Then find the proof."
       },
       {
-       "t": "Young Americans in the Peace Corps traveled overseas to earn good pay as teachers, nurses and engineers in the 1960s.",
+       "t": "Peace Corps volunteers went overseas to earn good pay as teachers in the 1960s.",
        "why": "The volunteers did teach, but the text says they got only enough money to live like their neighbors. Pay was not the reason."
       }
      ],
      "answer": 2
     },
     "partB": {
-     "q": "Which sentence from the text best supports your answer in Part A?",
+     "q": "Which sentence from the text **best** supports your answer in part A?",
      "choices": [
       {
        "t": "\"Many of these nations had only recently won their independence, and they needed teachers, nurses and engineers.\"",
@@ -2561,19 +2567,19 @@ window.SETS = {
     "p": 0,
     "type": "mc",
     "skill": "Central idea about the person",
-    "stem": "Which sentence best summarizes the central idea of the text?",
+    "stem": "Which sentence **best** summarizes the central idea of the text?",
     "choices": [
      {
-      "t": "Ann enjoyed helping her students learn, but she was most excited about exploring Ghana's markets and beaches.",
-      "why": "This switches the two ideas. Ann loved the markets and beaches, but she said something else beat them."
+      "t": "Ann enjoyed seeing her students understand, but she was most excited about learning Twi from her neighbors.",
+      "why": "This switches the two ideas. Ann loved learning Twi, but she said something else beat it."
      },
      {
-      "t": "Ann enjoyed exploring Ghana's markets and beaches, but she was most excited about helping her students learn.",
-      "why": "Yes! Ann said she loved every market and every beach, but nothing beat the moment a student finally understood."
+      "t": "Ann enjoyed learning Twi from her neighbors, but she was most excited about seeing her students understand.",
+      "why": "Yes! Ann said she loved learning Twi from her neighbors, but nothing beat the moment a student finally understood."
      },
      {
-      "t": "Ann enjoyed learning to speak Twi, but she was most excited about building her own science equipment.",
-      "why": "Ann did learn some Twi and build equipment, but the text never says the equipment was what excited her most."
+      "t": "Ann enjoyed exploring Ghana's markets and coast, but she was most excited about building her own science equipment.",
+      "why": "Ann did explore Ghana and build equipment, but the text never says the equipment was what excited her most."
      },
      {
       "t": "Ann enjoyed riding in the mammy wagons, but she was most excited about seeing the huge market in Kumasi.",
@@ -2588,7 +2594,7 @@ window.SETS = {
     "p": 0,
     "type": "hottext",
     "skill": "Click the proof of a trait",
-    "stem": "Click the section that best supports the inference that Ann was a creative problem solver. Choose two options.",
+    "stem": "Click the section that **best** supports the inference that Ann was a creative problem solver. Choose **two** options.",
     "pick": 2,
     "layout": "list",
     "pieces": [
@@ -2628,27 +2634,27 @@ window.SETS = {
     "p": 1,
     "type": "ms",
     "skill": "Choose two: proof of the creators' goal",
-    "stem": "The author infers that John Harrison wanted his clocks to be reliable. Which sentences from the text best support this inference? Select two answers.",
+    "stem": "The author infers that John Harrison wanted his clocks to be reliable. Which sentences from the text **best** support this inference? Select **two** answers.",
     "pick": 2,
     "pieces": [
      {
-      "t": "\"Finished in 1759, his fourth timekeeper, H4, looked like a large pocket watch and measured only about five inches (13 centimeters) across.\"",
+      "t": "Finished in 1759, his fourth timekeeper, H4, looked like a large pocket watch and measured only about five inches (13 centimeters) across.",
       "why": "This tells how small H4 was. It does not prove that Harrison wanted his clocks to be reliable."
      },
      {
-      "t": "\"Clock oil in his day thickened and failed, so Harrison made key parts from lignum vitae, a tropical wood that needed no oil.\"",
+      "t": "Clock oil in his day thickened and failed, so Harrison made key parts from lignum vitae, a tropical wood that needed no oil.",
       "why": "Yes! Oil that thickened and failed could stop a clock, so Harrison found a way to need no oil at all. This sentence proves the inference by itself."
      },
      {
-      "t": "\"The Board also wanted proof that other clockmakers could build copies, because a single watch could guide only a single ship.\"",
+      "t": "The Board also wanted proof that other clockmakers could build copies, because a single watch could guide only a single ship.",
       "why": "This tells what the Board wanted, not what Harrison wanted. It does not prove the inference."
      },
      {
-      "t": "\"He joined strips of brass and steel, which expand differently when heated, so the clock kept steady time in heat or cold.\"",
+      "t": "He joined strips of brass and steel, which expand differently when heated, so the clock kept steady time in heat or cold.",
       "why": "Yes! Harrison found a way to keep the clock steady in any temperature. This sentence proves the inference by itself."
      },
      {
-      "t": "\"It promised up to 20,000 British pounds, a fortune at the time, for a method that worked within half a degree.\"",
+      "t": "It promised up to 20,000 British pounds, a fortune at the time, for a method that worked within half a degree.",
       "why": "This tells about the prize that Parliament offered. It does not prove what Harrison wanted his clocks to be."
      }
     ],
@@ -2665,7 +2671,7 @@ window.SETS = {
     "skill": "Best summary of a paragraph",
     "lead": "Read the paragraph.",
     "box": "Instead of paying the prize, the Board argued. Some members said the result was simply luck. Others doubted that a watch that took six years to build could ever be practical. The strongest voice belonged to Nevil Maskelyne, an astronomer who favored a rival method based on measuring the moon's position among the stars. In 1765, after a second trial to Barbados, the Board offered half the prize, but only if Harrison handed over H4 and explained every part. Later, Maskelyne tested H4 for ten months at the Royal Observatory and reported that it did not perform well. Harrison was furious.",
-    "stem": "Which sentence best summarizes the paragraph?",
+    "stem": "Which sentence **best** summarizes the paragraph?",
     "choices": [
      {
       "t": "Maskelyne tested Harrison's watch at the Royal Observatory for months.",
@@ -2692,15 +2698,15 @@ window.SETS = {
     "p": 1,
     "type": "mc",
     "skill": "Which sentence shows why it was needed",
-    "stem": "Which sentence from the text best supports why a better way of finding longitude at sea in the 1700s was needed?",
+    "stem": "Which sentence from the text **best** supports why a tool for finding longitude at sea was needed?",
     "choices": [
      {
       "t": "\"Sailors could find their latitude fairly easily by measuring the height of the sun at noon.\"",
-      "why": "This tells what sailors already could do. It does not show a problem that needed a better way."
+      "why": "This tells what sailors already could do. It does not show a problem that needed a new tool."
      },
      {
       "t": "\"In 1707, four British warships wrecked on the rocks of the Isles of Scilly after their navigators lost track of where they were.\"",
-      "why": "Yes! The navigators did not know where their ships were, and the ships were wrecked. That shows why a better way was needed."
+      "why": "Yes! The navigators did not know where their ships were, and the ships were wrecked. That shows why a new tool was needed."
      },
      {
       "t": "\"It promised up to 20,000 British pounds, a fortune at the time, for a method that worked within half a degree.\"",
@@ -2708,7 +2714,7 @@ window.SETS = {
      },
      {
       "t": "\"Edmond Halley, the Astronomer Royal, sent him to George Graham, a famous clockmaker, who lent him money without charging interest.\"",
-      "why": "This tells who helped Harrison. It does not show why a better way was needed."
+      "why": "This tells who helped Harrison. It does not show why a new tool was needed."
      }
     ],
     "answer": 1
@@ -2742,7 +2748,7 @@ window.SETS = {
      "answer": 1
     },
     "partB": {
-     "q": "Which sentence from the text best supports your answer in Part A?",
+     "q": "Which sentence from the text **best** supports your answer in part A?",
      "choices": [
       {
        "t": "\"Gloria Hollister and John Tee-Van descended to 410 feet (125 meters), the deepest any woman had ever gone.\"",
@@ -2770,7 +2776,7 @@ window.SETS = {
     "p": 2,
     "type": "mc",
     "skill": "Central idea of the text",
-    "stem": "Which sentence best identifies the central idea of the text?",
+    "stem": "Which sentence **best** identifies the central idea of the text?",
     "choices": [
      {
       "t": "The dives tested whether the bathysphere could carry people deep underwater.",
@@ -2797,7 +2803,7 @@ window.SETS = {
     "p": 2,
     "type": "mc",
     "skill": "Which sentence supports a small idea",
-    "stem": "Which sentence from the text best supports the idea that some colors of sunlight reach deeper into the sea than others?",
+    "stem": "Which sentence from the text **best** supports the idea that some colors of sunlight reach deeper into the sea than others?",
     "choices": [
      {
       "t": "\"Outside the window, tiny living lights sparkled in the black water.\"",

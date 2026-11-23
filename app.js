@@ -17,7 +17,7 @@
   'use strict';
 
   const S = window.G6Speech;
-  const { esc, sayHTML, wordSpan, sayBtn, readBox, readLines, spokenOf, stopReading } = S;
+  const { esc, cue, sayHTML, wordSpan, sayBtn, readBox, readLines, spokenOf, stopReading } = S;
   const Sheet = window.G6Sheet;
   const SETS = window.SETS;
   /* GUEST VIEW (Marcos 11/19: an admin page with every SBAC site, "so they can see all of them in one place"): share.js,
@@ -98,7 +98,7 @@
   const TYPE_LABEL = { mc: 'Multiple choice', ebsr: 'Two parts', ms: 'Choose two' };
   // hot text (sections of the text) and choose-two both pick from a list (it.pieces) and are right when every pick is a key
   const multi = it => it.type === 'hottext' || it.type === 'ms';
-  const typeLabel = it => (it.type === 'hottext' ? (it.pick === 2 ? 'Select two sections' : 'Click one section') : TYPE_LABEL[it.type]);
+  const typeLabel = it => (it.type === 'hottext' ? (it.pick === 2 ? 'Click two sections' : 'Click one section') : TYPE_LABEL[it.type]);
   const questionText = it => (it.type === 'ebsr' ? `Part A: ${it.partA.q} Part B: ${it.partB.q}`
     : it.box ? `${it.lead} ${it.box} ${it.stem}` : it.stem);
   function answerText(it, ord = BOOK) {
@@ -164,10 +164,13 @@
   const msHTML = (p, k, pos = k) => `<div class="choice ms-choice" role="checkbox" aria-checked="false" tabindex="0" data-k="${k}" data-read-box>
       ${SQ}<span class="choice-body">${sayHTML(p.t)}</span>${sayBtn(`Read answer ${pos + 1}`)}</div>`;
 
+  // the two-part intro in the real test's words (Grade 6 map, AVA 11/21; 11/22): item 7's wording is the default, and
+  // item 1's other wording ("The following question has two parts. …") comes with the item as it.intro
+  const TWO_PART_INTRO = 'This question has two parts. First, answer part A. Then, answer part B.';
   function stemHTML(it) {
     if (it.type === 'ebsr') {
       const ex = it.excerpt ? ' Read these paragraphs from the text.' : '';
-      return `<p class="ask">${sayHTML(`This question has two parts. Answer Part A and Part B.${ex}`)}</p>`;
+      return `<p class="ask">${sayHTML(`${it.intro || TWO_PART_INTRO}${ex}`)}</p>`;
     }
     const tip = it.type === 'ms' ? 'Tap 2 answers. Tap one again to take it back.'
       : it.type === 'hottext' ? (it.pick === 2 ? 'Tap 2 sections. Tap one again to take it back.' : 'Tap 1 section.') : '';
@@ -415,7 +418,7 @@
     $('#reward').hidden = pct < 80;
     const missed = items.filter(it => !(state.results[it.id] || {}).ok);
     $('#missed').innerHTML = missed.length ? `<h3 class="missed-title">Questions to look at again</h3>${missed.map(it => `
-      <div class="miss"><div class="miss-q"><b>Question ${items.indexOf(it) + 1}:</b> ${esc(questionText(it))}</div>
+      <div class="miss"><div class="miss-q"><b>Question ${items.indexOf(it) + 1}:</b> ${cue(questionText(it))}</div>
         <div class="miss-row"><span class="miss-label key">Answer</span><span>${esc(answerText(it, ordFor(it)))}</span></div></div>`).join('')}`
       : '<p class="all-right">You got every question right! 🎉</p>';
     $('#progress-fill').style.width = '100%';

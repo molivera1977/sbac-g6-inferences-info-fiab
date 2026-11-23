@@ -14,6 +14,11 @@
   const READ_RATE = 0.82;
   const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
+  // The real test's cue words (Grade 3/5 round 4, 11/21; Grade 6 11/22): **best**, and **two** after Select or Choose, in a
+  // question's own words only. Shown bold; the stars are never shown or said, so the voice, its recording and the
+  // highlight are the same as before (tools/check_drafts.py says which words, and where).
+  const cue = s => esc(s).replace(/\*\*([^*\s]+)\*\*/g, '<strong class="cue">$1</strong>');
+
   const SIGN_SAY = { '🔊': 'the speaker button', '·': '', '—': '', '💡': '' };
   const wordSpan = (show, say, stop) => `<span class="w" data-say="${esc(say)}"${stop ? ' data-stop' : ''}>${show}</span>`;
   // stop: the last word ends a sentence when read aloud (a pause), as each part and line did before
@@ -31,7 +36,7 @@
       if (!chunk) return;
       if (/^\s+$/.test(chunk)) { pieces.push([chunk, null]); return; }
       const say = Object.prototype.hasOwnProperty.call(SIGN_SAY, chunk) ? SIGN_SAY[chunk] : chunk.replace(/[¹²³*]/g, '');
-      pieces.push([shown(chunk), say]);
+      pieces.push([chunk.includes('**') ? cue(chunk) : shown(chunk), say]);
     });
     let lastSaid = -1;
     pieces.forEach((pc, i) => { if (pc[1]) lastSaid = i; });
@@ -171,5 +176,5 @@
   if (window.speechSynthesis) speechSynthesis.onvoiceschanged = () => {};
   window.addEventListener('pagehide', stopReading);
 
-  window.G6Speech = { READ_RATE, esc, sayHTML, wordSpan, spokenOf, spokenLines, readLines, readBox, stopReading, isSpeaking, wasStopped, sayBtn };
+  window.G6Speech = { READ_RATE, esc, cue, sayHTML, wordSpan, spokenOf, spokenLines, readLines, readBox, stopReading, isSpeaking, wasStopped, sayBtn };
 })();

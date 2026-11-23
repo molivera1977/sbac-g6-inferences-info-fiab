@@ -15,7 +15,7 @@
 
   const A = window.G6App;
   const Sheet = window.G6Sheet;
-  const { esc } = window.G6Speech;
+  const { esc, cue } = window.G6Speech;
   const { SETS, TEACHERS, ALL_SETS, setLabel, itemsOf, typeLabel, questionText, multi, gradeFor, normName, show } = A;
   const $ = sel => document.querySelector(sel);
 
@@ -202,7 +202,7 @@
   function liveMissed(r) {
     const a = answersOf(r);
     const missed = itemsOf(r.set).map((it, i) => ({ it, i })).filter(({ it }) => a[it.id] && !a[it.id][0]);
-    return missed.length ? `<p class="t-live-miss">Missed: ${missed.map(({ it, i }) => `<b>${i + 1}.</b> ${esc(questionText(it))}`).join(' · ')}</p>` : '';
+    return missed.length ? `<p class="t-live-miss">Missed: ${missed.map(({ it, i }) => `<b>${i + 1}.</b> ${cue(questionText(it))}`).join(' · ')}</p>` : '';
   }
   function liveStrip(r) {
     const a = answersOf(r);
@@ -332,7 +332,7 @@
     heatDone = done;
     const rankHTML = list => `<ol class="t-rank">${list.map(s => `<li><div class="t-rank-head"><b>Question ${s.i + 1}</b>
       <span class="t-pill ${heatClass(s.pct)}">${s.right} of ${done.length} right · ${s.pct}%</span></div>
-      <div class="t-q"><i>${esc(s.it.skill)}:</i> ${esc(questionText(s.it))}</div></li>`).join('')}</ol>`;
+      <div class="t-q"><i>${esc(s.it.skill)}:</i> ${cue(questionText(s.it))}</div></li>`).join('')}</ol>`;
     return `<p class="t-legend">${esc(setLabel(set))} · each student's <b>${tryWord()}</b> · <span class="h-ok">✓</span> right · <span class="h-miss">✗</span> missed · bottom row = % of the ${done.length} ${done.length === 1 ? 'student' : 'students'} who got that question right · <b>tap a question number</b> to see that question and what students picked · <b>tap a ✓ or ✗</b> to see that student's answer</p>
       <div class="t-wrap"><table class="t-heat"><thead><tr><th scope="col">Student</th>${items.map((it, i) => `<th scope="col"><button type="button" class="h-qbtn" data-q="${i}" aria-expanded="false" aria-controls="t-qbox" title="${esc(it.skill)}">${i + 1}</button></th>`).join('')}<th scope="col">Score</th><th scope="col" title="Clock time, start to finish, for that try">Time</th></tr></thead>
       <tbody>${body}</tbody><tfoot><tr><th scope="row">% right</th>${stats.map(s => `<td class="${heatClass(s.pct)}">${s.pct}</td>`).join('')}<td></td><td></td></tr></tfoot></table></div>
@@ -419,9 +419,9 @@
     const s = heatStats[i];
     const it = s.it;
     const asked = it.type === 'ebsr'
-      ? `<p class="t-qbox-q"><b>Part A:</b> ${esc(it.partA.q)}</p><p class="t-qbox-q"><b>Part B:</b> ${esc(it.partB.q)}</p>`
-      : it.box ? `<p class="t-qbox-q">${esc(it.lead)}</p><div class="sum-box t-qbox-sum">${esc(it.box)}</div><p class="t-qbox-q">${esc(it.stem)}</p>`
-      : `<p class="t-qbox-q">${esc(it.stem)}</p>`;
+      ? `<p class="t-qbox-q"><b>Part A:</b> ${cue(it.partA.q)}</p><p class="t-qbox-q"><b>Part B:</b> ${cue(it.partB.q)}</p>`
+      : it.box ? `<p class="t-qbox-q">${esc(it.lead)}</p><div class="sum-box t-qbox-sum">${esc(it.box)}</div><p class="t-qbox-q">${cue(it.stem)}</p>`
+      : `<p class="t-qbox-q">${cue(it.stem)}</p>`;
     return `<div class="t-qbox-head"><b>Question ${i + 1}</b><span class="kq-skill">${esc(it.skill)}</span>
         <span class="t-pill ${heatClass(s.pct)}">${s.right} of ${heatTotal} right · ${s.pct}%</span>
         <button type="button" class="t-qbox-x" data-qclose aria-label="Close question ${i + 1}">✕</button></div>
@@ -575,16 +575,16 @@
   function keyItemHTML(it) {
     let answer;
     const box = it.box ? `<p class="kq-stem">${esc(it.lead)}</p><div class="sum-box kq-box">${esc(it.box)}</div>` : '';
-    if (it.type === 'mc') answer = `${box}<p class="kq-stem">${esc(it.stem)}</p>${keyChoices(it.choices, it.answer)}`;
+    if (it.type === 'mc') answer = `${box}<p class="kq-stem">${cue(it.stem)}</p>${keyChoices(it.choices, it.answer)}`;
     else if (multi(it)) {
       const right = it.type === 'ms' ? '✓ Correct answer' : '✓ Correct section';
-      answer = `<p class="kq-stem">${esc(it.stem)}</p><div class="kq-choices${it.type === 'ms' ? ' kq-ms' : ' kq-sents'}">${it.pieces.map((p, k) => `<div class="kq-choice${it.answer.includes(k) ? ' right' : ''}">
+      answer = `<p class="kq-stem">${cue(it.stem)}</p><div class="kq-choices${it.type === 'ms' ? ' kq-ms' : ' kq-sents'}">${it.pieces.map((p, k) => `<div class="kq-choice${it.answer.includes(k) ? ' right' : ''}">
         <span class="letter">${k + 1}</span><div class="kq-body">${esc(p.t)}${it.answer.includes(k) ? `<div class="kq-note ok">${right}</div>` : ''}
         <div class="kq-note"><b>Why:</b> ${esc(p.why)}</div></div></div>`).join('')}</div>`;
     } else {
       const ex = it.excerpt ? `<div class="kq-excerpt"><b>The question shows these paragraphs:</b>${it.excerpt.map(t => `<p>${esc(t)}</p>`).join('')}</div>` : '';
-      answer = `${ex}<p class="kq-stem"><b>Part A:</b> ${esc(it.partA.q)}</p>${keyChoices(it.partA.choices, it.partA.answer)}
-        <p class="kq-stem"><b>Part B:</b> ${esc(it.partB.q)}</p>${keyChoices(it.partB.choices, it.partB.answer)}`;
+      answer = `${ex}<p class="kq-stem"><b>Part A:</b> ${cue(it.partA.q)}</p>${keyChoices(it.partA.choices, it.partA.answer)}
+        <p class="kq-stem"><b>Part B:</b> ${cue(it.partB.q)}</p>${keyChoices(it.partB.choices, it.partB.answer)}`;
     }
     return `<article class="kq">
       <header class="kq-head"><span class="item-num">${it.n}</span><span class="kq-skill">${esc(it.skill)}</span><span class="kq-type">${typeLabel(it)}</span></header>
