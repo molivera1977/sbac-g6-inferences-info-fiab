@@ -1,7 +1,7 @@
 /* Grade 6 Reading Practice: Make and Support Inferences, Informational Texts.
    BUILT by tools/build_data.py from drafts/*.md. Do not edit by hand: change the draft, then run
    python3 tools/build_data.py (and python3 -E tools/check_drafts.py).
-   drafts fingerprint: 9431b1cd444d */
+   drafts fingerprint: 545b45a4a363 */
 window.SETS = {
  "W": {
   "passages": [
@@ -553,51 +553,63 @@ window.SETS = {
     "credit": "Written for this practice test."
    },
    {
-    "title": "Twelve Seconds in the Air",
+    "title": "A Christmas Escape",
     "subtitle": "",
     "blocks": [
      {
-      "p": "For thousands of years, people dreamed of flying like birds. By 1900, a few brave people had soared down hills on gliders¹. But no one had flown a machine with an engine and steered it. Many inventors had tried and failed. Could it be done?"
+      "p": "Harriet Tubman was born enslaved in Dorchester County, Maryland. Her parents named her Araminta Ross. In 1849, she feared that she would be sold, so she escaped from a plantation called Poplar Neck. Two of her brothers started out with her. An ad in a newspaper, the Cambridge Democrat, offered a $300 reward for the three of them. The brothers soon turned back. Harriet traveled north alone until she reached Philadelphia, Pennsylvania. There, she was free."
      },
      {
-      "p": "Many people scoffed at the idea. A famous scientist named Samuel Langley built a flying machine for the government. In 1903, it plunged into the Potomac River. One newspaper said a real flying machine might take a million years to build."
+      "p": "But Harriet did not stay in the North, where she was safe. She went back to Maryland again and again to guide others to freedom. She traveled on the Underground Railroad¹. It was not a real railroad. It was a secret network of brave people. They hid escaping families in their homes and helped them move north."
      },
      {
-      "p": "Wilbur and Orville Wright did not agree. The brothers were skilled mechanics from Dayton, Ohio. For three years, they had tested gliders near Kitty Hawk, North Carolina. The beach there was wide and empty, and the winds were strong. Now the brothers had built a new machine with a small engine and two propellers. Propellers are spinning blades that push air back and move a machine forward. They called their machine the Flyer."
+      "p": "In late 1854, Harriet heard terrible news. Three of her brothers had been advertised for sale. If they were sent far away, she might never see them again. She made a plan to bring them north."
      },
      {
-      "h": "Fall 1903: Trouble at Camp"
+      "h": "A Shed in the Rain"
      },
      {
-      "p": "On September 25, 1903, the brothers reached their camp near Kitty Hawk. They built a wooden hangar to keep the Flyer safe from the wind. Men from a nearby lifesaving station often came by to help. The brothers tested each part again and again. The work went slowly. In November, a propeller shaft cracked. Orville went home to Ohio. There he made new, stronger shafts. He did not get back until December. Each day grew colder."
+      "p": "Just before Christmas, Harriet slipped back into Maryland. She sent her brothers a secret message: be ready to leave. A few friends wanted to come too."
      },
      {
-      "h": "December 14: A Coin Toss"
+      "p": "The group hid in a fodder house near their parents' cabin. A fodder house was a shed for storing corn and hay. Rain poured down hour after hour. They could not start until dark."
      },
      {
-      "p": "On December 14, the brothers were ready at last. They tossed a coin to decide which brother would fly first. Wilbur won. The Flyer rolled along a wooden track and rose up. Then it climbed too steeply. After about three seconds, it stalled. It dropped to the ground with a thud. A few parts broke, so the brothers spent two days fixing them."
+      "p": "Their father, Ben Ross, had been freed years before. He still lived and worked at Poplar Neck. He knew they were there. At night, he brought them provisions. He slipped the food inside the door. He was careful not to look at his children."
      },
      {
-      "h": "December 17: Into the Wind"
+      "p": "Their mother, Rit, did not know. She was waiting for her sons to come for Christmas. She kept looking down the road for them. Through cracks in the walls, they watched her wait. They could not tell her they were there. She would have cried out, and someone might have heard."
      },
      {
-      "p": "December 17 was bitter cold. Gusts of wind blew at about 27 miles per hour (43 kilometers per hour). Five men came to watch and help. The brothers set up a camera on a stand and aimed it at the track. Now it was Orville's turn. At 10:35 in the morning, he lay down on the bottom wing. The engine roared. The Flyer moved down the track. Wilbur ran beside it, holding the wing steady. Then the Flyer lifted into the air!"
+      "p": "Before they left, the brothers looked through the window of their mother's cabin one last time. With tears in their eyes, they watched her."
      },
      {
-      "p": "It wobbled up and down. Orville flew for 12 seconds. He landed about 120 feet (37 meters) away. One of the lifesavers, John Daniels, squeezed the camera's button at just the right moment. His picture became one of the most famous in history."
+      "h": "Into the Night"
      },
      {
-      "p": "The brothers flew three more times that morning. Wilbur went next, and then Orville again. Each flight went farther than the one before. On the last flight, Wilbur stayed up for 59 seconds. He flew 852 feet (260 meters). Soon after, a strong gust flipped the Flyer over and smashed it. It never flew again. But its job was done."
+      "p": "When night came, the group was ready. Their father tied a handkerchief over his eyes. Then he accompanied them for a few miles. That way, he never saw them go. At last, they left him standing alone in the road with his eyes covered. When he could no longer hear them, he took off the handkerchief and went home."
      },
      {
-      "p": "That afternoon, the brothers sent a telegram to their father. It began, \"Success four flights Thursday morning.\" It was the first time a pilot had flown a powered airplane and steered it. Within a few years, the brothers were flying for amazed crowds in America and Europe."
+      "p": "For days, the travelers moved northward at night and hid during the day. It was cold and wet, and they had to stay quiet. People hunting for them could be anywhere."
+     },
+     {
+      "h": "Safe at Last"
+     },
+     {
+      "p": "On December 28, they reached Wilmington, Delaware. Thomas Garrett, a Quaker abolitionist, lived there. He worked to end the enslavement of people. The Quaker had helped Harriet many times. Harriet and one of the men had worn out their footwear on the long trip. Garrett gave them two dollars to replace it. He also paid for a carriage to take the group into Pennsylvania."
+     },
+     {
+      "p": "The next day, Garrett wrote a letter to a fellow abolitionist. He said he had \"sent away Harriet Tubman, with six men and one woman.\""
+     },
+     {
+      "p": "On December 29, they reached Philadelphia. William Still, who helped more than 800 fugitives, wrote about the travelers in his record book. They traveled on to St. Catharines, Canada, where they were free at last."
      }
     ],
     "footnotes": [
      {
       "mark": "¹",
-      "word": "gliders",
-      "meaning": "aircraft with no engine that ride on the wind"
+      "word": "Underground Railroad",
+      "meaning": "a secret network of people who helped enslaved people escape to freedom"
      }
     ],
     "credit": "Written for this practice test."
@@ -828,45 +840,45 @@ window.SETS = {
     "skill": "Inference about the group and the result + proof",
     "hint": "Answer first. Then find the proof. Part B is your Detail. It proves your Part A answer.",
     "partA": {
-     "q": "Which of these inferences about the Wright brothers and the Flyer is supported by the text?",
+     "q": "Which of these inferences about Harriet's brothers and their escape is supported by the text?",
      "choices": [
       {
-       "t": "The brothers showed that people could glide down hills.",
-       "why": "Other people had already soared down hills on gliders before the brothers' test. The Flyer did not show that. Answer first. Then find the proof."
+       "t": "The brothers were caught and taken back to the farm.",
+       "why": "The text says the brothers got all the way to Canada. No one caught them. Answer first. Then find the proof."
       },
       {
-       "t": "The brothers built the Flyer mainly to beat Samuel Langley.",
-       "why": "The text tells about Langley's machine, but it never says the brothers were trying to beat him."
+       "t": "The brothers reached a place where no one could sell them.",
+       "why": "Yes! The brothers made it to Canada, where they were free. No one could sell them there. Answer first. Then find the proof."
       },
       {
-       "t": "The brothers were the first to fly and steer a powered airplane.",
-       "why": "Yes! No pilot had ever flown and steered a machine with an engine before Orville and Wilbur did. Answer first. Then find the proof."
+       "t": "The brothers went north mainly to find work in a big city.",
+       "why": "The brothers left because they were going to be sold. The text never says they wanted jobs in a city."
       },
       {
-       "t": "The brothers kept flying the Flyer for many years after the test.",
-       "why": "The text says a gust smashed the Flyer and it never flew again."
+       "t": "The brothers left home because their mother asked them to go.",
+       "why": "Their mother did not even know the brothers were there. She was waiting for them to come for Christmas."
       }
      ],
-     "answer": 2
+     "answer": 1
     },
     "partB": {
      "q": "Which sentence from the text **best** supports your answer in part A?",
      "choices": [
       {
-       "t": "\"By 1900, a few brave people had soared down hills on gliders.\"",
-       "why": "This tells about other people's gliders. It does not show what the brothers' test proved."
+       "t": "\"Three of her brothers had been advertised for sale.\"",
+       "why": "This tells why Harriet came back for her brothers. It does not tell how their escape ended."
       },
       {
-       "t": "\"A famous scientist named Samuel Langley built a flying machine for the government.\"",
-       "why": "This tells about Langley's machine. It does not show what the brothers' test proved."
+       "t": "\"She was waiting for her sons to come for Christmas.\"",
+       "why": "This tells how their mother waited for them. It does not tell how the escape ended."
       },
       {
-       "t": "\"Within a few years, the brothers were flying for amazed crowds in America and Europe.\"",
-       "why": "This tells what happened years later. It does not show what the test on December 17 proved."
+       "t": "\"For days, the travelers moved northward at night and hid during the day.\"",
+       "why": "This tells how the group traveled. It does not tell where they ended up."
       },
       {
-       "t": "\"It was the first time a pilot had flown a powered airplane and steered it.\"",
-       "why": "Yes! This tells the result: the brothers did something no pilot had done before. Part B is your Detail. It proves your Part A answer."
+       "t": "\"They traveled on to St. Catharines, Canada, where they were free at last.\"",
+       "why": "Yes! This tells the result: the brothers were free in Canada. Part B is your Detail. It proves your Part A answer."
       }
      ],
      "answer": 3
@@ -882,20 +894,20 @@ window.SETS = {
     "hint": "The central idea is what the whole text is about. A detail tells about one part. Pick the choice that fits every part.",
     "choices": [
      {
-      "t": "The Wright brothers had to replace a propeller shaft that cracked in November.",
-      "why": "This is true, but it is one detail. A central idea tells about a big part of the text."
+      "t": "Harriet Tubman freed every enslaved person in Maryland that Christmas.",
+      "why": "This says too much. Harriet led her brothers and a few friends, not every enslaved person in Maryland."
      },
      {
-      "t": "The Wright brothers flew home to Ohio to show their father the Flyer.",
-      "why": "The brothers sent their father a telegram. The text never says they flew home."
+      "t": "Harriet Tubman went home mainly to spend Christmas with her parents.",
+      "why": "Harriet came back to save her brothers. She could not even let her mother know she was there."
      },
      {
-      "t": "The Wright brothers kept working through setbacks until their Flyer flew.",
-      "why": "Yes! The whole text tells how the brothers kept going, from the cracked shaft and the first stall to the four flights. This fits every part."
+      "t": "Harriet Tubman came back for her brothers and led them north one Christmas.",
+      "why": "Yes! The whole text tells how Harriet came back to Maryland just before Christmas and led her brothers north, night by night, until they were free. This fits every part."
      },
      {
-      "t": "The Wright brothers tested whether the wooden track could hold the Flyer's weight.",
-      "why": "The Flyer rolled along a wooden track, but that is one detail. The text never says the brothers were testing the track."
+      "t": "Harriet Tubman tested whether a group could travel safely in the cold rain.",
+      "why": "It was cold and rainy, but that is one detail. The text never says the group was testing anything."
      }
     ],
     "answer": 2
@@ -906,24 +918,24 @@ window.SETS = {
     "p": 2,
     "type": "mc",
     "skill": "Which sentence supports a small idea",
-    "stem": "Which sentence from the text **best** supports the idea that the brothers tried to be fair to each other?",
+    "stem": "Which sentence from the text **best** supports the idea that the brothers were sad to leave their mother?",
     "hint": "Read the idea in the question. Look at each sentence. Ask: Does this prove the idea? A true sentence is not always proof.",
     "choices": [
      {
-      "t": "\"Men from a nearby lifesaving station often came by to help.\"",
-      "why": "This tells who helped the brothers. It does not show that the brothers were fair to each other."
+      "t": "\"She sent her brothers a secret message: be ready to leave.\"",
+      "why": "This tells how Harriet told her brothers to get ready. It does not show how they felt about their mother."
      },
      {
-      "t": "\"They built a wooden hangar to keep the Flyer safe from the wind.\"",
-      "why": "This shows the brothers took care of the Flyer. It does not show that they were fair to each other."
+      "t": "\"He slipped the food inside the door.\"",
+      "why": "This tells how their father brought them food. It does not show how the brothers felt."
      },
      {
-      "t": "\"They tossed a coin to decide which brother would fly first.\"",
-      "why": "Yes! A coin toss gave each brother the same chance to fly first. That shows they tried to be fair."
+      "t": "\"With tears in their eyes, they watched her.\"",
+      "why": "Yes! The brothers cried as they looked at their mother one last time. That shows they were sad to leave her."
      },
      {
-      "t": "\"One of the lifesavers, John Daniels, squeezed the camera's button at just the right moment.\"",
-      "why": "This tells how the famous picture was taken. It does not show that the brothers were fair to each other."
+      "t": "\"Their father tied a handkerchief over his eyes.\"",
+      "why": "This tells what their father did. It does not show how the brothers felt about leaving their mother."
      }
     ],
     "answer": 2
@@ -1018,60 +1030,63 @@ window.SETS = {
     "credit": "Written for this practice test."
    },
    {
-    "title": "Across the Ocean by Air",
+    "title": "The City in the Clouds",
     "subtitle": "",
     "blocks": [
      {
-      "p": "In May 1919, airplanes were still new. The Wright brothers had made their first flight only sixteen years earlier. Now the United States Navy wanted to do something no one had ever done. It planned to fly airplanes all the way across the Atlantic Ocean."
+      "p": "In 1911, Hiram Bingham hoped to find a lost city. He taught the history of South America at Yale, a college in Connecticut. He had read old stories about the hidden cities of the Incas. The Incas once ruled a huge empire in the Andes Mountains. Then Spanish soldiers came in the 1500s. The last Inca kings fled deep into the mountains. Their final capital was lost. Bingham wanted to find it."
      },
      {
-      "p": "World War I had ended just six months before. During the war, airplanes had improved quickly. Still, the Navy's planes could not carry enough fuel to cross the whole ocean in one hop. The Navy believed that big flying boats¹ could make the trip in stages. They could stop at islands along the way. People everywhere wondered whether it was possible."
+      "p": "The valleys north of Cusco, an old Inca city, were steep and hard to reach. Thick forest covered the slopes. Fast rivers ran through deep canyons. Bingham's trip was called the Yale Peruvian Expedition. A small team went with him. It included a naturalist, who studied living things, and a doctor. Peru's president also sent a sergeant to protect them."
      },
      {
-      "p": "Three giant flying boats were ready: the NC-1, the NC-3 and the NC-4. Each one had four engines and wings 126 feet (38 meters) across. That is wider than a basketball court is long! Commander John Towers led the group. The NC-4 carried a crew of six. Albert Read commanded the NC-4 and also served as its navigator."
+      "h": "Down the River Valley"
      },
      {
-      "h": "Trouble From the Start"
+      "p": "In July 1911, the team set out from Cusco. They followed a new trail down the valley of the Urubamba River. The river rushed through a deep canyon far below them."
      },
      {
-      "p": "On May 8, 1919, the three planes roared off the water at Rockaway, New York. Their first stop was Halifax, in Canada. But off the coast of Cape Cod, one of the NC-4's engines failed. The plane landed on the sea. Then it taxied, or moved slowly across the water. It went all the way to a Navy air station at Chatham, Massachusetts."
+      "p": "On the sixth day, July 23, they reached a small farm called Mandor Pampa. That evening, a farmer named Melchor Arteaga came to their camp. He told them about ruins on a mountain across the river. He said they were worth a visit. The mountain was called Machu Picchu. Bingham asked the farmer to guide him there. The man agreed to go if he was paid extra."
      },
      {
-      "p": "Mechanics fixed the engine, but gales and rain kept the plane stranded for days. Newspapers began calling the NC-4 the \"lame duck.\" Its crew worried that the other planes would leave without them. On May 14, the weather cleared. The NC-4 flew to Halifax, and the next day it reached Trepassey, Newfoundland. The other two planes were waiting there."
+      "h": "Across the River"
      },
      {
-      "h": "A Night Over the Ocean"
+      "p": "The next morning, July 24, a cold drizzle was falling. It would last all day. Only two men went with Bingham. One was the farmer. The other was the sergeant, whose name was Carrasco. Soon the three men came to the river. A shaky bridge of four logs, tied together, crossed the rushing water. They made it across."
      },
      {
-      "p": "On the evening of May 16, the three planes took off from Trepassey. They headed out into the darkness. Their goal was the Azores, a group of islands far out in the Atlantic. Below them, 21 Navy ships waited in a long line, about 50 miles (80 kilometers) apart. The ships sent radio messages and weather reports. They also stood ready to rescue anyone who went down. All night long, the crews watched for the ships below."
+      "p": "On the other side, they began a hard climb. First they pushed through thick forest. Then they climbed a slope so steep that it was almost a cliff."
      },
      {
-      "p": "In the morning, thick fog rolled in. The fog was so thick that the NC-4's crew could not see from one end of their own plane to the other. The radio operator, Herbert Rodd, listened for signals from the hidden ships and helped Read find the way."
+      "p": "About noon, they reached a little grass hut. Two farm families lived up on the mountain. For about four years, they had planted crops on old stone terraces¹ there. One family gave Bingham water and a few cold boiled sweet potatoes. The water was delicious, he wrote, and the view from the hut was magnificent."
      },
      {
-      "p": "The other two planes were not so lucky. Lost in the fog, the NC-1 and the NC-3 landed on the rough sea. Neither plane could take off again. A Greek cargo ship rescued the crew of the NC-1, but the plane later sank. For more than two days, the wind and waves pushed the NC-3 toward the Azores. At last its crew steered it into the harbor at Ponta Delgada."
+      "p": "At first, Bingham was not impressed. He saw a hut and some terraces, but little else. \"I began to think that my time had been wasted,\" he later wrote."
      },
      {
-      "p": "After more than 15 hours in the air, the NC-4's crew spotted an island through a break in the fog. A little before noon on May 17, the plane landed safely in the harbor at Horta, in the Azores. Minutes later, the fog closed in again."
+      "h": "A City of Stone"
      },
      {
-      "h": "The Last Long Hop"
+      "p": "Then a boy from one of the families led him along the ridge. The boy was 11 years old. Soon Bingham was moving through a tropical forest full of ruined walls. He saw temples, palaces and houses made of granite. He saw a round tower, plazas, fountains and water channels. About a hundred terraces climbed the slopes. The stones fit together so tightly that a knife blade could not slip between them. Bingham believed the city might be one of the most important ruins in all of South America."
      },
      {
-      "p": "Storms kept the NC-4 at Horta for three days. On May 20, it flew to Ponta Delgada, on another island in the Azores. Then bad weather and engine trouble held it there for a week."
+      "p": "On one wall, he noticed a name and a date written in charcoal: \"A. Lizárraga 1902.\" A local farmer named Agustín Lizárraga had been there years before. The people who lived nearby had known about the ruins all along."
      },
      {
-      "p": "At last, on the morning of May 27, the NC-4 took off. It was headed for Lisbon, Portugal. Hour after hour, it flew east over empty ocean. In the evening, the crew saw the lighthouse at Cabo da Roca, the westernmost point of mainland Europe. Read later called that moment \"perhaps the biggest thrill of the whole trip.\" At 8:01 that night, the NC-4 landed on the river at Lisbon. Portugal's leaders and the people of Lisbon honored the aviators for two days."
+      "p": "Bingham thought he had found the last Inca capital, but he was wrong. Experts later showed that the last capital was Vilcabamba, a different place deeper in the forest."
      },
      {
-      "p": "The NC-4 had become the first airplane to fly across the Atlantic Ocean. It had taken careful planning, many helpers and a lot of patience. Four days later, the NC-4 finished its journey in Plymouth, England. Today, the plane is on display at a Navy museum in Pensacola, Florida."
+      "p": "Still, Bingham returned in 1912 with a larger team. Yale and the National Geographic Society each gave $10,000 to pay for the trip. From July to November, workers cleared away the trees and brush. The team made maps and took hundreds of photographs. In April 1913, National Geographic magazine printed his report with about 250 pictures. The magazine called them \"marvelous pictures.\" People around the world could now see the stone city high on its mountain."
+     },
+     {
+      "p": "In 1983, the United Nations named Machu Picchu a World Heritage Site. Today, more than a million people visit it each year. It sits 7,970 feet (2,430 meters) above the sea. Cliffs drop 1,480 feet (450 meters) to the river below."
      }
     ],
     "footnotes": [
      {
       "mark": "¹",
-      "word": "flying boat",
-      "meaning": "an airplane with a bottom shaped like a boat, so it can take off from water and land on it"
+      "word": "terraces",
+      "meaning": "flat steps cut into a steep hillside so that crops can be planted there"
      }
     ],
     "credit": "Written for this practice test."
@@ -1295,45 +1310,45 @@ window.SETS = {
     "type": "ebsr",
     "skill": "Inference about the group and the result + proof",
     "partA": {
-     "q": "Which of these inferences about the crew of the NC-4 and the flying boat is supported by the text?",
+     "q": "Which of these inferences about the explorers and Machu Picchu is supported by the text?",
      "choices": [
       {
-       "t": "The crew made the first flight from America to Europe.",
-       "why": "Yes! The NC-4 flew from New York all the way to Lisbon, Portugal, and no airplane had crossed the Atlantic before. Answer first. Then find the proof."
+       "t": "The explorers were the first people ever to reach the city.",
+       "why": "Farm families were already living on the mountain, and Agustín Lizárraga had written his name on a wall in 1902. Answer first. Then find the proof."
       },
       {
-       "t": "The crew proved that planes could cross the ocean without stopping.",
-       "why": "The NC-4 did cross the ocean, but the text says it flew in stages and stopped at islands along the way. Answer first. Then find the proof."
+       "t": "The explorers made the old city famous far beyond the mountains.",
+       "why": "Yes! After the 1912 trip, a magazine printed about 250 pictures of the city, and people all over the world saw it. Answer first. Then find the proof."
       },
       {
-       "t": "The crew won a race against the other two planes.",
-       "why": "The three planes were a team with one leader. The text never says they were racing."
+       "t": "The explorers found the last Inca capital they had been searching for.",
+       "why": "Bingham thought so, but the text says he was wrong. The last capital was Vilcabamba, a different place."
       },
       {
-       "t": "The crew decided that flying boats were too dangerous to use.",
-       "why": "Two planes had trouble, but the text never says the crew decided to stop using flying boats. Answer first. Then find the proof."
+       "t": "The explorers followed an old Inca map to reach the city.",
+       "why": "The text never mentions a map. A farmer and a boy showed Bingham the way."
       }
      ],
-     "answer": 0
+     "answer": 1
     },
     "partB": {
      "q": "Which sentence from the text **best** supports your answer in part A?",
      "choices": [
       {
-       "t": "\"Hour after hour, it flew east over empty ocean.\"",
-       "why": "This tells about one part of the last flight. It does not show what the whole trip proved."
+       "t": "\"He had read old stories about the hidden cities of the Incas.\"",
+       "why": "This tells what Bingham read before the trip. It does not tell how the trip turned out."
       },
       {
-       "t": "\"Lost in the fog, the NC-1 and the NC-3 landed on the rough sea.\"",
-       "why": "This tells what happened to the other two planes. It does not show what the NC-4's crew proved."
+       "t": "\"'I began to think that my time had been wasted,' he later wrote.\"",
+       "why": "This tells how Bingham felt before he saw the ruins. It does not tell the result of the expedition."
       },
       {
-       "t": "\"A Greek cargo ship rescued the crew of the NC-1, but the plane later sank.\"",
-       "why": "This tells about one rescue. It does not show how the trip ended."
+       "t": "\"Bingham believed the city might be one of the most important ruins in all of South America.\"",
+       "why": "This tells what Bingham believed. It does not show what the world learned about the city."
       },
       {
-       "t": "\"The NC-4 had become the first airplane to fly across the Atlantic Ocean.\"",
-       "why": "Yes! This is the result of the trip: the NC-4's crew had done what no one had done before. Part B is your Detail. It proves your Part A answer."
+       "t": "\"People around the world could now see the stone city high on its mountain.\"",
+       "why": "Yes! This is the result: people far away could now see the city. Part B is your Detail. It proves your Part A answer."
       }
      ],
      "answer": 3
@@ -1348,20 +1363,20 @@ window.SETS = {
     "stem": "Which sentence **best** identifies the central idea of the text?",
     "choices": [
      {
-      "t": "The flight proved that flying boats were safer than ships at sea.",
-      "why": "This says too much. The text never compares flying boats with ships, and two of the planes ended up on the sea."
+      "t": "The expedition proved that the Incas built all of their cities on mountaintops.",
+      "why": "This says too much. The text tells about one city on a mountain. It never says every Inca city was built that way."
      },
      {
-      "t": "The flight tested whether ships could rescue fliers who went down.",
-      "why": "The ships stood ready to rescue anyone who went down, but only in case of trouble. Rescues were not what the flight set out to try."
+      "t": "The expedition tested whether a new trail could carry travelers to the ruins.",
+      "why": "The team did follow a new trail, but that is one detail. The text never says the team was testing the trail."
      },
      {
-      "t": "The flight crossed the Atlantic in stages despite fog and engine trouble.",
-      "why": "Yes! The whole text tells how the NC-4 crossed the ocean one stop at a time, through fog, storms and engine trouble. A central idea tells about a big part of the text."
+      "t": "The expedition reached an ancient stone city with help from local people.",
+      "why": "Yes! The whole text tells how a farmer, a farm family and a boy led Bingham to the old city. A central idea tells about a big part of the text."
      },
      {
-      "t": "The flight showed that thick fog makes all ocean flights impossible.",
-      "why": "This says too much. The NC-4 flew through thick fog and still made it."
+      "t": "The expedition was planned mainly to bring Inca gold back to Yale.",
+      "why": "The text says Bingham hoped to find a lost city. It never says he was looking for gold."
      }
     ],
     "answer": 2
@@ -1372,23 +1387,23 @@ window.SETS = {
     "p": 2,
     "type": "mc",
     "skill": "Which sentence supports a small idea",
-    "stem": "Which sentence from the text **best** supports the idea that the radio helped the NC-4 find its way in the fog?",
+    "stem": "Which sentence from the text **best** supports the idea that the people who lived on the mountain were kind to their visitors?",
     "choices": [
      {
-      "t": "\"Below them, 21 Navy ships waited in a long line, about 50 miles (80 kilometers) apart.\"",
-      "why": "This tells where the ships waited. It does not tell how the NC-4 found its way in the fog."
+      "t": "\"That evening, a farmer named Melchor Arteaga came to their camp.\"",
+      "why": "This tells how Bingham met his guide, who wanted extra pay. It does not show the families' kindness."
      },
      {
-      "t": "\"The fog was so thick that the NC-4's crew could not see from one end of their own plane to the other.\"",
-      "why": "This shows how thick the fog was. It does not tell what helped the crew find the way."
+      "t": "\"For about four years, they had planted crops on old stone terraces there.\"",
+      "why": "This tells how long the families had farmed the mountain. It does not show how they treated the visitors."
      },
      {
-      "t": "\"The radio operator, Herbert Rodd, listened for signals from the hidden ships and helped Read find the way.\"",
-      "why": "Yes! Rodd used the radio to hear the ships he could not see, and that helped guide the plane. Answer first. Then find the proof."
+      "t": "\"One family gave Bingham water and a few cold boiled sweet potatoes.\"",
+      "why": "Yes! The family shared their water and food with a stranger. That shows they were kind. Answer first. Then find the proof."
      },
      {
-      "t": "\"After more than 15 hours in the air, the NC-4's crew spotted an island through a break in the fog.\"",
-      "why": "This tells how the crew first saw land. It does not show that the radio helped them."
+      "t": "\"On one wall, he noticed a name and a date written in charcoal: 'A. Lizárraga 1902.'\"",
+      "why": "This tells what Bingham saw on a wall. It does not tell anything about the families who lived there."
      }
     ],
     "answer": 2
@@ -1483,57 +1498,60 @@ window.SETS = {
     "credit": "Written for this practice test."
    },
    {
-    "title": "Under the Ice to the Top of the World",
+    "title": "Songs to Save a School",
     "subtitle": "",
     "blocks": [
      {
-      "p": "The Nautilus was not an ordinary submarine. It was the first submarine in the world to run on nuclear power. Older submarines had to come up to the surface often. Their engines needed air. The nuclear engine of the Nautilus did not need air at all. This new vessel could stay underwater for weeks at a time. Its commander, William Anderson, had a daring idea. He wanted to sail under the frozen Arctic Ocean. He would go all the way from the Pacific side to the Atlantic side. His path would pass right under the North Pole."
+      "p": "In 1871, a small school in Nashville, Tennessee, was running out of money. The school was called Fisk. It had opened in January 1866, just after the war that freed millions of enslaved people. Fisk was one of the first schools for freed people and their children. The American Missionary Association (AMA) had helped start it. Its classrooms were old wooden barracks that the army had once used as a hospital. The sick wards had become classrooms. By 1871, the buildings were falling down. The school's treasury was nearly empty. The AMA was ready to give up on it."
      },
      {
-      "p": "It was a risky plan. The top of the Arctic Ocean is covered by a thick lid of ice. If something went wrong down below, the boat could not simply float up for air. Its crew would be trapped under a roof of solid ice."
+      "p": "The school's treasurer, who also taught music, had a daring idea. He had led student choirs before. Now he would take a choir of students on a singing tour. People in the North would hear them. Then they would give money to save Fisk. He spent all the cash the school could spare. He added his own money. Then he borrowed more, risking his own property if the plan failed."
      },
      {
-      "p": "Why did the trip matter? In October 1957, the Soviet Union had launched Sputnik, the first satellite to circle the Earth. Many Americans worried that their country was falling behind. President Eisenhower wanted a big success. It would show the world what American science could do. A trip under the North Pole would be just that."
+      "p": "The singers were young. The pianist, a young woman named Sheppard, was 20. The youngest singers were only 14. Most Fisk students and their families had been freed only a few years before."
      },
      {
-      "p": "Commander Anderson led a crew of more than 100 sailors. They had help from two new tools. A scientist named Waldo Lyon and his team had built a special sonar¹ that pointed up at the ice. It showed how thick the ice was and how much room the boat had. A new navigation machine also kept track of where they were, even with no stars or sun to guide them."
+      "h": "Hard Days in Ohio"
      },
      {
-      "h": "Two Failed Tries"
+      "p": "On October 6, 1871, the choir left Nashville and traveled north into Ohio. The trip was hard from the start. \"Not one of us had an overcoat or wrap,\" Sheppard later remembered. One day she traveled through the rain in cloth slippers. Some hotels refused to let the singers stay. In one town, the young women slept on a porch in their raincoats. In another, a kind landlord gave up his own bedroom so the group would have a place to gather."
      },
      {
-      "p": "The first tries did not go well. In 1957, the Nautilus turned back far to the north when both of its compasses failed. In June 1958, the crew tried again, starting from Seattle, Washington. In the shallow Chukchi Sea near Alaska, the ice hung down much deeper than anyone expected. The boat had to squeeze between the thick ice above and the sea floor below. It was nearly trapped. Anderson turned around and sailed to Pearl Harbor, Hawaii, to wait for a better chance."
+      "p": "At first, few people came to hear them. In one town, not even twenty people showed up. Their first paid show earned less than $50. Then they heard about a great fire in another city. It had left thousands of families homeless. The singers gave every cent to help."
      },
      {
-      "h": "Under the Ice"
+      "p": "The choir sang popular songs and classical music. But crowds were moved most by the spirituals, the songs their parents had sung while enslaved. The singers had thought those songs were too private to share. \"We did not dream of ever using them in public,\" Sheppard said. Soon the spirituals became the heart of their concerts."
      },
      {
-      "p": "On July 23, 1958, the Nautilus left Pearl Harbor again. This time, Anderson knew of a better path. Near Point Barrow, Alaska, a deep undersea canyon cut through the sea floor. On August 1, the boat dove into the canyon and slipped under the ice."
+      "p": "One night in Ohio, the treasurer lay awake, trying to think of a name for the group. By morning, he had one: the Jubilee Singers. In the Bible, a year of jubilee¹ was a time when enslaved people were set free."
      },
      {
-      "p": "For the next few days, the Nautilus glided north through the dark, cold water. In some places, the ice above was only a few feet thick. In others, enormous ridges of ice hung far down into the sea. The sonar watched the ice the whole time. Inside, the sailors ate, slept and worked as usual. They could not see the sky, but their instruments kept track of every mile. Each hour brought them closer to the top of the world."
+      "h": "East to New York"
      },
      {
-      "p": "On the night of August 3, Commander Anderson spoke over the loudspeaker. He counted down the last few seconds. At 11:15 p.m., the Nautilus passed under the North Pole. There were 116 men aboard. They were the first people ever to reach the North Pole on a ship. The sailors cheered and shook hands."
+      "p": "On November 15, the singers came to Oberlin, Ohio. A big meeting of church leaders was being held there. It was called the National Council of Congregational Churches. The leaders collected more than $130 on the spot. Two secretaries of the AMA urged the treasurer to take the choir east."
      },
      {
-      "p": "The Nautilus kept going. About two days later, it came up into open water near Greenland. It had traveled about 1,830 miles (2,945 kilometers) under the ice in about four days. Anderson sent a short radio message to the president. It said, \"Nautilus 90 North.\" The North Pole sits at 90 degrees north, so the message meant the plan had worked."
+      "p": "In December, the singers reached New York City. AMA leaders let them stay in their homes for six weeks. A famous minister named Beecher invited them to his church. After they sang there on December 27, crowds packed churches and theaters to hear them. Another minister, Theodore Cuyler, wrote to the New York Tribune newspaper. He said he had never seen a crowd \"so moved and melted under the magnetism of music.\""
      },
      {
-      "h": "Home to a Parade"
+      "p": "Next, the singers went to Washington. The president welcomed them, and they sang the spiritual \"Go Down, Moses\" for him. Senator Parson Brownlow of Tennessee was too sick to sit up. He asked them to sing at his bedside, and he wept as he listened."
      },
      {
-      "p": "The news made headlines around the world. President Eisenhower gave Anderson a medal. When the crew reached New York, people filled the streets for a parade. Paper streamers fluttered down from the skyscrapers like snow. One man in the crowd said, \"Those sailors went where nobody had ever gone, and they came home smiling.\""
+      "h": "Home With $20,000"
      },
      {
-      "p": "The crew had crossed the top of the world, hidden under the ice. Today, the Nautilus is a museum in Connecticut. Visitors can walk through the narrow halls where the sailors once lived."
+      "p": "Within three months of leaving Nashville, the singers had paid off the school's debts of nearly $1,500. \"We carried home $20,000,\" Sheppard said. With that money, Fisk was able to stay open and keep teaching. It also bought land on a hill above Nashville for a new campus."
+     },
+     {
+      "p": "Later, the singers sailed to Europe and earned even more. That money paid for Jubilee Hall, the first permanent building on the new campus. It still stands today."
      }
     ],
     "footnotes": [
      {
       "mark": "¹",
-      "word": "sonar (SOH-nar)",
-      "meaning": "a tool that sends out sounds and listens for the echoes to find objects underwater"
+      "word": "jubilee",
+      "meaning": "a time of great joy; in the Bible, a year when people who were enslaved were set free"
      }
     ],
     "credit": "Written for this practice test."
@@ -1757,23 +1775,23 @@ window.SETS = {
     "type": "ebsr",
     "skill": "Inference about the group and the result + proof",
     "partA": {
-     "q": "Which of these inferences about the crew of the Nautilus and the trip under the ice is supported by the text?",
+     "q": "Which of these inferences about the singers and their school is supported by the text?",
      "choices": [
       {
-       "t": "The crew showed that most of the Arctic ice was thin.",
-       "why": "Some of the ice was only a few feet thick, but in other places enormous ridges hung far down. The text never says most of it was thin. Answer first. Then find the proof."
+       "t": "The singers grew rich from the money their concerts earned.",
+       "why": "The singers gave their first earnings to families hurt by a fire and carried the rest home to Fisk. The text never says they kept the money. Answer first. Then find the proof."
       },
       {
-       "t": "The crew gave up after the ice nearly trapped the boat.",
-       "why": "The crew turned around once, but they tried again and made it. Answer first. Then find the proof."
+       "t": "The singers were the first choir ever to sing for a president.",
+       "why": "They did sing for the president, but the text never says no choir had done it before. Answer first. Then find the proof."
       },
       {
-       "t": "The crew showed that the risky plan could succeed after all.",
-       "why": "Yes! After two failed tries, the Nautilus went under the ice from Alaska, past the North Pole, to the sea near Greenland. Answer first. Then find the proof."
+       "t": "The singers kept their school from closing its doors.",
+       "why": "Yes! The money they earned paid Fisk's debts, and the school was able to keep teaching. Answer first. Then find the proof."
       },
       {
-       "t": "The crew wanted mainly to win a race against Soviet sailors.",
-       "why": "The text tells about Sputnik, but it never says there was a race with Soviet sailors."
+       "t": "The singers gave up after small crowds came to their first shows.",
+       "why": "Only a few people came at first, but the singers kept going all the way to New York City and Washington."
       }
      ],
      "answer": 2
@@ -1782,20 +1800,20 @@ window.SETS = {
      "q": "Which sentence from the text **best** supports your answer in part A?",
      "choices": [
       {
-       "t": "\"In some places, the ice above was only a few feet thick.\"",
-       "why": "This is true, but it tells about the ice in only some places. It does not tell how the voyage ended."
+       "t": "\"In one town, not even twenty people showed up.\"",
+       "why": "This tells about one small crowd early in the tour. It does not tell how the tour ended."
       },
       {
-       "t": "\"Anderson turned around and sailed to Pearl Harbor, Hawaii, to wait for a better chance.\"",
-       "why": "This tells about the try that failed. It does not tell how the voyage ended."
+       "t": "\"'We did not dream of ever using them in public,' Sheppard said.\"",
+       "why": "This tells how the singers first felt about the spirituals. It does not tell what happened to their school."
       },
       {
-       "t": "\"In October 1957, the Soviet Union had launched Sputnik, the first satellite to circle the Earth.\"",
-       "why": "This tells why the trip mattered. It does not show what the crew did."
+       "t": "\"The president welcomed them, and they sang the spiritual 'Go Down, Moses' for him.\"",
+       "why": "This tells about one visit in Washington. It does not show what the tour did for Fisk."
       },
       {
-       "t": "\"The crew had crossed the top of the world, hidden under the ice.\"",
-       "why": "Yes! This is the result of the voyage: the crew made it across, under the ice. Part B is your Detail. It proves your Part A answer."
+       "t": "\"With that money, Fisk was able to stay open and keep teaching.\"",
+       "why": "Yes! This is the result of the tour: the school did not have to close. Part B is your Detail. It proves your Part A answer."
       }
      ],
      "answer": 3
@@ -1810,23 +1828,23 @@ window.SETS = {
     "stem": "Which sentence **best** identifies the central idea of the text?",
     "choices": [
      {
-      "t": "The voyage proved that the Soviet Union had fallen behind American science.",
-      "why": "This says too much. The text says many Americans worried that their own country was falling behind. It never says the trip proved anything about the Soviet Union."
+      "t": "The tour proved that spirituals were the most beloved songs in America.",
+      "why": "This says too much. The spirituals moved many crowds, but the text never compares them with every other song in America."
      },
      {
-      "t": "The voyage under the ice gave Americans something to be proud of.",
-      "why": "Yes! Americans worried that their country was falling behind. The trip under the North Pole gave them a big success, with headlines, a medal and a parade. A central idea tells about a big part of the text."
+      "t": "The tour tested whether students could travel without a grown-up leader.",
+      "why": "The school's treasurer led the choir the whole way. The text never says the tour was meant to test anything."
      },
      {
-      "t": "The voyage was planned mainly to measure how cold the water was.",
-      "why": "The text never says the crew measured the water. This was not the reason for the trip."
+      "t": "The tour succeeded once the singers shared their people's old songs.",
+      "why": "Yes! Small crowds came at first, but the spirituals moved people everywhere, and the money began to come in. A central idea tells about a big part of the text."
      },
      {
-      "t": "The voyage tested whether the boat could come up at the Pole.",
-      "why": "The Nautilus passed under the North Pole and came up about two days later near Greenland. The text never says the crew tried to come up at the Pole."
+      "t": "The tour was planned mainly to help families left homeless by fire.",
+      "why": "The singers did give money to fire victims once, but the tour was planned to save Fisk."
      }
     ],
-    "answer": 1
+    "answer": 2
    },
    {
     "id": "R2-09",
@@ -1834,26 +1852,26 @@ window.SETS = {
     "p": 2,
     "type": "mc",
     "skill": "Which sentence supports a small idea",
-    "stem": "Which sentence from the text **best** supports the idea that the crew could tell how much space was between the boat and the ice?",
+    "stem": "Which sentence from the text **best** supports the idea that the singers did not have warm clothes for the trip?",
     "choices": [
      {
-      "t": "\"A new navigation machine also kept track of where they were, even with no stars or sun to guide them.\"",
-      "why": "This tells how the crew knew where they were. It does not show how they knew the space above them."
+      "t": "\"On October 6, 1871, the choir left Nashville and traveled north into Ohio.\"",
+      "why": "This tells when and where the trip began. It does not tell anything about the singers' clothes."
      },
      {
-      "t": "\"The boat had to squeeze between the thick ice above and the sea floor below.\"",
-      "why": "This shows the boat was in a tight spot. It does not tell how the crew could measure the space."
+      "t": "\"'Not one of us had an overcoat or wrap,' Sheppard later remembered.\"",
+      "why": "Yes! Not one singer had a coat for the cold northern weather. Answer first. Then find the proof."
      },
      {
-      "t": "\"It showed how thick the ice was and how much room the boat had.\"",
-      "why": "Yes! The sonar showed the crew how much room the boat had under the ice. Answer first. Then find the proof."
+      "t": "\"In another, a kind landlord gave up his own bedroom so the group would have a place to gather.\"",
+      "why": "This tells how one man helped the group. It does not show what the singers had to wear."
      },
      {
-      "t": "\"On the night of August 3, Commander Anderson spoke over the loudspeaker.\"",
-      "why": "This tells about the countdown to the North Pole. It does not tell anything about the ice."
+      "t": "\"Then they heard about a great fire in another city.\"",
+      "why": "This tells about the news of a fire. It does not show that the singers lacked warm clothes."
      }
     ],
-    "answer": 2
+    "answer": 1
    }
   ]
  },
@@ -2343,41 +2361,41 @@ window.SETS = {
  "TB": {
   "passages": [
    {
-    "title": "A Classroom in Ghana",
+    "title": "A Texan in Moscow",
     "subtitle": "",
     "blocks": [
      {
-      "p": "In the spring of 1962, Ann Pruitt was twenty-two years old and about to graduate from college in Dayton, Ohio, with a degree in chemistry. Most of her classmates had accepted jobs in nearby offices and laboratories. She had never traveled farther than Toledo, yet that winter she had applied to a new government program. Then a letter from Washington, D.C., invited her to teach science in Ghana. She could barely locate the West African nation on a map. Her parents worried about her going so far from home, but she said yes right away."
+      "p": "In the spring of 1958, Van Cliburn was 23 years old, and he would soon make history. When he was six, his family moved to the small town of Kilgore, Texas, where his father worked in the oil business. His mother, a piano teacher, had given him his first lessons when he was about three. At 12, he won a statewide contest and played Tchaikovsky's First Piano Concerto with the Houston Symphony. As a teenager, he moved to New York City to study at Juilliard, a famous music school, and at 19 he won a major prize there. Now he was going to Moscow, the capital of the Soviet Union, to play in a new contest."
      },
      {
-      "p": "The invitation came from the Peace Corps. President John F. Kennedy had first shared the idea in 1960, in a speech to college students in Michigan at two o'clock in the morning. In 1961, he created the program to send American volunteers to nations that requested help. Many of these nations had only recently won their independence, and they needed teachers, nurses and engineers. Kennedy hoped the volunteers would help these nations and also help people around the world get to know Americans as friends. Volunteers served for two years, and they received only enough money to live like their neighbors."
+      "p": "At that time, the United States and the Union of Soviet Socialist Republics (USSR) were bitter rivals. In October 1957, the Soviets had surprised the world by launching Sputnik, the first satellite to circle the Earth. Many Americans worried that their country was falling behind. The next spring, Soviet leaders held the first International Tchaikovsky Competition. It was named for Pyotr Tchaikovsky, a famous composer who had lived in the 1800s. They designed the contest to prove that their nation led the world in music, just as Sputnik seemed to prove it led in space. About 50 young pianists from 19 countries entered."
      },
      {
-      "p": "Ghana had welcomed the very first group. In August 1961, fifty-one volunteers stepped off a plane in Accra, the capital, and impressed their hosts by singing Ghana's national anthem in Twi, one of the country's major languages. Ann would follow a year later, after weeks of training in which she studied the country's history and practiced teaching."
+      "h": "\"Vanyusha\""
      },
      {
-      "h": "Akwaaba!"
+      "p": "From the start, the crowds in Moscow loved the young Texan. Fans gave him a friendly nickname, \"Vanyusha,\" and near the end of the contest they chanted for him to win first prize."
      },
      {
-      "p": "She arrived in Ghana in September 1962. \"Akwaaba!\" her new neighbors called, which means \"welcome\" in Twi. Within a month, they had taught her enough Twi to bargain for oranges and bread. \"I loved learning Twi from my neighbors,\" she said. Her small house had no running water, so each morning she carried a bucket to a pump down the road."
+      "p": "On April 13, 1958, Van played in the final round. He played two long, difficult works for piano and orchestra, one by Tchaikovsky and one by Sergei Rachmaninoff. When he finished, the people in the hall stood and clapped for eight minutes."
      },
      {
-      "p": "At school, she faced a tougher challenge. Her science classroom held forty students but no laboratory equipment at all. So she built a balance scale from a coat hanger, string and two tin cans. For chemistry lessons, she collected empty bottles at the market and turned them into beakers and test tubes. \"My students were hungry to learn,\" she said. \"They made me want to be a better teacher.\""
+      "p": "Then Van did something no one had expected: he gave a short speech to the crowd in their own language. Next, he played his own piano version of \"Moscow Nights,\" a popular Soviet song. The musicians on the stage behind him were delighted."
      },
      {
-      "p": "On weekends, she explored as much of the country as she could. She rode in brightly painted trucks called mammy wagons to the coast, where fishermen hauled long wooden canoes up on the sand. \"The market in Kumasi was the biggest I had ever seen,\" she wrote to her parents. \"You could buy anything there, from yams to kente cloth.\""
+      "p": "The judges now faced a hard choice. Could they really give first prize to an American? As the story is told, they went to the Soviet leader, Nikita Khrushchev, and asked what to do. \"Is he the best?\" Khrushchev asked. When they answered yes, he said, \"Then give him the prize!\" On April 14, Van was named the winner."
      },
      {
-      "h": "A Storm on the Road"
+      "h": "A Parade on Broadway"
      },
      {
-      "p": "Travel could be dangerous, too. One evening during the rainy season, the truck carrying Ann home slid off a muddy road and tipped over on its side. She crawled out through a window with a bruised arm. Families from a nearby village pulled the other passengers free and sheltered everyone in their homes until morning. \"They didn't know me,\" she said, \"but they treated me like family.\""
+      "p": "Back home, Van had become a hero. On May 19, he played to a sold-out crowd at Carnegie Hall. The next day, New York City honored him with a ticker-tape parade up Broadway, as paper fluttered down from the tall buildings above the street. He is still the only musician who has ever been given that honor."
      },
      {
-      "p": "When Ann left Ghana in 1964, her students lined up outside the school and sang the national anthem in Twi, just as the first volunteers had done. \"Nothing beat the moment a student finally understood,\" Ann said later."
+      "p": "At City Hall, where the mayor presented him with a scroll and a medal, Van spoke to the crowd. \"I appreciate more than you will ever know that you are honoring me,\" he said, \"but the thing that thrills me the most is that you are honoring classical music.\" Then he added, \"Because I'm only one of many. I'm only a witness and a messenger.\""
      },
      {
-      "p": "By the end of 1963, about seven thousand volunteers were serving in dozens of countries. Since 1961, more than 240,000 Americans have served in the Peace Corps. \"I went to Ghana to teach,\" Ann said. \"I came home having learned more than I taught.\""
+      "p": "A few days later, Van and his parents visited President Dwight Eisenhower in his office. In 1961, his recording of the Tchaikovsky concerto he had played as a boy became the first classical album to earn a gold record. In the years that followed, he played for presidents and for audiences all over the world."
      }
     ],
     "footnotes": [],
@@ -2520,20 +2538,20 @@ window.SETS = {
      "q": "Which statement **best** summarizes the central idea of the text?",
      "choices": [
       {
-       "t": "Peace Corps volunteers traveled to Ghana to teach science in the 1960s.",
-       "why": "That is one detail. Ann taught science in Ghana, but the volunteers served in many nations, and it leaves out the bigger reasons the text gives for the program. A central idea tells about a big part of the text."
+       "t": "Young pianists traveled abroad to study with famous Soviet teachers in Moscow.",
+       "why": "The pianists went to Moscow to play in a contest, not to take lessons. The text never says they studied with Soviet teachers. Answer first. Then find the proof."
       },
       {
-       "t": "Peace Corps volunteers explored markets and learned new languages in the 1960s.",
-       "why": "These are true details about Ann, but they leave out why the volunteers went. A central idea tells about a big part of the text."
+       "t": "Young pianists played Tchaikovsky's First Piano Concerto with an orchestra in Moscow.",
+       "why": "Van played music by Tchaikovsky, but that is one detail. It leaves out why the pianists came and what the contest was for. A central idea tells about a big part of the text."
       },
       {
-       "t": "Peace Corps volunteers worked abroad and built friendships for America in the 1960s.",
-       "why": "Yes! The text tells what the volunteers did and why: they worked in other nations so people around the world would know Americans as friends. Answer first. Then find the proof."
+       "t": "Young pianists competed in a contest meant to show off Soviet music in Moscow.",
+       "why": "Yes! The text tells what the pianists did and why the contest was held: Soviet leaders wanted to prove that their nation led the world in music. Answer first. Then find the proof."
       },
       {
-       "t": "Peace Corps volunteers went overseas to earn good pay as teachers in the 1960s.",
-       "why": "The volunteers did teach, but the text says they got only enough money to live like their neighbors. Pay was not the reason."
+       "t": "Young pianists enjoyed the cheering fans and friendly nicknames from the crowds in Moscow.",
+       "why": "Van did have cheering fans and a nickname, but these fun details are not what the whole text is about. They do not tell why the contest was held."
       }
      ],
      "answer": 2
@@ -2542,23 +2560,23 @@ window.SETS = {
      "q": "Which sentence from the text **best** supports your answer in part A?",
      "choices": [
       {
-       "t": "\"Many of these nations had only recently won their independence, and they needed teachers, nurses and engineers.\"",
-       "why": "This tells what the new nations needed. It says nothing about building friendships."
+       "t": "\"At 12, he won a statewide contest and played Tchaikovsky's First Piano Concerto with the Houston Symphony.\"",
+       "why": "This tells about Van as a boy in Texas. It does not show what the contest in Moscow was for."
       },
       {
-       "t": "\"She rode in brightly painted trucks called mammy wagons to the coast, where fishermen hauled long wooden canoes up on the sand.\"",
-       "why": "This tells what Ann did for fun on weekends. It does not show why the volunteers went."
+       "t": "\"They designed the contest to prove that their nation led the world in music, just as Sputnik seemed to prove it led in space.\"",
+       "why": "Yes! This tells why the contest was held: Soviet leaders wanted to prove their nation led the world in music. Part B is your Detail. It proves your Part A answer."
       },
       {
-       "t": "\"Then a letter from Washington, D.C., invited her to teach science in Ghana.\"",
-       "why": "This tells how one volunteer, Ann, was asked to teach in Ghana. It does not show what all the volunteers did or why they went."
+       "t": "\"Fans gave him a friendly nickname, 'Vanyusha,' and near the end of the contest they chanted for him to win first prize.\"",
+       "why": "This tells how the crowds felt about Van. It does not show why the pianists came to Moscow."
       },
       {
-       "t": "\"Kennedy hoped the volunteers would help these nations and also help people around the world get to know Americans as friends.\"",
-       "why": "Yes! This tells why the volunteers went: so people around the world would know Americans as friends. Part B is your Detail. It proves your Part A answer."
+       "t": "\"When he finished, the people in the hall stood and clapped for eight minutes.\"",
+       "why": "This tells how the crowd cheered for one pianist. It does not show what the contest was for."
       }
      ],
-     "answer": 3
+     "answer": 1
     }
    },
    {
@@ -2570,20 +2588,20 @@ window.SETS = {
     "stem": "Which sentence **best** summarizes the central idea of the text?",
     "choices": [
      {
-      "t": "Ann enjoyed seeing her students understand, but she was most excited about learning Twi from her neighbors.",
-      "why": "This switches the two ideas. Ann loved learning Twi, but she said something else beat it."
+      "t": "Van enjoyed seeing classical music honored, but he was most excited about the cheering crowds in Moscow.",
+      "why": "This switches the two ideas. Van said what thrilled him most was not the cheering for him."
      },
      {
-      "t": "Ann enjoyed learning Twi from her neighbors, but she was most excited about seeing her students understand.",
-      "why": "Yes! Ann said she loved learning Twi from her neighbors, but nothing beat the moment a student finally understood."
+      "t": "Van enjoyed the cheering crowds in Moscow, but he was most excited about seeing classical music honored.",
+      "why": "Yes! The crowds in Moscow loved Van, but at City Hall he said \"the thing that thrills me the most is that you are honoring classical music.\""
      },
      {
-      "t": "Ann enjoyed exploring Ghana's markets and coast, but she was most excited about building her own science equipment.",
-      "why": "Ann did explore Ghana and build equipment, but the text never says the equipment was what excited her most."
+      "t": "Van enjoyed his ticker-tape parade up Broadway, but he was most excited about meeting the president.",
+      "why": "Van did have a parade and visit President Eisenhower, but the text never says the visit excited him most."
      },
      {
-      "t": "Ann enjoyed riding in the mammy wagons, but she was most excited about singing the anthem in Twi.",
-      "why": "Ann's students sang the anthem in Twi when she left, but the text never says singing it excited her most."
+      "t": "Van enjoyed performing for the judges in Moscow, but he was most excited about winning the prize money.",
+      "why": "The text never talks about prize money. Answer first. Then find the proof."
      }
     ],
     "answer": 1
@@ -2594,38 +2612,38 @@ window.SETS = {
     "p": 0,
     "type": "hottext",
     "skill": "Click the proof of a trait",
-    "stem": "Click the section that **best** supports the inference that Ann was a creative problem solver. Choose **two** options.",
+    "stem": "Click the section that **best** supports the inference that Van was a respectful guest. Choose **two** options.",
     "pick": 2,
     "layout": "list",
     "pieces": [
      {
-      "t": "At school, she faced a tougher challenge. Her science classroom held forty students but no laboratory equipment at all.",
-      "why": "This tells about the problem: a classroom with no equipment. It does not show how Ann solved it."
+      "t": "On April 13, 1958, Van played in the final round.",
+      "why": "This tells when Van played in the final. It does not show how he treated his hosts."
      },
      {
-      "t": "So she built a balance scale from a coat hanger, string and two tin cans.",
-      "why": "Yes! Ann made a scale from a coat hanger and tin cans, and she turned empty bottles into beakers and test tubes. Each section proves the inference by itself."
+      "t": "He played two long, difficult works for piano and orchestra, one by Tchaikovsky and one by Sergei Rachmaninoff.",
+      "why": "This tells what music Van played in the contest. It does not show respect for his hosts."
      },
      {
-      "t": "For chemistry lessons, she collected empty bottles at the market and turned them into beakers and test tubes.",
-      "why": "Yes! Ann made a scale from a coat hanger and tin cans, and she turned empty bottles into beakers and test tubes. Each section proves the inference by itself."
+      "t": "When he finished, the people in the hall stood and clapped for eight minutes.",
+      "why": "This tells how the crowd cheered. It shows what the people did, not what Van did for them."
      },
      {
-      "t": "\"My students were hungry to learn,\" she said. \"They made me want to be a better teacher.\"",
-      "why": "This shows how Ann felt about her students. It does not show a clever way to solve a problem."
+      "t": "Then Van did something no one had expected: he gave a short speech to the crowd in their own language.",
+      "why": "Yes! Van spoke to the crowd in their own language, and he played a song they loved. Each section proves the inference by itself."
      },
      {
-      "t": "On weekends, she explored as much of the country as she could. She rode in brightly painted trucks called mammy wagons to the coast, where fishermen hauled long wooden canoes up on the sand.",
-      "why": "This tells how Ann explored Ghana on weekends. It is about sightseeing, not solving a problem."
+      "t": "Next, he played his own piano version of \"Moscow Nights,\" a popular Soviet song.",
+      "why": "Yes! Van spoke to the crowd in their own language, and he played a song they loved. Each section proves the inference by itself."
      },
      {
-      "t": "\"The market in Kumasi was the biggest I had ever seen,\" she wrote to her parents. \"You could buy anything there, from yams to kente cloth.\"",
-      "why": "This shows Ann was amazed by the market. It does not show how she solved a problem."
+      "t": "The musicians on the stage behind him were delighted.",
+      "why": "This tells how the musicians felt. It does not show what Van did for his hosts."
      }
     ],
     "answer": [
-     1,
-     2
+     3,
+     4
     ]
    },
    {
