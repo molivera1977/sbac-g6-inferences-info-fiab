@@ -22,6 +22,11 @@
   let tTeacher = '';   // whose class is showing
   let tPin = '';       // kept in memory only, for Refresh
   let tSample = false;
+  // a teacher's own class with no work yet (asked 11/25: "Until her 1st score"): the sample class with its bar, until her
+  // students' first saved answer comes in on an update; then her real class, and the sample is gone
+  let tWaiting = false;
+  const SAMPLE_NOTE = $('#t-sample').textContent;
+  const WAIT_NOTE = "Sample data · Your class has no scores yet, so these are made-up students to show you what this page will look like. They disappear as soon as your students' scores start showing up.";
   let heatSet = 'W';
   let heatMode = 'latest';   // the switch: each student's 'first' or 'latest' finished try (the heat maps, picks, Top 3)
   // the rows' order (asked 11/25: "the scores on the right should be sortable"): 'name' A–Z, or by score. Tap Score:
@@ -651,12 +656,14 @@
 
   function showClass(rows, sample) {
     tSample = sample;
-    students = groupStudents(rows);
+    tWaiting = !sample && !groupStudents(rows).length;
+    students = groupStudents(tWaiting ? sampleRows() : rows);
     // the teacher/admin guest link with no class link shows a SAMPLE class, so it names both grade-level teachers
     // (Marcos 11/19: "should it specifically say Richardson? how about both grade level teachers")
     const whose = window.SHARE_TEACHER && !A.CLASS ? Object.values(TEACHERS).join(' & ') : TEACHERS[tTeacher];
     $('#t-title').textContent = `Class Scores · ${whose}`;
-    $('#t-sample').hidden = !sample;
+    $('#t-sample').hidden = !(sample || tWaiting);
+    $('#t-sample').textContent = tWaiting ? WAIT_NOTE : SAMPLE_NOTE;
     // the teacher/admin guest view says how the real page works (Marcos 11/19: "mention about the pin so admin knows.
     // and how each teacher will only see their class data")
     const pinNote = $('#t-pin-note');
@@ -689,7 +696,7 @@
     const keep = sel.value;
     sel.innerHTML = students.map(st => `<option>${esc(st.name)}</option>`).join('');
     if (students.some(st => st.name === keep)) sel.value = keep;
-    $('#t-fix').hidden = tSample || !students.length;
+    $('#t-fix').hidden = tSample || tWaiting || !students.length;
   }
   async function fixName() {
     const from = $('#fix-from').value;
