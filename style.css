@@ -510,3 +510,73 @@ strong.cue { font-weight: 800; }
 
 /* guest view (11/19): the two guest cards on the teacher/admin link need more room than one start button */
 .teacher-row.guest-row { max-width: 760px; }
+
+/* the bottom row's % is a button too: it opens the same box as the question number (11/25) */
+.t-heat tfoot td:has(.h-pbtn) { padding: 0; }
+.h-pbtn { all: unset; box-sizing: border-box; display: block; width: 100%; padding: 6px 0; text-align: center; cursor: pointer;
+  border-radius: 4px; font-weight: 800; }
+.h-pbtn:hover, .h-pbtn.on { outline: 3px solid var(--pd); outline-offset: -3px; }
+.h-pbtn:focus-visible { outline: 3px solid #5eead4; outline-offset: -3px; }
+/* Student and Score sort the rows (11/25) */
+.h-sort { all: unset; cursor: pointer; font-weight: 800; color: var(--tm); border-radius: 6px; padding: 2px 4px; white-space: nowrap; }
+.h-sort:hover, .h-sort:focus-visible { color: var(--pd); outline: 2px solid var(--pd); }
+.h-sort.on { color: var(--pd); }
+.t-heat td.h-time { padding-left: 8px; white-space: nowrap; font-weight: 600; font-size: 0.75rem; color: var(--tm); text-align: right; }
+/* the box under the heat map: one student's answer, and what everyone picked */
+.t-qbox { margin-top: 12px; border: 2px solid var(--pd); border-radius: 12px; padding: 12px 14px; background: #fff; }
+.t-qbox-head { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-bottom: 8px; }
+.t-qbox-head .t-qbox-x { margin-left: auto; border: 0; background: transparent; font-size: 1.1rem; cursor: pointer; color: var(--tm); }
+.t-qbox-q { margin: 4px 0; font-size: 0.95rem; line-height: 1.7; font-family: var(--font-read); }
+.t-qbox-a { margin: 8px 0; padding: 6px 10px; border-radius: 8px; background: var(--okb); font-size: 0.9rem; line-height: 1.7; }
+.t-qbox-a .line, .pk-ans .line, .t-student .line { display: inline; }
+.t-qbox-a .line + .line::before, .pk-ans .line + .line::before, .t-student .line + .line::before { content: ' '; }
+.t-picks { margin: 10px 0 0; }
+.t-picks h5 { margin: 0 0 6px; font-size: 0.85rem; color: var(--pd); }
+.t-picks h5 span { font-weight: 600; color: var(--tm); }
+.pk-group { margin: 8px 0 12px; padding-top: 6px; border-top: 1px solid var(--b); }
+.pk-title { margin: 4px 0; font-weight: 800; font-size: 0.85rem; color: var(--t); }
+.pk-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; }
+.pk-row { display: grid; grid-template-columns: minmax(0, 1fr) 120px 2.2em; gap: 8px; align-items: center; font-size: 0.85rem; padding: 4px 8px; border-radius: 8px; }
+.pk-label { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 8px; line-height: 1.6; }
+.pk-ans { font-family: var(--font-read); }
+.pk-mark { font-weight: 800; color: var(--ok); }
+.pk-who { flex-basis: 100%; font-size: 0.75rem; color: var(--tm); }
+.pk-row.pk-right { background: var(--okb); }
+.pk-row.pk-top { background: var(--erb); }
+.pk-row em { font-style: normal; font-weight: 800; color: var(--er); }
+.pk-bar { height: 10px; background: #e2e8f0; border-radius: 5px; overflow: hidden; }
+.pk-bar i { display: block; height: 100%; background: var(--p); }
+.pk-right .pk-bar i { background: var(--ok); }
+.pk-top .pk-bar i { background: var(--er); }
+.pk-n { text-align: right; }
+.pk-unsaved, .pk-none { margin: 6px 0 0; font-size: 0.8rem; color: var(--tm); }
+.t-student { margin: 4px 0 10px; padding: 8px 12px; border-radius: 10px; border: 2px solid var(--b); background: #f8fafc; font-size: 0.9rem; line-height: 1.7; }
+.t-student.ok { border-color: var(--ok); background: var(--okb); }
+.t-student.no { border-color: var(--er); background: var(--erb); }
+.t-student p { margin: 2px 0; }
+.t-student-pick, .t-student-key { font-family: var(--font-read); }
+.t-tag { font-family: var(--font-ui); font-weight: 700; color: var(--tm); }
+/* the skill / standard heat map */
+.t-skill th .sk-sub { display: block; font-weight: 400; font-size: 0.65rem; color: var(--tm); }
+.t-skill thead th { vertical-align: bottom; padding: 4px 4px; }
+.t-skill th.sk-std, .t-skill td:nth-last-child(-n+2) { border-left: 3px solid #94a3b8; }
+.t-skill td { padding: 6px 4px; }
+/* every box, skill / standard name and % on the skill map is a button: it opens the box under the map (11/25) */
+.t-skill td:has(.sk-cell), .t-skill td:has(.sk-pbtn) { padding: 0; }
+.sk-cell, .sk-pbtn { all: unset; box-sizing: border-box; display: block; width: 100%; padding: 6px 4px; text-align: center;
+  cursor: pointer; border-radius: 4px; font-weight: 800; }
+.sk-cell:hover, .sk-cell.on, .sk-pbtn:hover, .sk-pbtn.on { outline: 3px solid var(--pd); outline-offset: -3px; }
+.sk-head { all: unset; display: block; box-sizing: border-box; width: 100%; cursor: pointer; border-radius: 6px; padding: 2px; text-align: center; }
+.sk-head:hover, .sk-head.on { outline: 2px solid var(--pd); background: #eef2ff; }
+.sk-cell:focus-visible, .sk-pbtn:focus-visible, .sk-head:focus-visible { outline: 3px solid #5eead4; outline-offset: -3px; }
+.t-skbox .sk-q { border-top: 1px solid var(--b); padding-top: 8px; margin-top: 8px; }
+.t-skbox .sk-q h5 { margin: 0 0 4px; font-size: 0.95rem; color: var(--pd); }
+.sk-hint { margin: 0 0 6px; }
+#t-qbox { scroll-margin-top: 12px; }   /* a question opened from the skill box lands with its heading in view */
+.sk-lines { list-style: none; margin: 6px 0 0; padding: 0; display: grid; gap: 8px; }
+.sk-line { display: flex; gap: 10px; align-items: flex-start; padding: 8px 10px; border: 1px solid var(--b); border-radius: 10px; background: #f8fafc; }
+.sk-line-body { display: flex; flex-direction: column; align-items: flex-start; gap: 4px; min-width: 0; }
+.sk-sum { font-family: var(--font-read); }
+.sk-top { font-size: 0.88rem; }
+.sk-top .line, .sk-sum .line { display: inline; }   /* a choice's lines stay in the sentence */
+.sk-top .line + .line::before, .sk-sum .line + .line::before { content: ' '; }
