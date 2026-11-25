@@ -316,8 +316,9 @@
       const pct = Math.round((right / (done.length * c.qs.length)) * 100);
       return `<td class="${heatClass(pct)}"><button type="button" class="sk-pbtn" data-c="${ci}" aria-expanded="false" aria-controls="t-skbox" aria-label="${esc(c.label)}: ${pct}% right. Show its questions." title="${esc(c.label)} · tap to see its questions">${pct}</button></td>`;
     }).join('');
+    const anyStd = cols.some(c => c.std);   // one skill per standard here, so the map may have no standard columns: the hint names only what it shows
     return `<h3 class="t-sub">Skill heat map <span>(${esc(setLabel(set))} · each student's ${tryWord()} · right out of the questions in that skill)</span></h3>
-      <p class="t-legend"><b>tap a box</b> to see that student's answers in that skill or standard · <b>tap a skill, a standard or its %</b> to see its questions</p>
+      <p class="t-legend"><b>tap a box</b> to see that student's answers in that ${anyStd ? 'skill or standard' : 'skill'} · <b>tap ${anyStd ? 'a skill, a standard' : 'a skill'} or its %</b> to see its questions</p>
       <div class="t-wrap"><table class="t-heat t-skill"><thead><tr><th scope="col">Student</th>${cols.map((c, ci) => (c.std
         ? `<th scope="col" class="sk-std" title="${esc(STD_WORDS[c.label].full)}"><button type="button" class="sk-head" data-c="${ci}" aria-expanded="false" aria-controls="t-skbox">${esc(c.label)}<span class="sk-name">${esc(STD_WORDS[c.label].short)}</span><span class="sk-sub">${esc(c.sub)}</span></button></th>`
         : `<th scope="col" class=""><button type="button" class="sk-head" data-c="${ci}" aria-expanded="false" aria-controls="t-skbox">${esc(c.label)}<span class="sk-sub">${esc(c.sub)}</span></button></th>`)).join('')}</tr></thead>
