@@ -290,8 +290,8 @@ strong.cue { font-weight: 800; }
 .t-table th, .t-table td { border-bottom: 1px solid var(--b); padding: 8px 6px; text-align: center; vertical-align: middle; }
 .t-table th { font-size: 0.7rem; text-transform: uppercase; color: var(--tm); }
 .t-table th:first-child, .t-table td:first-child { text-align: left; font-weight: 800; }
-.t-table td b { display: block; font-size: 1rem; }
-.t-table td span { display: block; font-size: 0.7rem; color: var(--tm); }
+.t-table :where(tr:not(.t-sc-row)) td b { display: block; font-size: 1rem; }
+.t-table :where(tr:not(.t-sc-row)) td span { display: block; font-size: 0.7rem; color: var(--tm); }
 .t-table td .t-none { color: #cbd5e1; font-size: 1rem; }
 /* Finished: 1st try → latest try on one line, each score in its grade color */
 .t-table td b span { display: inline; font-size: inherit; }
@@ -580,3 +580,15 @@ strong.cue { font-weight: 800; }
 .sk-top { font-size: 0.88rem; }
 .sk-top .line, .sk-sum .line { display: inline; }   /* a choice's lines stay in the sentence */
 .sk-top .line + .line::before, .sk-sum .line + .line::before { content: ' '; }
+
+/* 11/25 a student's score and a Top 3 / Bottom 3 question are buttons (Marcos: "in the spirit of everything being clickable") */
+.t-cell, .t-rank-btn { display: block; width: 100%; padding: 6px 8px; border: 2px solid transparent; border-radius: 10px; background: none; font: inherit; color: inherit; cursor: pointer; }
+.t-cell:hover, .t-cell:focus-visible, .t-rank-btn:hover, .t-rank-btn:focus-visible { background: var(--pl); }
+.t-cell.on, .t-rank-btn.on { border-color: var(--p); background: var(--pl); }
+.t-rank-btn { text-align: left; }
+.t-cell { padding: 4px 2px; }
+.t-rank-btn .t-q { display: block; }
+.t-table .t-sc-row > td { text-align: left; font-weight: 400; padding: 2px 8px 14px; }
+.sc-take { margin-top: 10px; }
+.sc-line { margin: 0 0 6px; }
+.sc-q { margin-top: 8px; }

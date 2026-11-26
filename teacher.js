@@ -352,6 +352,98 @@
     return `${Math.floor(mins / 60)} hr ${mins % 60} min`;
   }
 
+  /* 🔎 A STUDENT'S SCORE (Marcos 11/25: "in the spirit of everything being clickable… their individual scores"): a score
+     is a button; it opens a box right under that student's row: each try of that set, 1st try first (its %, right out of
+     how many, when, how long) with a ✓ / ✗ box per question (tap one: the question, the pick, the right answer), and a
+     try being worked on now with its boxes so far. One box at a time; tap the score again (or ✕) to close it. The
+     20-second update keeps it open (found by the student's name and the set, not by place). */
+  let scOpen = null;   // { key: the student's normName, set, take: a try's index or null, q: a question or null }
+  function scCellHTML(st, s, inner) {
+    const c = st.sets[s];
+    if (!c || (!c.tries.length && !c.now)) return `<td>${inner}</td>`;
+    return `<td><button type="button" class="t-cell" data-sc="${esc(normName(st.name))}" data-scset="${s}" aria-expanded="false" title="${esc(st.name)} · ${esc(setLabel(s))}: tap to see each try">${inner}</button></td>`;
+  }
+  const scTries = c => [...c.tries].sort((a, b) => rowTime(a) - rowTime(b)).concat(c.now ? [c.now] : []);
+  const scMissed = r => new Set(String(r.missed || '').split(',').map(x => x.trim()).filter(Boolean));
+  const scWhen = r => { const t = Date.parse(r.finishedAt || r.updatedAt || r.savedAt); return isNaN(t) ? '' : new Date(t).toLocaleString([], { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' }); };
+  // ✓ / ✗ / not yet for one question of one try: its saved answer; a finished try saved before answers were kept: its misses
+  function scMark(r, it) {
+    const x = answersOf(r)[it.id];
+    if (Array.isArray(x)) return x[0] ? 'ok' : 'miss';
+    if (r.status === 'Finished') return scMissed(r).has(it.id) ? 'miss' : 'ok';
+    return 'wait';
+  }
+  const scTryName = k => (k === 0 ? '1st try' : `Try ${k + 1}`);
+  function scBoxHTML(st, s) {
+    const c = st.sets[s];
+    const tries = scTries(c).map((r, k) => {
+      const now = r === c.now, its = itemsOf(r.set), when = scWhen(r);
+      const line = now
+        ? `<b>▶ Working on it now</b> · ${liveText(r)}`
+        : `<b>${scTryName(k)}</b> · <span class="${gradeFor(pctOf(r)).c}">${pctOf(r)}%</span> · ${Number(r.pts) || 0} of ${Number(r.tot) || its.length} right${when ? ` · ${esc(when)}` : ''} · ${tookText(r)}`;
+      const strip = its.map((it, i) => {
+        const m = scMark(r, it);
+        return `<button type="button" class="ts-q sc-qb ts-${m}" data-sctake="${k}" data-q="${i}" aria-expanded="false" title="Question ${i + 1}: ${m === 'ok' ? 'right' : m === 'miss' ? 'wrong' : 'not answered yet'}"><i>${i + 1}</i>${m === 'ok' ? '✓' : m === 'miss' ? '✗' : ''}</button>`;
+      }).join('');
+      return `<div class="sc-take${now ? ' sc-now' : ''}"><p class="sc-line">${line}</p>
+        <span class="t-strip" role="group" aria-label="${esc(st.name)}: each question. Tap one to see it.">${strip}</span>
+        <div class="t-qbox sc-q" data-sc-q="${k}" hidden></div></div>`;
+    }).join('');
+    return `<div class="t-qbox-head"><b>${esc(st.name)}</b><span class="kq-skill">${esc(setLabel(s))}</span>
+        <button type="button" class="t-qbox-x" data-scclose aria-label="Close ${esc(st.name)}'s ${esc(setLabel(s))}">✕</button></div>${tries}`;
+  }
+  // the box for question i of one try: the pick and what the student heard (the heat map's box), the question, the right answer
+  function scQHTML(name, r, k, i) {
+    const it = itemsOf(r.set)[i], answers = answersOf(r), m = scMark(r, it);
+    const who = m === 'wait'
+      ? `<div class="t-student wait"><p><b>${esc(name)}</b> has not answered it yet.</p></div>`
+      : studentHTML(it, { name, answers, missed: m === 'miss' ? new Set([it.id]) : new Set(), take: r.status === 'Finished' ? scTryName(k).toLowerCase() : 'working now' });
+    return `<div class="t-qbox-head"><b>Question ${i + 1}</b><span class="kq-skill">${esc(it.skill)}</span>
+        <button type="button" class="t-qbox-x" data-scqclose aria-label="Close question ${i + 1}">✕</button></div>
+      ${who}${askedHTML(it)}<p class="t-qbox-a sc-right"><b>Right answer:</b> ${esc(rightAnswerText(it))}</p>`;
+  }
+  function drawSc() {
+    const st = scOpen ? students.find(x => normName(x.name) === scOpen.key) : null;
+    const c = st ? st.sets[scOpen.set] : null;
+    if (!c || (!c.tries.length && !c.now)) scOpen = null;
+    const tries = scOpen ? scTries(c) : [];
+    if (scOpen && scOpen.take != null && !(tries[scOpen.take] && itemsOf(tries[scOpen.take].set)[scOpen.q])) scOpen = { ...scOpen, take: null, q: null };
+    // the box is a row of its own right under the student's row, there only while it is open (the table keeps one row per student)
+    document.querySelectorAll('#t-body .t-sc-row').forEach(row => row.remove());
+    const under = scOpen ? [...document.querySelectorAll('#t-body .t-cell')].find(b => b.dataset.sc === scOpen.key) : null;
+    const tr = under ? under.closest('tr') : null;
+    if (tr) {
+      const row = document.createElement('tr');
+      row.className = 't-sc-row';
+      row.dataset.scRow = scOpen.key;
+      row.innerHTML = `<td colspan="${tr.children.length}"><div class="t-qbox t-scbox" role="region" aria-live="polite">${scBoxHTML(st, scOpen.set)}</div></td>`;
+      tr.after(row);
+    }
+    document.querySelectorAll('#t-body .t-cell').forEach(b => {
+      const on = Boolean(scOpen) && b.dataset.sc === scOpen.key && b.dataset.scset === scOpen.set;
+      b.classList.toggle('on', on);
+      b.setAttribute('aria-expanded', String(on));
+    });
+    if (!scOpen || scOpen.take == null) return;
+    const box = document.querySelector(`#t-body .sc-q[data-sc-q="${scOpen.take}"]`);
+    if (box) { box.innerHTML = scQHTML(st.name, tries[scOpen.take], scOpen.take, scOpen.q); box.hidden = false; }
+    document.querySelectorAll('#t-body .sc-qb').forEach(b => {
+      const on = b.dataset.sctake === String(scOpen.take) && b.dataset.q === String(scOpen.q);
+      b.classList.toggle('on', on);
+      b.setAttribute('aria-expanded', String(on));
+    });
+  }
+  function toggleSc(key, set) {
+    scOpen = scOpen && scOpen.key === key && scOpen.set === set ? null : { key, set, take: null, q: null };
+    drawSc();
+  }
+  function toggleScQ(take, q) {
+    if (!scOpen) return;
+    const same = scOpen.take === take && scOpen.q === q;
+    scOpen = { ...scOpen, take: same ? null : take, q: same ? null : q };
+    drawSc();
+  }
+
   function classHTML() {
     // 📍 Right Now (11/21, from the class dashboard): the student with the lowest share right comes first, then the newest
     const working = students.flatMap(st => ALL_SETS.filter(s => st.sets[s] && st.sets[s].now).map(s => ({ name: st.name, r: st.sets[s].now })))
@@ -374,7 +466,7 @@
         <span class="t-ago">${ago(w.r.updatedAt)}</span>${liveStrip(w)}${liveMissed(w.r)}</li>`).join('')}</ul>` : '<p class="t-msg">No one is in the middle of a set.</p>'}
       <h3 class="t-sub">Finished <span>(1st try → latest try · ▶ = working on it now)</span></h3>
       <div class="t-wrap"><table class="t-table"><thead><tr><th>Student</th>${ALL_SETS.map(s => `<th>${setLabel(s)}</th>`).join('')}</tr></thead>
-        <tbody>${students.map(st => `<tr><td>${esc(st.name)}</td>${ALL_SETS.map(s => `<td>${cell(st.sets[s])}</td>`).join('')}</tr>`).join('')}</tbody></table></div>
+        <tbody>${students.map(st => `<tr><td>${esc(st.name)}</td>${ALL_SETS.map(s => scCellHTML(st, s, cell(st.sets[s]))).join('')}</tr>`).join('')}</tbody></table></div>
       <h3 class="t-sub">Question heat map <span>(pick a try and a set)</span></h3>
       <div class="key-tabs t-tabs t-modes" role="group" aria-label="Which try">${[['first', '1st try'], ['latest', 'Latest try']].map(([m, w]) => `<button type="button" class="key-tab" data-mode="${m}" aria-pressed="false">${w}</button>`).join('')}</div>
       <div class="key-tabs t-tabs" role="tablist" aria-label="Set">${ALL_SETS.map(s => `<button type="button" class="key-tab" data-heat="${s}">${setLabel(s)}</button>`).join('')}</div>
@@ -417,9 +509,9 @@
     // Student and Score are buttons that set the rows' order; aria-sort says which order is on
     const sortHead = (key, label, on) => `<th scope="col" class="h-sorth"${on ? ` aria-sort="${on}"` : ''}><button type="button" class="h-sort${on ? ' on' : ''}" data-sort="${key}" title="${key === 'name' ? 'Sort by name, A to Z' : 'Sort by score (tap again to flip)'}">${label}<span class="h-arrow" aria-hidden="true">${on === 'descending' ? ' ▼' : on === 'ascending' ? ' ▲' : key === 'name' ? '' : ' ↕'}</span></button></th>`;
     const scoreOn = heatSort === 'score-down' ? 'descending' : heatSort === 'score-up' ? 'ascending' : null;
-    const rankHTML = list => `<ol class="t-rank">${list.map(s => `<li><div class="t-rank-head"><b>Question ${s.i + 1}</b>
-      <span class="t-pill ${heatClass(s.pct)}">${s.right} of ${done.length} right · ${s.pct}%</span></div>
-      <div class="t-q"><i>${esc(s.it.skill)}:</i> ${cue(questionText(s.it))}</div></li>`).join('')}</ol>`;
+    const rankHTML = list => `<ol class="t-rank">${list.map(s => `<li><button type="button" class="t-rank-btn" data-q="${s.i}" aria-expanded="false" aria-controls="t-qbox" title="Question ${s.i + 1} · tap to see that question and what students picked"><span class="t-rank-head"><b>Question ${s.i + 1}</b>
+      <span class="t-pill ${heatClass(s.pct)}">${s.right} of ${done.length} right · ${s.pct}%</span></span>
+      <span class="t-q"><i>${esc(s.it.skill)}:</i> ${cue(questionText(s.it))}</span></button></li>`).join('')}</ol>`;
     return `<p class="t-legend">${esc(setLabel(set))} · each student's <b>${tryWord()}</b> · <span class="h-ok">✓</span> right · <span class="h-miss">✗</span> missed · bottom row = % of the ${done.length} ${done.length === 1 ? 'student' : 'students'} who got that question right · <b>tap a question number or its %</b> to see that question and what students picked · <b>tap a ✓ or ✗</b> to see that student's answer · <b>tap Score</b> to sort by score (again to flip; tap Student for A–Z)</p>
       <div class="t-wrap"><table class="t-heat"><thead><tr>${sortHead('name', 'Student', heatSort === 'name' ? 'ascending' : null)}${items.map((it, i) => `<th scope="col"><button type="button" class="h-qbtn" data-q="${i}" aria-expanded="false" aria-controls="t-qbox" title="${esc(it.skill)}">${i + 1}</button></th>`).join('')}${sortHead('score', 'Score', scoreOn)}<th scope="col" title="Clock time, start to finish, for that try">Time</th></tr></thead>
       <tbody>${body}</tbody><tfoot>${foot}</tfoot></table></div>
@@ -532,7 +624,7 @@
     if (!box) return;
     const who = si == null ? '' : String(si);
     const same = !box.hidden && box.dataset.q === String(i) && (box.dataset.s || '') === who;
-    document.querySelectorAll('#t-heat .h-qbtn, #t-heat .h-pbtn').forEach(b => {   // the number and its % open the same box
+    document.querySelectorAll('#t-heat .h-qbtn, #t-heat .h-pbtn, #t-heat .t-rank-btn').forEach(b => {   // the number and its % open the same box
       const on = !same && !who && b.dataset.q === String(i);
       b.classList.toggle('on', on);
       b.setAttribute('aria-expanded', String(on));
@@ -675,6 +767,7 @@
     if (!students.length) { $('#t-body').innerHTML = '<p class="t-msg">No work yet. Rows show up here after each answer a student checks.</p>'; return; }
     $('#t-body').innerHTML = classHTML();
     drawLive();
+    drawSc();
     const hasDone = s => students.some(st => st.sets[s] && st.sets[s].latest);
     if (!hasDone(heatSet)) { heatSet = ALL_SETS.find(hasDone) || 'W'; skOpen = null; }
     showHeat(heatSet);
@@ -722,7 +815,8 @@
 
   async function refresh(quiet) {
     if (tSample || !tPin) return;
-    if (!quiet) { liveOpen = null; skOpen = null; }   // ↻ Refresh starts closed; the 20-second update keeps the open boxes
+    if (!quiet) { liveOpen = null; skOpen = null; }
+    if (!quiet) scOpen = null;   // a score's box too: ↻ Refresh starts closed; the 20-second update keeps it   // ↻ Refresh starts closed; the 20-second update keeps the open boxes
     const open = openBox();   // by the student's name, so a new order finds them again
     const y = window.scrollY;
     if (!quiet) $('#t-body').innerHTML = '<p class="t-msg">Loading…</p>';
@@ -826,6 +920,21 @@
   $('#t-refresh').addEventListener('click', () => { refresh(); autoRefresh(); });
   $('#fix-go').addEventListener('click', fixName);
   $('#t-body').addEventListener('click', e => {
+    // a student's score (11/25): its box of tries; a ✓ / ✗ in it opens that question; ✕ closes
+    const scb = e.target.closest('.t-cell');
+    if (scb) { toggleSc(scb.dataset.sc, scb.dataset.scset); return; }
+    const scq = e.target.closest('.sc-qb');
+    if (scq) { toggleScQ(Number(scq.dataset.sctake), Number(scq.dataset.q)); return; }
+    if (e.target.closest('[data-scqclose]')) { scOpen = scOpen && { ...scOpen, take: null, q: null }; drawSc(); return; }
+    if (e.target.closest('[data-scclose]')) { scOpen = null; drawSc(); return; }
+    // a Top 3 / Bottom 3 question (11/25): the same box as its number on the heat map, brought into view
+    const rk = e.target.closest('.t-rank-btn');
+    if (rk) {
+      toggleQ(Number(rk.dataset.q));
+      const box = $('#t-qbox');
+      if (box && !box.hidden && box.scrollIntoView) box.scrollIntoView({ block: 'nearest' });
+      return;
+    }
     const sq = e.target.closest('.ts-q[data-live]');
     if (sq) { toggleLive(sq.dataset.live, Number(sq.dataset.q)); return; }
     if (e.target.closest('[data-live-close]')) { liveOpen = null; drawLive(); return; }
